@@ -100,6 +100,12 @@ def sync_textbook():
         (DOCS_DIR / "simulations.md").write_text(sim_content, encoding="utf-8")
         print("✅ Synced & sanitized Simulations Guide -> docs/simulations.md")
 
+    # 4.1 Copy Standalone In-Browser Circuit Simulator
+    sim_html = SIMULATIONS_DIR / "web" / "simulator.html"
+    if sim_html.exists():
+        shutil.copy2(sim_html, DOCS_DIR / "simulator.html")
+        print("✅ Synced Standalone Web Circuit Simulator -> docs/simulator.html")
+
     # 5. Copy All Reviews and Packets
     reviews_target_dir = DOCS_DIR / "reviews"
     reviews_target_dir.mkdir(parents=True, exist_ok=True)

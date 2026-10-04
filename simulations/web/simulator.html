@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instructabot - Unit 1 Nightlight Circuit Simulator</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #090d16;
+      color: #f1f5f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 24px;
+      max-width: 620px;
+      width: 100%;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+    }
+    .title { font-size: 18px; font-weight: bold; color: #f8fafc; }
+    .subtitle { font-size: 12px; color: #94a3b8; margin-top: 2px; }
+    .badge {
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      transition: all 0.25s ease;
+    }
+    .badge-on {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+    .badge-off {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+    .circuit-box {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+    }
+    svg { width: 100%; max-height: 220px; }
+    .meter-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .meter-cell {
+      background: #1e293b;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #334155;
+    }
+    .meter-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #94a3b8;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .meter-val { font-size: 14px; font-weight: 800; }
+    .slider-container {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+    }
+    input[type=range] {
+      width: 100%;
+      height: 6px;
+      background: #475569;
+      border-radius: 4px;
+      outline: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #facc15;
+      cursor: pointer;
+      box-shadow: 0 0 10px #eab308;
+      border: 2px solid #ffffff;
+    }
+    .pedagogy {
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 12px 14px;
+      border-radius: 10px;
+      transition: all 0.25s ease;
+    }
+    .pedagogy-on {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      color: #e2e8f0;
+    }
+    .pedagogy-off {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      color: #e2e8f0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 12px;
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    .glow-led { filter: drop-shadow(0 0 12px #facc15) drop-shadow(0 0 24px #eab308); }
+    .flow-line { stroke-dasharray: 4, 6; animation: flow 1s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -10; } }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div>
+        <div class="title">⚡ Instructabot: Autonomous Nightlight</div>
+        <div class="subtitle">Unit 1 Interactive Hardware Simulator (Zero Code)</div>
+      </div>
+      <span id="badge" class="badge badge-on">🌙 Dark: LED ON</span>
+    </div>
+
+    <!-- Circuit SVG -->
+    <div class="circuit-box">
+      <svg viewBox="0 0 460 200">
+        <!-- Power Rails -->
+        <line x1="30" y1="20" x2="430" y2="20" stroke="#ef4444" stroke-width="2.5"/>
+        <text x="35" y="15" fill="#ef4444" font-size="11" font-weight="bold">+9V Power Rail</text>
+        <line x1="30" y1="180" x2="430" y2="180" stroke="#3b82f6" stroke-width="2.5"/>
+        <text x="35" y="196" fill="#60a5fa" font-size="11" font-weight="bold">Ground (0V)</text>
+
+        <!-- Current Flow Lines -->
+        <line id="flow" x1="360" y1="20" x2="360" y2="180" stroke="#fde047" stroke-width="2" class="flow-line" opacity="0.9"/>
+
+        <!-- 9V Battery -->
+        <rect x="35" y="65" width="22" height="42" rx="3" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+        <text x="46" y="89" fill="#f8fafc" font-size="10" font-weight="bold" text-anchor="middle">9V</text>
+        <line x1="46" y1="65" x2="46" y2="20" stroke="#ef4444" stroke-width="2"/>
+        <line x1="46" y1="107" x2="46" y2="180" stroke="#3b82f6" stroke-width="2"/>
+
+        <!-- LDR Sensor -->
+        <circle cx="150" cy="55" r="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+        <path d="M142 55 L146 51 L150 59 L154 51 L158 55" fill="none" stroke="#f59e0b" stroke-width="2"/>
+        <text x="150" y="29" fill="#fbbf24" font-size="10" text-anchor="middle" font-weight="bold">LDR (Sensor)</text>
+        <line x1="150" y1="39" x2="150" y2="20" stroke="#ef4444" stroke-width="2"/>
+        <line x1="150" y1="71" x2="150" y2="100" stroke="#cbd5e1" stroke-width="2"/>
+
+        <!-- 10k Divider Resistor -->
+        <rect x="142" y="125" width="16" height="26" rx="2" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="150" y="142" fill="#f8fafc" font-size="9" text-anchor="middle">10kΩ</text>
+        <line x1="150" y1="100" x2="150" y2="125" stroke="#cbd5e1" stroke-width="2"/>
+        <line x1="150" y1="151" x2="150" y2="180" stroke="#3b82f6" stroke-width="2"/>
+
+        <!-- Junction Point -->
+        <circle cx="150" cy="100" r="4" fill="#fbbf24"/>
+        <line x1="150" y1="100" x2="250" y2="100" stroke="#fbbf24" stroke-width="2"/>
+        <text id="vb-text" x="195" y="93" fill="#4ade80" font-size="10" font-weight="bold" text-anchor="middle">V_b = 0.72V</text>
+
+        <!-- 2N2222 Transistor -->
+        <line x1="250" y1="85" x2="250" y2="115" stroke="#f8fafc" stroke-width="3"/>
+        <line x1="250" y1="92" x2="265" y2="78" stroke="#f8fafc" stroke-width="2"/>
+        <line x1="265" y1="78" x2="265" y2="50" stroke="#f8fafc" stroke-width="2"/>
+        <line x1="265" y1="50" x2="360" y2="50" stroke="#f8fafc" stroke-width="2"/>
+        <line x1="250" y1="108" x2="265" y2="122" stroke="#f8fafc" stroke-width="2"/>
+        <polygon points="262,118 266,122 267,117" fill="#f8fafc"/>
+        <line x1="265" y1="122" x2="265" y2="180" stroke="#3b82f6" stroke-width="2"/>
+        <text x="250" y="138" fill="#38bdf8" font-size="9" font-weight="bold" text-anchor="middle">2N2222 NPN</text>
+
+        <!-- 330 Ohm Resistor -->
+        <rect x="352" y="45" width="16" height="24" rx="2" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="360" y="61" fill="#f8fafc" font-size="9" text-anchor="middle">330Ω</text>
+        <line x1="360" y1="20" x2="360" y2="45" stroke="#ef4444" stroke-width="2"/>
+        <line x1="360" y1="69" x2="360" y2="90" stroke="#f8fafc" stroke-width="2"/>
+
+        <!-- LED Actuator -->
+        <circle id="glow" cx="360" cy="100" r="30" fill="#facc15" opacity="0.5"/>
+        <polygon id="led" points="348,90 372,90 360,110" fill="#facc15" stroke="#eab308" stroke-width="1.5" class="glow-led"/>
+        <line x1="348" y1="110" x2="372" y2="110" stroke="#eab308" stroke-width="2"/>
+        <text x="360" y="128" fill="#fef08a" font-size="10" font-weight="bold" text-anchor="middle">LED</text>
+        <line x1="360" y1="110" x2="360" y2="180" stroke="#3b82f6" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <!-- Meters -->
+    <div class="meter-grid">
+      <div class="meter-cell">
+        <div class="meter-label">Ambient Light</div>
+        <div id="m-lux" class="meter-val" style="color: #f59e0b;">20 Lux (Dark)</div>
+      </div>
+      <div class="meter-cell">
+        <div class="meter-label">Base Voltage (V_b)</div>
+        <div id="m-vb" class="meter-val" style="color: #34d399;">0.72 V (&ge; 0.7V)</div>
+      </div>
+      <div class="meter-cell">
+        <div class="meter-label">Transistor Switch</div>
+        <div id="m-state" class="meter-val" style="color: #34d399;">CLOSED (ON)</div>
+      </div>
+    </div>
+
+    <!-- Flashlight Slider -->
+    <div class="slider-container">
+      <div class="slider-labels">
+        <span>🌙 Midnight Darkness</span>
+        <span style="color: #94a3b8;">&larr; Drag Flashlight &rarr;</span>
+        <span>☀️ Direct Sunlight</span>
+      </div>
+      <input id="slider" type="range" min="0" max="100" value="15"/>
+    </div>
+
+    <!-- Explanation -->
+    <div id="ped" class="pedagogy pedagogy-on">
+      <strong>🌙 Autonomous Behavior Active:</strong> In darkness, the sensor's electrical resistance spikes. Current flows into the transistor's Base. Because Base voltage exceeds <strong>0.7V</strong>, the transistor acts like a closed switch, lighting up the nightlight!
+    </div>
+
+    <div style="text-align: center; margin-top: 14px;">
+      <a href="getting_started/" class="back-link">&larr; Return to Getting Started Guide</a>
+    </div>
+  </div>
+
+  <script>
+    var slider = document.getElementById('slider');
+    var badge = document.getElementById('badge');
+    var mLux = document.getElementById('m-lux');
+    var mVb = document.getElementById('m-vb');
+    var mState = document.getElementById('m-state');
+    var vbText = document.getElementById('vb-text');
+    var glow = document.getElementById('glow');
+    var led = document.getElementById('led');
+    var flow = document.getElementById('flow');
+    var ped = document.getElementById('ped');
+
+    function update(val) {
+      var isDark = val < 45;
+      var lux = Math.round(Math.pow(val / 10, 2) * 15 + 5);
+      var vb = (0.76 - (val / 100) * 0.58).toFixed(2);
+      if (vb > 0.75) vb = "0.75";
+      if (vb < 0.20) vb = "0.20";
+
+      mLux.textContent = lux + " Lux (" + (isDark ? "Darkness" : "Bright") + ")";
+      mVb.textContent = vb + " V (" + (isDark ? "≥ 0.7V Threshold" : "< 0.7V Threshold") + ")";
+      vbText.textContent = "V_b = " + vb + "V";
+
+      if (isDark) {
+        badge.className = "badge badge-on";
+        badge.textContent = "🌙 Dark: LED ON";
+        mState.textContent = "CLOSED (ON)";
+        mState.style.color = "#34d399";
+        mVb.style.color = "#34d399";
+        vbText.setAttribute('fill', '#4ade80');
+        glow.setAttribute('opacity', '0.5');
+        led.setAttribute('fill', '#facc15');
+        led.classList.add('glow-led');
+        flow.setAttribute('opacity', '0.9');
+        ped.className = "pedagogy pedagogy-on";
+        ped.innerHTML = "<strong>🌙 Autonomous Behavior Active:</strong> In darkness, the sensor's resistance spikes. Current flows into the transistor's Base. Because Base voltage exceeds <strong>0.7V</strong>, the transistor acts like a closed switch, illuminating your LED nightlight!";
+      } else {
+        badge.className = "badge badge-off";
+        badge.textContent = "☀️ Light: LED OFF";
+        mState.textContent = "OPEN (OFF)";
+        mState.style.color = "#f59e0b";
+        mVb.style.color = "#f59e0b";
+        vbText.setAttribute('fill', '#94a3b8');
+        glow.setAttribute('opacity', '0');
+        led.setAttribute('fill', '#475569');
+        led.classList.remove('glow-led');
+        flow.setAttribute('opacity', '0.05');
+        ped.className = "pedagogy pedagogy-off";
+        ped.innerHTML = "<strong>☀️ Closed-Loop Feedback:</strong> The flashlight floods the sensor with light! Sensor resistance collapses, dropping Base voltage to <strong>" + vb + "V</strong> (below 0.7V). The transistor snaps open, instantly shutting off the LED!";
+      }
+    }
+
+    slider.addEventListener('input', function(e) {
+      update(Number(e.target.value));
+    });
+    update(15);
+  </script>
+</body>
+</html>

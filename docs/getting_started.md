@@ -8,180 +8,41 @@
 ## 🌟 The First-Day Guarantee
 You will make a virtual electronic circuit work in your web browser **within 5 minutes of opening this page**, with **zero software to install**.
 
-### ⚡ Live In-Browser Nightlight Simulator
-Try it right now below—drag the slider to shine a flashlight on the sensor and watch the circuit react autonomously:
+### ⚡ Step 1: Open Your First Circuit (Zero Installs)
 
-<div style="background: #0f172a; border: 1px solid #334155; border-radius: 12px; padding: 18px; max-width: 580px; margin: 16px 0; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif;">
-  <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; padding-bottom: 10px; margin-bottom: 12px;">
-    <div>
-      <strong style="font-size: 15px; color: #f8fafc;">⚡ Autonomous Transistor Nightlight</strong>
-      <div style="font-size: 12px; color: #94a3b8;">Sense &rarr; Think &rarr; Act Circuit Loop</div>
-    </div>
-    <span id="nl-badge" style="padding: 4px 10px; border-radius: 9999px; font-size: 12px; font-weight: bold; background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3);">
-      🌙 Dark: LED ON
-    </span>
-  </div>
+> [!TIP] **Launch the Interactive Web Simulator**  
+> We host a standalone interactive circuit simulator that runs directly in your browser with zero logins or software installations:  
+> 🚀 **[Click Here to Launch the Live Interactive Nightlight Simulator](https://jscottvogel.github.io/Instructabot/simulator.html)**
 
-  <!-- SVG Circuit Diagram -->
-  <div style="background: #020617; border-radius: 8px; padding: 12px; border: 1px solid #1e293b; text-align: center;">
-    <svg viewBox="0 0 460 200" style="width: 100%; max-height: 190px;">
-      <!-- Power Rails -->
-      <line x1="30" y1="20" x2="430" y2="20" stroke="#ef4444" stroke-width="2.5"/>
-      <text x="35" y="15" fill="#ef4444" font-size="11" font-weight="bold">+9V Rail</text>
-      <line x1="30" y1="180" x2="430" y2="180" stroke="#3b82f6" stroke-width="2.5"/>
-      <text x="35" y="195" fill="#60a5fa" font-size="11" font-weight="bold">Ground (0V)</text>
+#### How the Autonomous Sense-Think-Act Loop Operates:
 
-      <!-- Battery -->
-      <rect x="35" y="65" width="22" height="42" rx="3" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
-      <text x="46" y="89" fill="#f8fafc" font-size="10" font-weight="bold" text-anchor="middle">9V</text>
-      <line x1="46" y1="65" x2="46" y2="20" stroke="#ef4444" stroke-width="2"/>
-      <line x1="46" y1="107" x2="46" y2="180" stroke="#3b82f6" stroke-width="2"/>
+```mermaid
+flowchart LR
+    Sensor["👁️ 1. SENSE<br/>Photoresistor (LDR)<br/>Measures Ambient Light"] --> Brain["🧠 2. THINK<br/>2N2222 Transistor<br/>Compares V_base to 0.7V"]
+    Brain --> Actuator["💡 3. ACT<br/>Nightlight LED<br/>Emits Light in Darkness"]
+```
 
-      <!-- LDR Photoresistor -->
-      <circle cx="150" cy="55" r="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
-      <path d="M142 55 L146 51 L150 59 L154 51 L158 55" fill="none" stroke="#f59e0b" stroke-width="2"/>
-      <text x="150" y="28" fill="#fbbf24" font-size="10" text-anchor="middle" font-weight="bold">LDR Sensor</text>
-      <line x1="150" y1="39" x2="150" y2="20" stroke="#ef4444" stroke-width="2"/>
-      <line x1="150" y1="71" x2="150" y2="100" stroke="#cbd5e1" stroke-width="2"/>
+| Environmental State | Sensor Resistance ($R_{\text{LDR}}$) | Transistor Base Voltage ($V_b$) | Transistor Switch State | Nightlight LED |
+| :--- | :--- | :--- | :--- | :--- |
+| **☀️ Bright Daylight / Flashlight ON** | Very Low ($\approx 500\,\Omega$) | Drops to **$< 0.7\,\text{V}$** | **OPEN** (Cutoff — No Current) | **OFF (Dark)** |
+| **🌙 Midnight Darkness / Flashlight OFF** | Very High ($> 200\,\text{k}\Omega$) | Rises to **$\ge 0.7\,\text{V}$** | **CLOSED** (Saturation — Conducting) | **ON (Glowing!)** |
 
-      <!-- 10k Resistor -->
-      <rect x="142" y="125" width="16" height="26" rx="2" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
-      <text x="150" y="142" fill="#f8fafc" font-size="9" text-anchor="middle">10kΩ</text>
-      <line x1="150" y1="100" x2="150" y2="125" stroke="#cbd5e1" stroke-width="2"/>
-      <line x1="150" y1="151" x2="150" y2="180" stroke="#3b82f6" stroke-width="2"/>
+#### Step-by-Step Instructions:
+1. **Launch the Simulation**:
+   - Open the **[Live In-Browser Nightlight Simulator](https://jscottvogel.github.io/Instructabot/simulator.html)**.
+   - Or open [Autodesk Tinkercad Circuits](https://www.tinkercad.com/circuits) for the hands-on virtual breadboard wiring lab.
+2. **Interact with the Sensor**:
+   - Drag the ambient light / flashlight slider back and forth.
+   - **Shine light on the sensor** $\to$ Watch Base Voltage drop below $0.7\,\text{V}$ $\to$ The LED automatically turns **OFF**.
+   - **Pull the light into darkness** $\to$ Watch Base Voltage exceed $0.7\,\text{V}$ $\to$ The LED instantly illuminates **ON**.
+3. 🎉 **Congratulations! You just analyzed your first autonomous sensor-actuator robotic circuit!**
 
-      <!-- Junction to Base -->
-      <circle cx="150" cy="100" r="4" fill="#fbbf24"/>
-      <line x1="150" y1="100" x2="250" y2="100" stroke="#fbbf24" stroke-width="2"/>
-      <text id="nl-vb-text" x="195" y="93" fill="#4ade80" font-size="10" font-weight="bold" text-anchor="middle">V_b = 0.72V</text>
+---
 
-      <!-- 2N2222 Transistor -->
-      <line x1="250" y1="85" x2="250" y2="115" stroke="#f8fafc" stroke-width="3"/>
-      <line x1="250" y1="92" x2="265" y2="78" stroke="#f8fafc" stroke-width="2"/>
-      <line x1="265" y1="78" x2="265" y2="50" stroke="#f8fafc" stroke-width="2"/>
-      <line x1="265" y1="50" x2="360" y2="50" stroke="#f8fafc" stroke-width="2"/>
-      
-      <line x1="250" y1="108" x2="265" y2="122" stroke="#f8fafc" stroke-width="2"/>
-      <polygon points="262,118 266,122 267,117" fill="#f8fafc"/>
-      <line x1="265" y1="122" x2="265" y2="180" stroke="#3b82f6" stroke-width="2"/>
-      <text x="250" y="138" fill="#38bdf8" font-size="9" font-weight="bold" text-anchor="middle">2N2222 NPN</text>
-
-      <!-- 330 Ohm Resistor -->
-      <rect x="352" y="45" width="16" height="24" rx="2" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
-      <text x="360" y="61" fill="#f8fafc" font-size="9" text-anchor="middle">330Ω</text>
-      <line x1="360" y1="20" x2="360" y2="45" stroke="#ef4444" stroke-width="2"/>
-      <line x1="360" y1="69" x2="360" y2="90" stroke="#f8fafc" stroke-width="2"/>
-
-      <!-- LED Symbol & Radiant Glow -->
-      <circle id="nl-glow" cx="360" cy="100" r="32" fill="#facc15" opacity="0.45"/>
-      <polygon id="nl-led" points="348,90 372,90 360,110" fill="#facc15" stroke="#eab308" stroke-width="1.5"/>
-      <line x1="348" y1="110" x2="372" y2="110" stroke="#eab308" stroke-width="2"/>
-      <text x="360" y="128" fill="#fef08a" font-size="10" font-weight="bold" text-anchor="middle">LED</text>
-      <line x1="360" y1="110" x2="360" y2="140" stroke="#f8fafc" stroke-width="2"/>
-      <line x1="360" y1="140" x2="265" y2="140" stroke="#f8fafc" stroke-width="2"/>
-      <line x1="265" y1="140" x2="265" y2="78" stroke="#f8fafc" stroke-width="2"/>
-    </svg>
-  </div>
-
-  <!-- Multimeter Readouts -->
-  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 12px 0; text-align: center; background: #020617; padding: 10px; border-radius: 8px; border: 1px solid #1e293b;">
-    <div>
-      <div style="font-size: 10px; color: #94a3b8; text-transform: uppercase;">Ambient Light</div>
-      <div id="nl-lux-val" style="font-size: 13px; font-weight: bold; color: #f59e0b;">20 Lux (Dark)</div>
-    </div>
-    <div>
-      <div style="font-size: 10px; color: #94a3b8; text-transform: uppercase;">Base Voltage</div>
-      <div id="nl-vb-val" style="font-size: 13px; font-weight: bold; color: #34d399;">0.72V (&ge;0.7V)</div>
-    </div>
-    <div>
-      <div style="font-size: 10px; color: #94a3b8; text-transform: uppercase;">Transistor State</div>
-      <div id="nl-state-val" style="font-size: 13px; font-weight: bold; color: #34d399;">CLOSED (ON)</div>
-    </div>
-  </div>
-
-  <!-- Flashlight Slider Control -->
-  <div style="margin: 12px 0;">
-    <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 6px;">
-      <span>🌙 Midnight Darkness</span>
-      <span style="color: #94a3b8;">&larr; Drag to shine flashlight &rarr;</span>
-      <span>☀️ Direct Sunlight</span>
-    </div>
-    <input id="nl-slider" type="range" min="0" max="100" value="15" style="width: 100%; accent-color: #f59e0b; cursor: pointer;">
-  </div>
-
-  <!-- Pedagogical Explanation -->
-  <div id="nl-explanation" style="font-size: 12px; line-height: 1.5; color: #cbd5e1; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.25); padding: 10px; border-radius: 8px;">
-    <strong>🌙 How Autonomy Works Here:</strong> In the dark, the photoresistor's resistance rises, raising the transistor Base voltage above <strong>0.7V</strong>. The transistor switch snaps shut, allowing power to flood into the nightlight LED!
-  </div>
-</div>
-
-<script>
-(function() {
-  var slider = document.getElementById('nl-slider');
-  var badge = document.getElementById('nl-badge');
-  var luxVal = document.getElementById('nl-lux-val');
-  var vbVal = document.getElementById('nl-vb-val');
-  var stateVal = document.getElementById('nl-state-val');
-  var vbText = document.getElementById('nl-vb-text');
-  var glow = document.getElementById('nl-glow');
-  var led = document.getElementById('nl-led');
-  var exp = document.getElementById('nl-explanation');
-
-  function update(val) {
-    var isDark = val < 45;
-    var lux = Math.round(Math.pow(val / 10, 2) * 15 + 5);
-    var vb = (0.76 - (val / 100) * 0.58).toFixed(2);
-    if (vb > 0.75) vb = "0.75";
-    if (vb < 0.20) vb = "0.20";
-
-    luxVal.textContent = lux + " Lux (" + (isDark ? "Darkness" : "Bright") + ")";
-    vbVal.textContent = vb + "V (" + (isDark ? "≥0.7V" : "<0.7V") + ")";
-    vbText.textContent = "V_b = " + vb + "V";
-
-    if (isDark) {
-      badge.textContent = "🌙 Dark: LED ON";
-      badge.style.background = "rgba(16, 185, 129, 0.2)";
-      badge.style.color = "#34d399";
-      stateVal.textContent = "CLOSED (ON)";
-      stateVal.style.color = "#34d399";
-      vbVal.style.color = "#34d399";
-      vbText.setAttribute('fill', '#4ade80');
-      glow.setAttribute('opacity', '0.5');
-      led.setAttribute('fill', '#facc15');
-      exp.style.background = "rgba(16, 185, 129, 0.1)";
-      exp.style.borderColor = "rgba(16, 185, 129, 0.25)";
-      exp.innerHTML = "<strong>🌙 How Autonomy Works Here:</strong> In the dark, the sensor resistance rises, raising Base voltage above <strong>0.7V</strong>. The transistor switch snaps shut, illuminating your LED nightlight!";
-    } else {
-      badge.textContent = "☀️ Light: LED OFF";
-      badge.style.background = "rgba(245, 158, 11, 0.2)";
-      badge.style.color = "#fbbf24";
-      stateVal.textContent = "OPEN (OFF)";
-      stateVal.style.color = "#f59e0b";
-      vbVal.style.color = "#f59e0b";
-      vbText.setAttribute('fill', '#94a3b8');
-      glow.setAttribute('opacity', '0');
-      led.setAttribute('fill', '#475569');
-      exp.style.background = "rgba(245, 158, 11, 0.1)";
-      exp.style.borderColor = "rgba(245, 158, 11, 0.25)";
-      exp.innerHTML = "<strong>☀️ Closed-Loop Feedback:</strong> The flashlight floods the sensor, dropping resistance and pulling Base voltage down to <strong>" + vb + "V</strong> (below 0.7V). The transistor snaps open, shutting off the LED!";
-    }
-  }
-
-  if (slider) {
-    slider.addEventListener('input', function(e) {
-      update(Number(e.target.value));
-    });
-    update(15);
-  }
-})();
-</script>
-
-### 🛠️ Next: Build the Full Physical Circuit in Simulation
-Once you've explored the live simulation above, you can build the complete breadboard circuit with your own hands:
-- **Zero-Code Breadboard Lab**: Follow the full step-by-step assembly guide in [Lab 1: The Zero-Code Light-Sensitive Nightlight](curriculum/unit-01-electronics/lab-01-zero-code-nightlight.md).
-- **Interactive Simulator Options**:
-  1. **Autodesk Tinkercad**: Build on a virtual breadboard using [Autodesk Tinkercad Circuits](https://www.tinkercad.com/circuits) (free, browser-based, recommended for analog circuits).
-  2. **Wokwi**: In Unit 2, we introduce microcontrollers using Wokwi with pre-configured project files in [`simulations/wokwi/`](https://github.com/jscottvogel/Instructabot/tree/main/simulations/wokwi).
+### 🛠️ Next: Build the Full Physical Circuit on a Breadboard
+Ready to wire the components together yourself?
+- Follow the full step-by-step breadboard assembly guide in [Lab 1: The Zero-Code Light-Sensitive Nightlight](curriculum/unit-01-electronics/lab-01-zero-code-nightlight.md).
+- In Unit 2, we introduce programmable microcontrollers using Wokwi with pre-configured project files in [`simulations/wokwi/`](https://github.com/jscottvogel/Instructabot/tree/main/simulations/wokwi).
 
 🎉 **Congratulations! You just analyzed your first autonomous sensor-actuator robotic circuit!**
 
