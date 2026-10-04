@@ -55,7 +55,6 @@ nav:
   - "🗺️ Master Syllabus": syllabus.md
   - "📖 Plain-English Glossary": glossary.md
   - "🎮 Simulations & Labs": simulations.md
-  - "💼 Official Hardware Kits & BOM": hardware_kits.md
   - Curriculum Units:
       - Unit 00 Foundations:
           - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/01-what-is-a-robot.md

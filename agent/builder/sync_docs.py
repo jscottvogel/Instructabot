@@ -86,12 +86,6 @@ def sync_textbook():
         shutil.copy2(glossary_path, DOCS_DIR / "glossary.md")
         print("✅ Synced Plain-English Glossary -> docs/glossary.md")
 
-    # 3.2 Copy Hardware Kits & Monetization Guide
-    kits_path = REPO_ROOT / "hardware" / "KITS_AND_MONETIZATION.md"
-    if kits_path.exists():
-        shutil.copy2(kits_path, DOCS_DIR / "hardware_kits.md")
-        print("✅ Synced Hardware Kits & Monetization Blueprint -> docs/hardware_kits.md")
-
     # 4. Copy Simulations Guide with link fixes
     sim_readme = SIMULATIONS_DIR / "README.md"
     if sim_readme.exists():
@@ -236,7 +230,6 @@ def generate_mkdocs_yml(nav_units):
         '  - "🗺️ Master Syllabus": syllabus.md',
         '  - "📖 Plain-English Glossary": glossary.md',
         '  - "🎮 Simulations & Labs": simulations.md',
-        '  - "💼 Official Hardware Kits & BOM": hardware_kits.md',
         '  - Curriculum Units:'
     ]
 
