@@ -33,6 +33,11 @@ jobs:
         run: |
           python agent/builder/sync_docs.py
 
+      - name: ⚙️ Configure Git Author for Deployment
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: 🚀 Deploy Web Textbook to GitHub Pages
         run: |
-          mkdocs gh-deploy --force
+          mkdocs gh-deploy --force --clean

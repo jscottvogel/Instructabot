@@ -103,7 +103,7 @@ def main():
     # Discover curriculum lessons (exclude templates and root syllabus)
     lesson_files = [
         p for p in CURRICULUM_DIR.glob("**/*.md")
-        if p.name not in ["SYLLABUS.md", "LESSON_TEMPLATE.md", "README.md"]
+        if p.name not in ["SYLLABUS.md", "LESSON_TEMPLATE.md", "README.md", "GETTING_STARTED.md", "GLOSSARY.md"]
     ]
 
     if not lesson_files:

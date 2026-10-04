@@ -100,7 +100,7 @@ def run_full_evolution_cycle():
     citation_errors = 0
     lesson_files = [
         p for p in CURRICULUM_DIR.glob("**/*.md")
-        if p.name not in ["SYLLABUS.md", "LESSON_TEMPLATE.md", "README.md"]
+        if p.name not in ["SYLLABUS.md", "LESSON_TEMPLATE.md", "README.md", "GETTING_STARTED.md", "GLOSSARY.md"]
     ]
     for md_file in lesson_files:
         content = md_file.read_text(encoding="utf-8", errors="ignore")

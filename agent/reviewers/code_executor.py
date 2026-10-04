@@ -133,8 +133,9 @@ class CodeExecutionHarness:
         return file_report
 
     def run_all(self) -> Dict[str, Any]:
-        md_files = sorted(self.curriculum_dir.rglob("*.md"))
-        md_files = [f for f in md_files if f.name not in ["LESSON_TEMPLATE.md", "SYLLABUS.md"]]
+        all_files = sorted(self.curriculum_dir.rglob("*.md"))
+        excluded = {"LESSON_TEMPLATE.md", "SYLLABUS.md", "README.md", "GETTING_STARTED.md", "GLOSSARY.md"}
+        md_files = [f for f in all_files if f.name not in excluded]
 
         total_files = len(md_files)
         total_blocks = 0

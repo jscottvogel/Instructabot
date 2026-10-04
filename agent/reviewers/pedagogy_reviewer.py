@@ -144,8 +144,9 @@ class PedagogyReviewer:
         """Audits all curriculum lessons in the repository."""
         all_results = []
         md_files = sorted(self.curriculum_dir.rglob("*.md"))
-        # Filter out templates
-        md_files = [f for f in md_files if f.name not in ["LESSON_TEMPLATE.md", "SYLLABUS.md"]]
+        # Filter out templates and auxiliary documentation
+        excluded = {"LESSON_TEMPLATE.md", "SYLLABUS.md", "README.md", "GETTING_STARTED.md", "GLOSSARY.md"}
+        md_files = [f for f in md_files if f.name not in excluded]
 
         total_score = 0
         for md_file in md_files:
