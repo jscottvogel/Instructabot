@@ -1,0 +1,3153 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="State-of-the-Art Autonomous Robotics Curriculum for High School & College Students">
+      
+      
+        <meta name="author" content="Instructabot Educational Team">
+      
+      
+      
+        <link rel="prev" href="../02-circuit-components-breadboarding/">
+      
+      
+        <link rel="next" href="../lab-01-zero-code-nightlight/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Electricity & Electronics from Scratch - Instructabot 🤖📚</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-1-the-spark-electricity-electronics-from-scratch" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Instructabot 🤖📚" class="md-header__button md-logo" aria-label="Instructabot 🤖📚" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Instructabot 🤖📚
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Electricity & Electronics from Scratch
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jscottvogel/Instructabot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jscottvogel/Instructabot
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../syllabus/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Master Syllabus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../simulations/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Simulations & Labs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../unit-00-foundations/01-what-is-a-robot/" class="md-tabs__link">
+          
+  
+  
+  Curriculum Units
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reports/autonomous_evolution_report/" class="md-tabs__link">
+          
+  
+  
+  Autonomous Reports & Audits
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Instructabot 🤖📚" class="md-nav__button md-logo" aria-label="Instructabot 🤖📚" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Instructabot 🤖📚
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jscottvogel/Instructabot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jscottvogel/Instructabot
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../syllabus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Master Syllabus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../simulations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulations & Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curriculum Units
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Curriculum Units
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 00 Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 00 Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-00-foundations/01-what-is-a-robot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Robotic Mindset & Anatomy of Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-00-foundations/02-the-five-subsystems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Robotic Mindset & Anatomy of Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-00-foundations/03-safety-ethics-notebook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Robotic Mindset & Anatomy of Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-00-foundations/lab-00-systems-decomposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Robotic Mindset & Anatomy of Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 01 Electronics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 01 Electronics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-intuitive-electrical-physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electricity & Electronics from Scratch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-circuit-components-breadboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electricity & Electronics from Scratch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electricity & Electronics from Scratch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-01-zero-code-nightlight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electricity & Electronics from Scratch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 02 The Brain
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 02 The Brain
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-02-the-brain/01-algorithmic-logic-and-flowcharts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computational Thinking & Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-02-the-brain/02-python-for-robotics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computational Thinking & Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-02-the-brain/03-microcontrollers-vs-sbcs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computational Thinking & Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-02-the-brain/lab-02-intersection-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computational Thinking & Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 03 The Senses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 03 The Senses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/01-analog-vs-digital-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/02-distance-and-proximity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/03-motion-and-orientation-imus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/04-noise-and-signal-conditioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/lab-03-sonar-radar-scanner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 04 The Muscles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 04 The Muscles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-04-the-muscles/01-electric-motors-compared/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motors, Actuation, & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-04-the-muscles/02-h-bridge-motor-driving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motors, Actuation, & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-04-the-muscles/03-speed-direction-soft-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motors, Actuation, & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-04-the-muscles/lab-04-motor-drive-acceleration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motors, Actuation, & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 05 The Bones
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 05 The Bones
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/01-structural-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/02-mechanical-power-transmission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/03-spatial-geometry-kinematics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/04-cad-modeling-for-robotics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/lab-05-robotic-arm-cad-sizing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 06 Mobile Robotics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 06 Mobile Robotics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/01-drive-architectures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/02-odometry-and-encoders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/03-closed-loop-pid-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/04-physics-simulators-webots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/lab-06-maze-navigation-webots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 07 Robot Vision
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 07 Robot Vision
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/01-digital-images-matrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/02-opencv-python-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/03-object-tracking-aruco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/04-3d-depth-sensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/lab-07-pan-tilt-visual-turret/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 08 Ros2 Middleware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 08 Ros2 Middleware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/01-why-middleware-ros2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/02-computational-graph-nodes-topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/03-introspection-rviz2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/04-tf2-coordinate-transforms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/lab-08-modular-ros2-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 09 Autonomous Navigation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 09 Autonomous Navigation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/01-fundamental-problem-of-slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/02-lidar-slam-algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/03-path-planning-and-costmaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/04-nav2-stack-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/lab-09-autonomous-warehouse-nav2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 10 Modern Ai Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 10 Modern Ai Sim2Real
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/01-classical-vs-ai-robotics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/02-deep-learning-object-detection-yolo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/03-sim2real-domain-randomization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/04-vla-foundation-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/lab-10-semantic-object-fetching-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autonomous Reports & Audits
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Autonomous Reports & Audits
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reports/autonomous_evolution_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous Evolution Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reports/editorial_board_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editorial Board Report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reports/evolution_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Trends Brief
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="unit-1-the-spark-electricity-electronics-from-scratch">Unit 1: The Spark: Electricity &amp; Electronics from Scratch</h1>
+<h1 id="module-13-power-delivery-voltage-regulators-brownout-prevention">Module 1.3: Power Delivery, Voltage Regulators, &amp; Brownout Prevention</h1>
+<blockquote>
+<p><strong>Prerequisites</strong>: Module 1.1 (Intuitive Electrical Physics), Module 1.2 (Circuit Components &amp; Breadboarding)<br />
+<strong>Estimated Time</strong>: 45 minutes<br />
+<strong>Interactive Activity</strong>: Power Budgeting &amp; Thermal Efficiency Analysis Lab<br />
+<strong>Target Audience</strong>: High School &amp; College Students (Zero Prior Engineering Experience)  </p>
+</blockquote>
+<hr />
+<h2 id="1-learning-objectives">1. Learning Objectives</h2>
+<p>By the end of this module, you will be able to:
+- [ ] <strong>Explain</strong> why raw battery voltage varies constantly and why microchips require precisely regulated voltage rails (<span class="arithmatex">\(5.0\text{V}\)</span> and <span class="arithmatex">\(3.3\text{V}\)</span>) <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.
+- [ ] <strong>Contrast</strong> Linear Regulators (LDOs) with Switching Regulators (Buck Converters) in terms of thermal heat dissipation and electrical efficiency <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.
+- [ ] <strong>Calculate</strong> the power wasted as heat in a power supply (<span class="arithmatex">\(P_{\text{loss}} = (V_{\text{in}} - V_{\text{out}}) \cdot I\)</span>) <sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.
+- [ ] <strong>Architect</strong> a dual-rail power distribution system with decoupling capacitors to prevent robot motor brownouts <sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<hr />
+<h2 id="2-intuitive-big-picture-the-unruly-battery">2. Intuitive Big Picture: The Unruly Battery</h2>
+<p>Beginners often imagine that an "11.1V battery" simply provides a constant <span class="arithmatex">\(11.1\text{V}\)</span> forever. In reality, a battery's voltage is a moving target:
+- A <span class="arithmatex">\(3\text{S}\)</span> Lithium Polymer battery starts at <strong><span class="arithmatex">\(12.60\text{V}\)</span></strong> fresh off the charger (<span class="arithmatex">\(4.20\text{V}/\text{cell}\)</span>).
+- Mid-way through operation, it hovers around <strong><span class="arithmatex">\(11.10\text{V}\)</span></strong> (<span class="arithmatex">\(3.70\text{V}/\text{cell}\)</span>).
+- When almost depleted, it drops to <strong><span class="arithmatex">\(10.20\text{V}\)</span></strong> (<span class="arithmatex">\(3.40\text{V}/\text{cell}\)</span>).
+- When your robot accelerates from a standstill, the sudden surge in motor current causes the battery voltage to momentarily sag even lower!</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a> [ 12.6V Full ] ---&gt; [ 11.1V Nominal ] ---&gt; [ 10.2V Depleted ] ---&gt; [ 8.5V Surge Sag! ]
+</code></pre></div>
+<p>Meanwhile, modern microcontrollers (ESP32, Raspberry Pi, Arduino) have internal silicon transistors that <strong>can only survive within a narrow window</strong>:
+- If a <span class="arithmatex">\(5.0\text{V}\)</span> chip receives <span class="arithmatex">\(6.0\text{V}\)</span>, the microscopic insulation inside the silicon burns out permanently.
+- If it receives <span class="arithmatex">\(4.2\text{V}\)</span>, it triggers a <strong>Brownout Reset (BOR)</strong> and instantly reboots <sup id="fnref5:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<p>To connect an unruly, sagging battery to a delicate microcontroller, every robot requires a <strong>Voltage Regulator</strong> <sup id="fnref6:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<hr />
+<h2 id="3-the-core-concept-explained">3. The Core Concept Explained</h2>
+<h3 id="31-linear-regulators-the-wasteful-resistor">3.1 Linear Regulators: The Wasteful Resistor</h3>
+<p>The simplest type of voltage regulator is a <strong>Linear Regulator</strong> (such as the classic LM7805 or AMS1117) <sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>A linear regulator behaves like an automated, self-adjusting variable resistor. It constantly measures its output voltage and absorbs all the excess voltage, burning it off as <strong>pure heat</strong> <sup id="fnref7:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref4:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<pre class="mermaid"><code>flowchart LR
+    Vin["Battery: 12.0V (1.0 Amp)"] --&gt; Reg["Linear Regulator (LM7805)&lt;br/&gt;Burns 7.0V as HEAT!"]
+    Reg --&gt; Vout["Clean Output: 5.0V (1.0 Amp)"]
+    Reg -.-&gt; Heat["🔥 Heat Dissipated: 7.0 Watts!"]</code></pre>
+<h4 id="calculating-heat-loss-in-a-linear-regulator">Calculating Heat Loss in a Linear Regulator:</h4>
+<div class="arithmatex">\[P_{\text{loss}} = (V_{\text{in}} - V_{\text{out}}) \times I_{\text{load}}\]</div>
+<h4 id="the-efficiency-trap">The Efficiency Trap:</h4>
+<p>Imagine your robot is powered by a <span class="arithmatex">\(12\text{V}\)</span> battery, and your computer draws <span class="arithmatex">\(1.0\text{A}\)</span> at <span class="arithmatex">\(5.0\text{V}\)</span>:
+1. <strong>Power delivered to computer</strong>:
+   $<span class="arithmatex">\(P_{\text{useful}} = 5.0\text{V} \times 1.0\text{A} = 5.0\text{ Watts}\)</span>$
+2. <strong>Power wasted as burning heat</strong>:
+   $<span class="arithmatex">\(P_{\text{loss}} = (12.0\text{V} - 5.0\text{V}) \times 1.0\text{A} = \mathbf{7.0\text{ Watts of pure heat!}}\)</span>$
+3. <strong>Efficiency</strong>:
+   $<span class="arithmatex">\(\text{Efficiency} = \frac{5.0\text{W}}{12.0\text{W}} \approx \mathbf{41.7\%}\)</span>$</p>
+<p>More than <strong>half of your battery energy</strong> is converted into useless heat that can melt your robot's plastic chassis! Furthermore, without a heavy aluminum heatsink, the linear regulator will quickly exceed <span class="arithmatex">\(125^\circ\text{C}\)</span> and shut itself off to prevent catching fire <sup id="fnref8:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref5:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<hr />
+<h3 id="32-switching-regulators-buck-converters-the-high-efficiency-valve">3.2 Switching Regulators (Buck Converters): The High-Efficiency Valve</h3>
+<p>Modern robotics solves this thermal problem using a <strong>DC-DC Buck Converter</strong> (Switching Regulator) <sup id="fnref9:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>Instead of burning off excess voltage as continuous heat, a Buck converter uses a high-speed semiconductor switch (MOSFET) that turns on and off hundreds of thousands of times per second (<span class="arithmatex">\(100\text{ kHz} - 2\text{ MHz}\)</span>). It rapidly chops the <span class="arithmatex">\(12\text{V}\)</span> supply into tiny bursts and stores the energy in an <strong>inductor</strong> (magnetic coil) and a <strong>capacitor</strong> (reservoir) <sup id="fnref10:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
+<pre class="mermaid"><code>flowchart LR
+    Vin["Battery: 12V"] --&gt; Switch["High-Speed Switch&lt;br/&gt;(Chops 12V into fast pulses)"]
+    Switch --&gt; Inductor["Inductor &amp; Diode&lt;br/&gt;(Stores energy magnetically)"]
+    Inductor --&gt; Cap["Capacitor&lt;br/&gt;(Smooths ripple)"]
+    Cap --&gt; Vout["Clean 5.0V Output&lt;br/&gt;(92% Efficiency!)"]</code></pre>
+<h4 id="why-buck-converters-rule-robotics">Why Buck Converters Rule Robotics:</h4>
+<ul>
+<li><strong>Efficiency</strong>: Typically <strong><span class="arithmatex">\(88\% \text{ to } 96\%\)</span></strong>!</li>
+<li><strong>Virtually No Heat</strong>: Stepping <span class="arithmatex">\(12\text{V}\)</span> down to <span class="arithmatex">\(5\text{V}\)</span> at <span class="arithmatex">\(1.0\text{A}\)</span> only loses about <span class="arithmatex">\(0.4\text{W}\)</span> of heat instead of <span class="arithmatex">\(7.0\text{W}\)</span>.</li>
+<li><strong>Longer Battery Life</strong>: Because power is conserved (<span class="arithmatex">\(P_{\text{in}} \approx P_{\text{out}}\)</span>), drawing <span class="arithmatex">\(1.0\text{A}\)</span> at <span class="arithmatex">\(5\text{V}\)</span> only pulls about <strong><span class="arithmatex">\(0.45\text{A}\)</span></strong> from your <span class="arithmatex">\(12\text{V}\)</span> battery <sup id="fnref12:1"><a class="footnote-ref" href="#fn:1">1</a></sup>!</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Linear Regulator (LDO)</th>
+<th style="text-align: left;">Switching Regulator (Buck)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Typical Efficiency</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(30\% - 50\%\)</span> (Poor)</td>
+<td style="text-align: left;"><span class="arithmatex">\(85\% - 95\%\)</span> (Excellent)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Heat Generated</strong></td>
+<td style="text-align: left;">Very High (Requires large heatsink)</td>
+<td style="text-align: left;">Very Low (Runs cool)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Circuit Complexity</strong></td>
+<td style="text-align: left;">3 pins, zero external coils</td>
+<td style="text-align: left;">Requires inductor, diode, capacitors</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Electrical Noise</strong></td>
+<td style="text-align: left;">Extremely quiet (clean analog signal)</td>
+<td style="text-align: left;">Slight high-frequency switching ripple</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Best Robotics Use</strong></td>
+<td style="text-align: left;">Sensitive analog sensors (<span class="arithmatex">\(&lt;100\text{mA}\)</span>)</td>
+<td style="text-align: left;">Microcomputers, main logic, servos (<span class="arithmatex">\(&gt;500\text{mA}\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33-the-decoupling-capacitor-energy-reservoirs">3.3 The Decoupling Capacitor: Energy Reservoirs</h3>
+<p>When a DC motor suddenly starts spinning, it demands a massive spike in current for a few milliseconds (stall current). This sudden surge causes the voltage on the power rail to dip sharply <sup id="fnref3:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<p>To shield sensitive microchips from this dip, engineers place <strong>Decoupling / Smoothing Capacitors</strong> directly across the power pins of the chip:</p>
+<pre class="mermaid"><code>flowchart LR
+    VCC[+5V Power Rail] --- Cap[Electrolytic Capacitor: 100uF]
+    Cap --- GND[Ground Rail: 0V]
+    VCC --&gt; MCU[Microcontroller VCC Pin]</code></pre>
+<ul>
+<li>A <strong>capacitor</strong> acts like a miniature rechargeable water tank right next to the chip.</li>
+<li>During steady operation, the capacitor charges up to <span class="arithmatex">\(5.0\text{V}\)</span>.</li>
+<li>The microsecond a motor starts and the power rail dips, the capacitor instantly discharges its stored electrons into the chip, holding the voltage steady above the brownout reset threshold <sup id="fnref5:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</li>
+</ul>
+<hr />
+<h3 id="34-dual-rail-power-architecture">3.4 Dual-Rail Power Architecture</h3>
+<p>To build a robot that never brownouts, follow this standard robotics power distribution topology <sup id="fnref11:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref4:3"><a class="footnote-ref" href="#fn:3">3</a></sup>:</p>
+<pre class="mermaid"><code>flowchart TD
+    Battery[🔋 11.1V / 12V Main Battery] --&gt; EStop[🛑 Physical E-Stop / Switch]
+
+    subgraph Actuator Power Rail (High Current / Noisy)
+        EStop ==&gt; MotorDriver[Motor Driver H-Bridges]
+        MotorDriver ==&gt; Motors[DC Motors &amp; Servos]
+    end
+
+    subgraph Logic Power Rail (Clean / Regulated)
+        EStop ==&gt; Buck[Buck Converter: 12V to 5V]
+        Buck --&gt; Cap[Large Smoothing Capacitor: 470uF]
+        Cap --&gt; MCU[Microcontroller / Single Board Computer]
+    end
+
+    GND[⚡ COMMON GROUND BUS: All negative wires connected together!]
+    Battery -.- GND
+    Motors -.- GND
+    MCU -.- GND</code></pre>
+<hr />
+<h2 id="4-hands-on-power-budgeting-lab">4. Hands-On Power Budgeting Lab</h2>
+<h3 id="lab-objective">Lab Objective</h3>
+<p>In this exercise, you will calculate the <strong>Power Budget</strong> and <strong>Thermal Heat Loss</strong> for a mobile robot equipped with a camera and motors.</p>
+<h3 id="system-specifications">System Specifications:</h3>
+<ul>
+<li><strong>Battery</strong>: <span class="arithmatex">\(11.1\text{V}\)</span> LiPo (<span class="arithmatex">\(2200\text{ mAh}\)</span> capacity)</li>
+<li><strong>Actuators</strong>: Two DC motors drawing <span class="arithmatex">\(0.8\text{A}\)</span> average each at <span class="arithmatex">\(11.1\text{V}\)</span></li>
+<li><strong>Single-Board Computer (Raspberry Pi)</strong>: Requires <span class="arithmatex">\(5.0\text{V}\)</span> and draws <span class="arithmatex">\(1.5\text{A}\)</span> continuous</li>
+</ul>
+<h4 id="calculation-step-1-compare-linear-regulator-vs-buck-converter">Calculation Step 1: Compare Linear Regulator vs. Buck Converter</h4>
+<ol>
+<li><strong>If using a Linear Regulator (LM7805)</strong>:</li>
+<li>Voltage dropped: <span class="arithmatex">\(V_{\text{drop}} = 11.1\text{V} - 5.0\text{V} = 6.1\text{V}\)</span></li>
+<li>Waste heat power: <span class="arithmatex">\(P_{\text{waste}} = 6.1\text{V} \times 1.5\text{A} = \mathbf{9.15\text{ Watts!}}\)</span></li>
+<li><em>Verdict</em>: Without a fan and massive heatsink, the regulator will overheat in seconds and shut down.</li>
+<li><strong>If using a 90% Efficient Buck Converter</strong>:</li>
+<li>Power needed by Pi: <span class="arithmatex">\(P_{\text{useful}} = 5.0\text{V} \times 1.5\text{A} = 7.5\text{W}\)</span></li>
+<li>Total battery power pulled: <span class="arithmatex">\(P_{\text{batt}} = \frac{7.5\text{W}}{0.90} \approx 8.33\text{W}\)</span></li>
+<li>Current pulled from battery: <span class="arithmatex">\(I_{\text{batt}} = \frac{8.33\text{W}}{11.1\text{V}} = \mathbf{0.75\text{A}}\)</span> (Only half the current drawn from the battery!)</li>
+<li>Waste heat: Only <span class="arithmatex">\(8.33\text{W} - 7.5\text{W} = \mathbf{0.83\text{ Watts}}\)</span>.</li>
+</ol>
+<h4 id="calculation-step-2-estimate-total-robot-runtime">Calculation Step 2: Estimate Total Robot Runtime</h4>
+<ul>
+<li>Total average battery current = Motors (<span class="arithmatex">\(0.8\text{A} + 0.8\text{A}\)</span>) + Buck converter (<span class="arithmatex">\(0.75\text{A}\)</span>) = <strong><span class="arithmatex">\(2.35\text{ Amperes}\)</span></strong> (<span class="arithmatex">\(2350\text{mA}\)</span>).</li>
+<li>Usable battery capacity: <span class="arithmatex">\(2200\text{mAh} \times 0.80\text{ (Safe 80% discharge)} = 1760\text{mAh}\)</span>.</li>
+<li>Estimated run time:
+  $<span class="arithmatex">\(\text{Runtime} = \frac{1760\text{ mAh}}{2350\text{ mA}} \approx 0.75\text{ hours} \approx \mathbf{45\text{ minutes of continuous driving}}.\)</span>$</li>
+</ul>
+<hr />
+<h2 id="5-troubleshooting-power-pitfalls">5. Troubleshooting &amp; Power Pitfalls</h2>
+<blockquote>
+<p>[!WARNING]
+<strong>Pitfall 1: Powering Servos Directly from Microcontroller 5V Pins</strong><br />
+Beginners often plug 2 or 3 hobby servos directly into the <span class="arithmatex">\(5\text{V}\)</span> pin of an Arduino or Raspberry Pi. An onboard regulator can only supply about <span class="arithmatex">\(0.5\text{A}\)</span>. A single moving servo can pull <span class="arithmatex">\(1.0\text{A}\)</span> stall current. The moment the servo tries to move, the onboard regulator overloads, the <span class="arithmatex">\(5\text{V}\)</span> rail crashes, and the computer reboots endlessly. Always power servos from a dedicated external Buck converter!</p>
+<p>[!WARNING]
+<strong>Pitfall 2: Forgetting the Common Ground Wire</strong><br />
+If your motors are powered by a 12V battery and your computer is powered by a 5V power bank, you <strong>must connect the negative (-) terminal of both supplies together</strong>. Without a common ground reference, the control signals from the computer cannot establish an electrical circuit with the motor driver.</p>
+</blockquote>
+<hr />
+<h2 id="6-real-world-applications-next-steps">6. Real-World Applications &amp; Next Steps</h2>
+<p>Power delivery is the unsung hero of aerospace and robotics engineering:
+- The NASA Perseverance Rover manages its 110W nuclear generator using switching power converters to charge its lithium batteries while distributing isolated power rails to science instruments.
+- Autonomous electric cars use high-voltage DC-DC converters to step 400V or 800V traction battery power down to 12V for onboard autonomous computers and safety sensors.</p>
+<p>In our capstone for this unit, <strong>Lab 1: The Zero-Code Light-Sensitive Nightlight</strong>, we will wire our first autonomous sensor circuit on a breadboard—using a photoresistor and transistor to automatically turn on an LED in darkness without writing a single line of software!</p>
+<hr />
+<h2 id="7-sources-media-provenance">7. Sources &amp; Media Provenance</h2>
+<h3 id="cited-references">Cited References</h3>
+<h3 id="media-manifest">Media Manifest</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Asset Name</th>
+<th style="text-align: left;">Media Type</th>
+<th style="text-align: left;">Source / Repository</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Attribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>linear-vs-buck.svg</code></td>
+<td style="text-align: left;">Vector Graphic / Flowchart</td>
+<td style="text-align: left;">Instructabot Educational Team</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+<td style="text-align: left;">Instructabot Project <sup id="fnref13:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>five-subsystems-flow.svg</code></td>
+<td style="text-align: left;">Vector Diagram</td>
+<td style="text-align: left;">Instructabot Educational Team</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+<td style="text-align: left;">Instructabot Project</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tinkercad-nightlight.png</code></td>
+<td style="text-align: left;">Circuit Schematic</td>
+<td style="text-align: left;">Tinkercad Circuits / Instructabot</td>
+<td style="text-align: left;">CC BY 4.0</td>
+<td style="text-align: left;">Autodesk Tinkercad / Instructabot</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><strong>Everett Rogers</strong>, <em>"Basic Calculation of a Buck Converter's Power Stage (Application Report SLVA477B)"</em>, Texas Instruments. Available: <a href="https://www.ti.com/lit/an/slva477b/slva477b.pdf">Texas Instruments Application Report SLVA477B</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref7:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref8:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref9:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref10:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref11:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref12:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref13:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><strong>Tony R. Kuphaldt</strong>, <em>"Lessons In Electric Circuits, Volume I — DC (Chapter 3: Electrical Safety and Power Supplies)"</em>, Open Textbook Library / All About Circuits. Available: <a href="https://open.umn.edu/opentextbooks/textbooks/lessons-in-electric-circuits-volume-i-dc">Lessons In Electric Circuits</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><strong>Leslie Kaelbling, Tomas Lozano-Perez, Dennis Freeman</strong>, <em>"Introduction to Electrical Engineering and Computer Science I (6.01SC) — Circuits and Op-Amps"</em>, MIT OpenCourseWare. License: CC BY-NC-SA 4.0. Available: <a href="https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/">MIT OCW 6.01SC Circuits</a>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

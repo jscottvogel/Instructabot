@@ -1,0 +1,3194 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="State-of-the-Art Autonomous Robotics Curriculum for High School & College Students">
+      
+      
+        <meta name="author" content="Instructabot Educational Team">
+      
+      
+      
+        <link rel="prev" href="../../../simulations/">
+      
+      
+        <link rel="next" href="../02-the-five-subsystems/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>The Robotic Mindset & Anatomy of Systems - Instructabot 🤖📚</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-0-the-robotic-mindset-anatomy-of-systems" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Instructabot 🤖📚" class="md-header__button md-logo" aria-label="Instructabot 🤖📚" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Instructabot 🤖📚
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Robotic Mindset & Anatomy of Systems
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jscottvogel/Instructabot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jscottvogel/Instructabot
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../syllabus/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Master Syllabus
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../simulations/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Simulations & Labs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Curriculum Units
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reports/autonomous_evolution_report/" class="md-tabs__link">
+          
+  
+  
+  Autonomous Reports & Audits
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Instructabot 🤖📚" class="md-nav__button md-logo" aria-label="Instructabot 🤖📚" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Instructabot 🤖📚
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jscottvogel/Instructabot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jscottvogel/Instructabot
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../syllabus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Master Syllabus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../simulations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulations & Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curriculum Units
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Curriculum Units
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 00 Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 00 Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Robotic Mindset & Anatomy of Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-the-five-subsystems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Robotic Mindset & Anatomy of Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-safety-ethics-notebook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Robotic Mindset & Anatomy of Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-00-systems-decomposition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Robotic Mindset & Anatomy of Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 01 Electronics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 01 Electronics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-01-electronics/01-intuitive-electrical-physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electricity & Electronics from Scratch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-01-electronics/02-circuit-components-breadboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electricity & Electronics from Scratch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-01-electronics/03-power-delivery-and-regulators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electricity & Electronics from Scratch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-01-electronics/lab-01-zero-code-nightlight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electricity & Electronics from Scratch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 02 The Brain
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 02 The Brain
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-02-the-brain/01-algorithmic-logic-and-flowcharts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computational Thinking & Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-02-the-brain/02-python-for-robotics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computational Thinking & Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-02-the-brain/03-microcontrollers-vs-sbcs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computational Thinking & Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-02-the-brain/lab-02-intersection-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computational Thinking & Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 03 The Senses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 03 The Senses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/01-analog-vs-digital-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/02-distance-and-proximity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/03-motion-and-orientation-imus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/04-noise-and-signal-conditioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-03-the-senses/lab-03-sonar-radar-scanner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensors, Signals, & Perception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 04 The Muscles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 04 The Muscles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-04-the-muscles/01-electric-motors-compared/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motors, Actuation, & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-04-the-muscles/02-h-bridge-motor-driving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motors, Actuation, & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-04-the-muscles/03-speed-direction-soft-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motors, Actuation, & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-04-the-muscles/lab-04-motor-drive-acceleration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motors, Actuation, & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 05 The Bones
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 05 The Bones
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/01-structural-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/02-mechanical-power-transmission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/03-spatial-geometry-kinematics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/04-cad-modeling-for-robotics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-05-the-bones/lab-05-robotic-arm-cad-sizing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanics, Kinematics, & CAD Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 06 Mobile Robotics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 06 Mobile Robotics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/01-drive-architectures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/02-odometry-and-encoders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/03-closed-loop-pid-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/04-physics-simulators-webots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-06-mobile-robotics/lab-06-maze-navigation-webots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Driving the Physical World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 07 Robot Vision
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 07 Robot Vision
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/01-digital-images-matrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/02-opencv-python-foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/03-object-tracking-aruco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/04-3d-depth-sensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-07-robot-vision/lab-07-pan-tilt-visual-turret/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giving Robots Sight with OpenCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 08 Ros2 Middleware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 08 Ros2 Middleware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/01-why-middleware-ros2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/02-computational-graph-nodes-topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/03-introspection-rviz2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/04-tf2-coordinate-transforms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-08-ros2-middleware/lab-08-modular-ros2-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Industry Standard Robot Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 09 Autonomous Navigation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 09 Autonomous Navigation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/01-fundamental-problem-of-slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/02-lidar-slam-algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/03-path-planning-and-costmaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/04-nav2-stack-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-09-autonomous-navigation/lab-09-autonomous-warehouse-nav2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SLAM & Path Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 10 Modern Ai Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit 10 Modern Ai Sim2Real
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/01-classical-vs-ai-robotics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/02-deep-learning-object-detection-yolo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/03-sim2real-domain-randomization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/04-vla-foundation-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-10-modern-ai-sim2real/lab-10-semantic-object-fetching-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern AI, Foundation Models, & Sim2Real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autonomous Reports & Audits
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Autonomous Reports & Audits
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reports/autonomous_evolution_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous Evolution Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reports/editorial_board_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editorial Board Report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reports/evolution_brief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Trends Brief
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="unit-0-the-robotic-mindset-anatomy-of-systems">Unit 0: The Robotic Mindset &amp; Anatomy of Systems</h1>
+<h1 id="module-01-what-makes-a-robot-a-robot">Module 0.1: What Makes a Robot a Robot?</h1>
+<blockquote>
+<p><strong>Prerequisites</strong>: None (Zero programming, physics, or engineering experience assumed)<br />
+<strong>Estimated Time</strong>: 40 minutes<br />
+<strong>Interactive Activity</strong>: Interactive Systems Decomposition &amp; The Sense-Think-Act Mapping<br />
+<strong>Target Audience</strong>: High School &amp; College Students  </p>
+</blockquote>
+<hr />
+<h2 id="1-learning-objectives">1. Learning Objectives</h2>
+<p>By the end of this module, you will be able to:
+- [ ] <strong>Define</strong> what constitutes a robot using international engineering standards (ISO 8373:2021) without confusing it with simple appliances or remote-controlled gadgets <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.
+- [ ] <strong>Contrast</strong> the difference between <em>automation</em>, <em>teleoperation</em> (remote control), and <em>true autonomy</em> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.
+- [ ] <strong>Explain</strong> the universal <strong>Sense <span class="arithmatex">\(\rightarrow\)</span> Think <span class="arithmatex">\(\rightarrow\)</span> Act</strong> feedback loop and trace it through any robotic system <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.
+- [ ] <strong>Deconstruct</strong> a real-world robot (such as a Mars rover or an autonomous warehouse transporter) into its primary subsystems <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
+<hr />
+<h2 id="2-intuitive-big-picture-the-living-machine">2. Intuitive Big Picture: The Living Machine</h2>
+<p>Imagine three different machines in your house:
+1. <strong>A standard toaster</strong>: You push down a mechanical lever. A heating element glows red for two minutes. A bimetallic strip or simple timer pops the toast up. Does it care if the bread is already burnt to a crisp or frozen solid? No. It has no idea what is happening to the bread.
+2. <strong>A remote-controlled toy drone</strong>: You hold a joystick. When you push forward, radio waves travel to the drone's motors and spin the propellers faster. If you let go of the controls right as a gust of wind blows, the drone crashes into a tree unless you react quickly. Who did the thinking? You did.
+3. <strong>An autonomous vacuum cleaner (like a Roomba)</strong>: You press start and walk out the door. It rolls forward. An infrared sensor notices a staircase drop-off. An internal microprocessor calculates: <em>"Cliff detected on front bumper! Stop wheels immediately, back up 5 cm, rotate 45 degrees left, and resume cleaning."</em> It adapts to unexpected physical reality without human help.</p>
+<pre class="mermaid"><code>flowchart TD
+    subgraph Non-Robotic Machine
+        A1[Fixed Timer or Human Hand] --&gt; B1[Motor or Heater Turns On] --&gt; C1[Fixed Output Regardless of Environment]
+    end
+
+    subgraph Autonomous Robot
+        S[Sensors: Detect Environment] --&gt; T[Controller: Process &amp; Decide]
+        T --&gt; A[Actuators: Move &amp; Change World]
+        A -.-&gt;|Changes Environment| S
+    end</code></pre>
+<p>The difference between a machine and a <strong>robot</strong> is the ability to <strong>interact intelligently with an unpredictable physical world</strong>. A robot does not merely follow a blind sequence of instructions; it perceives what is happening around it, makes an informed computational decision, and physically acts upon that decision <sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<hr />
+<h2 id="3-the-core-concept-explained">3. The Core Concept Explained</h2>
+<h3 id="31-the-formal-engineering-definition">3.1 The Formal Engineering Definition</h3>
+<p>According to the <strong>International Organization for Standardization (ISO 8373:2021)</strong>, a robot is formally defined as:</p>
+<blockquote>
+<p><em>"An actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, to perform intended tasks."</em> <sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+</blockquote>
+<p>Breaking this down into plain English:
+1. <strong>Actuated mechanism</strong>: It has physical parts that exert force and move (motors, pistons, wheels, grippers). Software running alone on a screen is an AI or algorithm, but it is not a <em>robot</em> until it is embodied in the physical world.
+2. <strong>Programmable in two or more axes</strong>: It can be commanded to move along multiple paths or rotational directions (e.g., forward/backward plus left/right, or shoulder plus elbow rotation).
+3. <strong>Degree of autonomy</strong>: It can carry out tasks based on current state and sensing without continuous real-time human intervention <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>Historically, the <strong>Robotic Industries Association (RIA)</strong> formulated a similar milestone definition: <em>"A reprogrammable, multifunctional manipulator designed to move material, parts, tools, or specialized devices through variable programmed motions."</em></p>
+<hr />
+<h3 id="32-the-spectrum-automation-vs-teleoperation-vs-autonomy">3.2 The Spectrum: Automation vs. Teleoperation vs. Autonomy</h3>
+<p>Robotics exists along a continuous spectrum of human involvement. Understanding where a system falls on this spectrum is critical for an engineer:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">How It Operates</th>
+<th style="text-align: left;">Who Does the "Thinking"?</th>
+<th style="text-align: left;">Real-World Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Fixed Automation</strong></td>
+<td style="text-align: left;">Repeats a blind, pre-timed sequence. Does not adapt to external changes.</td>
+<td style="text-align: left;">The original human programmer.</td>
+<td style="text-align: left;">A kitchen microwave or classic washing machine cycle.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Teleoperation</strong></td>
+<td style="text-align: left;">A human pilot operates joysticks or switches in real time. Commands are transmitted via wire or radio.</td>
+<td style="text-align: left;">The human operator (in real time).</td>
+<td style="text-align: left;">Bomb disposal robots, surgical arms (da Vinci), underwater ROVs.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Supervisory Autonomy</strong></td>
+<td style="text-align: left;">Humans issue high-level goals (<em>"Drive to crater edge"</em>); the robot plans and executes the path safely on its own.</td>
+<td style="text-align: left;">Shared: Human sets goals, robot handles real-time execution.</td>
+<td style="text-align: left;">Mars Curiosity &amp; Perseverance rovers (AutoNav) <sup id="fnref6:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Full Autonomy</strong></td>
+<td style="text-align: left;">The system senses its surroundings, plans routes, handles unexpected obstacles, and fulfills missions entirely on its own.</td>
+<td style="text-align: left;">The onboard robotic software architecture.</td>
+<td style="text-align: left;">Warehouse autonomous mobile robots (AMRs), self-navigating inspection drones.</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    A["Pure Teleoperation&lt;br/&gt;(100% Human Control)"] --- B["Supervisory Control&lt;br/&gt;(Human sets goals, Robot executes)"] --- C["Full Autonomy&lt;br/&gt;(100% Robot Closed-Loop)"]
+    style B fill:#d4edda,stroke:#28a745,stroke-width:2px</code></pre>
+<blockquote>
+<p>[!NOTE]
+<strong>Why Teleoperation Fails in Deep Space</strong>:
+Mars is between 55 million and 400 million kilometers from Earth. Radio signals traveling at the speed of light take anywhere from <strong>4 to 24 minutes one way</strong> <sup id="fnref3:4"><a class="footnote-ref" href="#fn:4">4</a></sup>. If a Mars rover relied on a human with a joystick, driving 1 meter would require sending a command, waiting 20 minutes to see if it hit a rock, and waiting another 20 minutes to stop. NASA rovers must possess autonomous perception (<strong>AutoNav</strong>) to map terrain and steer around hazards independently <sup id="fnref4:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
+</blockquote>
+<hr />
+<h3 id="33-the-heart-of-robotics-the-sense-think-act-loop">3.3 The Heart of Robotics: The Sense-Think-Act Loop</h3>
+<p>Pioneered in robotics education at institutions like MIT <sup id="fnref3:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, every autonomous robotic system operates on a continuous feedback loop:</p>
+<pre class="mermaid"><code>flowchart TD
+    subgraph The Continuous Loop
+        Sense["1. SENSE&lt;br/&gt;(Collect Data from Physical World)"]
+        Think["2. THINK&lt;br/&gt;(Process Data &amp; Compute Action)"]
+        Act["3. ACT&lt;br/&gt;(Exert Mechanical Force on World)"]
+
+        Sense --&gt;|Raw Sensor Readings| Think
+        Think --&gt;|Motor Velocity &amp; Angle Commands| Act
+        Act --&gt;|Alters Physical Position/Environment| Sense
+    end</code></pre>
+<ol>
+<li><strong>Sense (Input)</strong>:</li>
+<li>Sensors convert physical energy (light waves, sound vibrations, pressure, magnetic fields) into digital numbers the computer can read.</li>
+<li><em>Examples</em>: Camera image pixels, ultrasonic echo timing, infrared distance measurements, wheel encoder tick counts.</li>
+<li><strong>Think (Computation &amp; Decision Making)</strong>:</li>
+<li>The computer (microcontroller, single-board computer, or industrial PLC) runs algorithms to answer three questions:<ul>
+<li><em>Where am I?</em> (Localization)</li>
+<li><em>What is around me?</em> (Perception &amp; Mapping)</li>
+<li><em>What should I do next?</em> (Planning &amp; Control)</li>
+</ul>
+</li>
+<li><strong>Act (Output &amp; Actuation)</strong>:</li>
+<li>The controller sends signals to actuators (motors, solenoids, pneumatic valves) to generate physical force.</li>
+<li>The action changes the robot's physical position or manipulates an object in the world.</li>
+<li><strong>Crucial</strong>: Because the physical world changed, the sensors immediately capture a new state, and the cycle repeats tens or hundreds of times every second.</li>
+</ol>
+<hr />
+<h3 id="34-deconstructing-real-world-robots">3.4 Deconstructing Real-World Robots</h3>
+<p>To see how the Sense-Think-Act loop manifests across different industries, consider these two foundational robotics benchmarks:</p>
+<h4 id="case-study-a-the-mars-curiosity-perseverance-rover">Case Study A: The Mars Curiosity / Perseverance Rover <sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <sup id="fnref2:4"><a class="footnote-ref" href="#fn:4">4</a></sup></h4>
+<ul>
+<li><strong>Mission</strong>: Navigate extraterrestrial rocky terrain, analyze geological samples.</li>
+<li><strong>Senses</strong>: Hazard Avoidance Cameras (Hazcams), Navigation Stereo Cameras (Navcams), Inertial Measurement Units (IMUs).</li>
+<li><strong>Thinks</strong>: Onboard radiation-hardened RAD750 processor running autonomous navigation software (AutoNav) to build 3D mesh maps of rocks and calculate wheel traversability <sup id="fnref5:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</li>
+<li><strong>Acts</strong>: Six motorized wheels with rocker-bogie suspension, robotic arm drill and turret, mast pan-tilt motors.</li>
+</ul>
+<h4 id="case-study-b-warehouse-mobile-logistics-robot-eg-kiva-amazon-amr">Case Study B: Warehouse Mobile Logistics Robot (e.g., Kiva / Amazon AMR)</h4>
+<ul>
+<li><strong>Mission</strong>: Pick up multi-ton shelving pods in fulfillment centers and navigate crowded floors.</li>
+<li><strong>Senses</strong>: Downward-pointing cameras reading floor fiducial 2D barcodes, 360-degree safety LiDAR, optical wheel encoders.</li>
+<li><strong>Thinks</strong>: Central fleet management assigns pod destination; local microcomputer runs obstacle avoidance and PID speed control.</li>
+<li><strong>Acts</strong>: Dual brushless drive motors for differential steering, hydraulic or screw lift to raise shelves.</li>
+</ul>
+<hr />
+<h2 id="4-hands-on-systems-decomposition-lab">4. Hands-On Systems Decomposition Lab</h2>
+<h3 id="lab-objective">Lab Objective</h3>
+<p>In this exercise, you will reverse-engineer a familiar automated system and determine whether it qualifies as a robot. You will decompose its components into the <strong>Sense-Think-Act</strong> paradigm.</p>
+<h3 id="the-system-an-autonomous-sump-pump-vs-an-autonomous-lawn-mower">The System: An Autonomous Sump Pump vs. An Autonomous Lawn Mower</h3>
+<p>Compare these two devices:
+- <strong>Device 1</strong>: A basement sump pump with a hollow plastic float switch. When water rises, the float rises mechanically, closing electrical contacts to turn on the pump. When water falls, the float drops, opening the circuit.
+- <strong>Device 2</strong>: An autonomous robotic lawn mower with boundary wire sensors, collision bumpers, rain sensor, and twin drive motors.</p>
+<h4 id="step-1-trace-the-sense-think-act-loop">Step 1: Trace the Sense-Think-Act Loop</h4>
+<p>Fill in the analysis table:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Subsystem Component</th>
+<th style="text-align: left;">Device 1 (Sump Pump)</th>
+<th style="text-align: left;">Device 2 (Robotic Lawn Mower)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>What does it Sense?</strong></td>
+<td style="text-align: left;">Water height (via buoyant float)</td>
+<td style="text-align: left;">Boundary wire frequency, bumper impact, rain moisture</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>How does it Think?</strong></td>
+<td style="text-align: left;"><em>None</em> (Direct mechanical contact closure)</td>
+<td style="text-align: left;">Microprocessor checks boundary signal, computes random or spiral mowing path, checks battery state</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>How does it Act?</strong></td>
+<td style="text-align: left;">AC water pump impeller turns</td>
+<td style="text-align: left;">Left/right wheel brushless motors steer; spinning cutting blade motor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Can it adapt if something unexpected happens?</strong></td>
+<td style="text-align: left;">No. If the pipe is clogged, it burns itself out.</td>
+<td style="text-align: left;">Yes. If it hits an obstacle, it stops the blades, backs up, and tries a new heading.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Is it a Robot?</strong></td>
+<td style="text-align: left;"><strong>No</strong> (It is a mechanical feedback appliance)</td>
+<td style="text-align: left;"><strong>Yes</strong> (It fulfills the ISO 8373 criteria)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="step-2-thought-experiment-upgrading-an-appliance-into-a-robot">Step 2: Thought Experiment — Upgrading an Appliance into a Robot</h4>
+<p>Take a standard household appliance (e.g., a toaster or an electric desk fan). In your engineering notes:
+1. What <strong>sensor</strong> would you add? (e.g., optical color sensor to inspect toast darkness, or thermal camera to find where a person is sitting).
+2. What <strong>computing logic</strong> would the controller run? (e.g., <em>"If toast surface hits RGB value <code>#8B4513</code> (golden brown), trigger eject"</em>).
+3. What <strong>actuator</strong> does the controller command? (e.g., motorized servo to raise toast gently instead of an uncontrolled spring).</p>
+<hr />
+<h2 id="5-troubleshooting-conceptual-pitfalls">5. Troubleshooting &amp; Conceptual Pitfalls</h2>
+<p>Here are common misconceptions beginners encounter when learning robotics:</p>
+<blockquote>
+<p>[!WARNING]
+<strong>Pitfall 1: "Does a robot have to look like a human?"</strong><br />
+<strong>Reality</strong>: No. Less than 1% of the world's working robots are humanoid. The dominant forms are multi-axis articulated arms (car manufacturing), wheeled mobile platforms (warehouses), and gantry systems (3D printers and CNC machines). Humanoid form factors are only useful when environments were strictly built for human bodies (like climbing stairs or using human door handles).</p>
+<p>[!WARNING]
+<strong>Pitfall 2: "Is ChatGPT or software AI a robot?"</strong><br />
+<strong>Reality</strong>: No. An artificial intelligence model running purely in a data center or browser is an <strong>algorithm</strong> or a <strong>software agent</strong>. A robot requires physical embodiment: it must interact with mass, momentum, friction, and physical forces through actuators <sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. When AI software is loaded onto a physical body with sensors and actuators, it becomes an <strong>embodied AI</strong> or <strong>autonomous robot</strong>.</p>
+<p>[!WARNING]
+<strong>Pitfall 3: "Is my remote control drone or car a robot?"</strong><br />
+<strong>Reality</strong>: In pure manual mode, it is a <strong>teleoperated vehicle</strong>. However, modern drones often feature flight controllers with gyroscopes, accelerometers, and barometers that automatically stabilize the aircraft hundreds of times per second against wind gusts. That stabilization layer <em>is</em> an autonomous robotic control loop!</p>
+</blockquote>
+<hr />
+<h2 id="6-real-world-applications-next-steps">6. Real-World Applications &amp; Next Steps</h2>
+<p>Robots are transforming every major sector of human society:
+- <strong>Medicine</strong>: Surgical robots translating surgeon hand tremors into sub-millimeter precision sutures.
+- <strong>Space Exploration</strong>: Autonomous rovers and rotorcraft (like the Ingenuity Mars Helicopter) operating millions of miles away from Earth.
+- <strong>Agriculture</strong>: Autonomous tractors identifying and laser-weeding specific plants while leaving crops unharmed.</p>
+<p>In the next module, <strong>Module 0.2: The Five Subsystems of Any Robot</strong>, we will open up the robot chassis and examine the five vital systems that keep every robot alive and functioning: Structure, Power, Actuators, Sensors, and Computation.</p>
+<hr />
+<h2 id="7-sources-media-provenance">7. Sources &amp; Media Provenance</h2>
+<h3 id="cited-references">Cited References</h3>
+<h3 id="media-manifest">Media Manifest</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Asset Name</th>
+<th style="text-align: left;">Media Type</th>
+<th style="text-align: left;">Source / Repository</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Attribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>sense-think-act.svg</code></td>
+<td style="text-align: left;">Vector Graphic / Diagram</td>
+<td style="text-align: left;">Instructabot Educational Team</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+<td style="text-align: left;">Instructabot Project / Open Courseware</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>curiosity-rover-annotated.jpg</code></td>
+<td style="text-align: left;">Photograph / Schematic</td>
+<td style="text-align: left;">NASA / Jet Propulsion Laboratory</td>
+<td style="text-align: left;">Public Domain</td>
+<td style="text-align: left;">NASA/JPL-Caltech <sup id="fnref7:4"><a class="footnote-ref" href="#fn:4">4</a></sup></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>unimate-1961.jpg</code></td>
+<td style="text-align: left;">Historical Photograph</td>
+<td style="text-align: left;">Smithsonian Institution / USPTO</td>
+<td style="text-align: left;">Public Domain</td>
+<td style="text-align: left;">George Devol / Unimation / GM Archives</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>teleop-vs-autonomy.svg</code></td>
+<td style="text-align: left;">Systems Diagram</td>
+<td style="text-align: left;">Instructabot Educational Team</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+<td style="text-align: left;">Instructabot Project</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><strong>ISO/TC 299 Robotics Technical Committee</strong>, <em>"ISO 8373:2021 Robotics — Vocabulary"</em>, International Organization for Standardization, 2021. Available: <a href="https://www.iso.org/standard/75338.html">ISO Standard 8373:2021</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><strong>NASA Robotics Alliance Project</strong>, <em>"Robotics Overview and Subsystems Reference"</em>, National Aeronautics and Space Administration. Available: <a href="https://robotics.nasa.gov/educational-resources/">NASA RAP Educational Resources</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><strong>Leslie Kaelbling, Tomas Lozano-Perez, Dennis Freeman</strong>, <em>"Introduction to Electrical Engineering and Computer Science I (6.01SC)"</em>, MIT OpenCourseWare, Spring 2011. License: CC BY-NC-SA 4.0. Available: <a href="https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/">MIT OCW 6.01SC</a>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><strong>Mark Maimone, Yang Cheng, Larry Matthies</strong>, <em>"Autonomous Planetary Rover Navigation: The Mars Exploration Rovers, Curiosity, and Perseverance"</em>, NASA Jet Propulsion Laboratory / IEEE Aerospace Conference. Public Domain (U.S. Government Work). Available: <a href="https://trs.jpl.nasa.gov/handle/2014/37656">NASA Technical Reports Server 2014/37656</a>.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref7:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
