@@ -57,67 +57,67 @@ nav:
   - "🎮 Simulations & Labs": simulations.md
   - Curriculum Units:
       - Unit 00 Foundations:
-          - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/01-what-is-a-robot.md
-          - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/02-the-five-subsystems.md
-          - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/03-safety-ethics-notebook.md
-          - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/lab-00-systems-decomposition.md
+          - "Module 0.1: What Makes a Robot a Robot?": curriculum/unit-00-foundations/01-what-is-a-robot.md
+          - "Module 0.2: The Five Subsystems of Any Robot": curriculum/unit-00-foundations/02-the-five-subsystems.md
+          - "Module 0.3: Engineering Notebooks, Safety, and Ethics": curriculum/unit-00-foundations/03-safety-ethics-notebook.md
+          - "Lab 0: Reverse-Engineering Systems Decomposition": curriculum/unit-00-foundations/lab-00-systems-decomposition.md
       - Unit 01 Electronics:
-          - "Electricity & Electronics from Scratch": curriculum/unit-01-electronics/01-intuitive-electrical-physics.md
-          - "Electricity & Electronics from Scratch": curriculum/unit-01-electronics/02-circuit-components-breadboarding.md
-          - "Electricity & Electronics from Scratch": curriculum/unit-01-electronics/03-power-delivery-and-regulators.md
-          - "Electricity & Electronics from Scratch": curriculum/unit-01-electronics/lab-01-zero-code-nightlight.md
+          - "Module 1.1: Intuitive Electrical Physics": curriculum/unit-01-electronics/01-intuitive-electrical-physics.md
+          - "Module 1.2: Essential Circuit Components & Breadboarding": curriculum/unit-01-electronics/02-circuit-components-breadboarding.md
+          - "Module 1.3: Power Delivery, Voltage Regulators, & Brownout Prevention": curriculum/unit-01-electronics/03-power-delivery-and-regulators.md
+          - "Lab 1: The Zero-Code Light-Sensitive Nightlight": curriculum/unit-01-electronics/lab-01-zero-code-nightlight.md
       - Unit 02 The Brain:
-          - "Computational Thinking & Microcontrollers": curriculum/unit-02-the-brain/01-algorithmic-logic-and-flowcharts.md
-          - "Computational Thinking & Microcontrollers": curriculum/unit-02-the-brain/02-python-for-robotics.md
-          - "Computational Thinking & Microcontrollers": curriculum/unit-02-the-brain/03-microcontrollers-vs-sbcs.md
-          - "Computational Thinking & Microcontrollers": curriculum/unit-02-the-brain/lab-02-intersection-controller.md
+          - "Module 2.1: Algorithmic Logic, Flowcharts, & State Machines": curriculum/unit-02-the-brain/01-algorithmic-logic-and-flowcharts.md
+          - "Module 2.2: Python for Robotics Foundations": curriculum/unit-02-the-brain/02-python-for-robotics.md
+          - "Module 2.3: Microcontrollers vs. Single-Board Computers & GPIO": curriculum/unit-02-the-brain/03-microcontrollers-vs-sbcs.md
+          - "Lab 2: The Pedestrian-Responsive Intersection Controller": curriculum/unit-02-the-brain/lab-02-intersection-controller.md
       - Unit 03 The Senses:
-          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/01-analog-vs-digital-signals.md
-          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/02-distance-and-proximity.md
-          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/03-motion-and-orientation-imus.md
-          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/04-noise-and-signal-conditioning.md
-          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/lab-03-sonar-radar-scanner.md
+          - "Module 3.1: Analog vs. Digital Signals & The ADC": curriculum/unit-03-the-senses/01-analog-vs-digital-signals.md
+          - "Module 3.2: Distance & Proximity Sensing (Ultrasonic & Time-of-Flight)": curriculum/unit-03-the-senses/02-distance-and-proximity.md
+          - "Module 3.3: Motion & Orientation Sensing (IMUs & Gyroscopes)": curriculum/unit-03-the-senses/03-motion-and-orientation-imus.md
+          - "Module 3.4: Real-World Sensor Noise & Digital Signal Filtering": curriculum/unit-03-the-senses/04-noise-and-signal-conditioning.md
+          - "Lab 3: The Ultrasonic Sonar Radar Scanner": curriculum/unit-03-the-senses/lab-03-sonar-radar-scanner.md
       - Unit 04 The Muscles:
-          - "Motors, Actuation, & Power Electronics": curriculum/unit-04-the-muscles/01-electric-motors-compared.md
-          - "Motors, Actuation, & Power Electronics": curriculum/unit-04-the-muscles/02-h-bridge-motor-driving.md
-          - "Motors, Actuation, & Power Electronics": curriculum/unit-04-the-muscles/03-speed-direction-soft-start.md
-          - "Motors, Actuation, & Power Electronics": curriculum/unit-04-the-muscles/lab-04-motor-drive-acceleration.md
+          - "Module 4.1: Electric Motors Compared (DC, Servos, Steppers, & BLDC)": curriculum/unit-04-the-muscles/01-electric-motors-compared.md
+          - "Module 4.2: Motor Driving & Power Isolation (The H-Bridge)": curriculum/unit-04-the-muscles/02-h-bridge-motor-driving.md
+          - "Module 4.3: Speed & Direction Control: Soft-Start Acceleration Ramping": curriculum/unit-04-the-muscles/03-speed-direction-soft-start.md
+          - "Lab 4: Precision Bi-Directional Motor Drive with Soft Acceleration": curriculum/unit-04-the-muscles/lab-04-motor-drive-acceleration.md
       - Unit 05 The Bones:
-          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/01-structural-fundamentals.md
-          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/02-mechanical-power-transmission.md
-          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/03-spatial-geometry-kinematics.md
-          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/04-cad-modeling-for-robotics.md
-          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/lab-05-robotic-arm-cad-sizing.md
+          - "Module 5.1: Structural Fundamentals, Materials, & Stability": curriculum/unit-05-the-bones/01-structural-fundamentals.md
+          - "Module 5.2: Mechanical Power Transmission, Gears, & Belts": curriculum/unit-05-the-bones/02-mechanical-power-transmission.md
+          - "Module 5.3: Spatial Geometry & Forward Kinematics": curriculum/unit-05-the-bones/03-spatial-geometry-kinematics.md
+          - "Module 5.4: Computer-Aided Design (CAD) & Designing for 3D Printing": curriculum/unit-05-the-bones/04-cad-modeling-for-robotics.md
+          - "Lab 5: Designing & Sizing a 2-DOF Robotic Arm Link": curriculum/unit-05-the-bones/lab-05-robotic-arm-cad-sizing.md
       - Unit 06 Mobile Robotics:
-          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/01-drive-architectures.md
-          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/02-odometry-and-encoders.md
-          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/03-closed-loop-pid-control.md
-          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/04-physics-simulators-webots.md
-          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/lab-06-maze-navigation-webots.md
+          - "Module 6.1: Mobile Robot Drive Architectures & Kinematics": curriculum/unit-06-mobile-robotics/01-drive-architectures.md
+          - "Module 6.2: Odometry & Encoders: Tracking Position in Space": curriculum/unit-06-mobile-robotics/02-odometry-and-encoders.md
+          - "Module 6.3: Closed-Loop Control: The PID Controller": curriculum/unit-06-mobile-robotics/03-closed-loop-pid-control.md
+          - "Module 6.4: Open-Source Physics Simulators (Webots)": curriculum/unit-06-mobile-robotics/04-physics-simulators-webots.md
+          - "Lab 6: Autonomous Maze-Navigating Mobile Robot in Webots": curriculum/unit-06-mobile-robotics/lab-06-maze-navigation-webots.md
       - Unit 07 Robot Vision:
-          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/01-digital-images-matrices.md
-          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/02-opencv-python-foundations.md
-          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/03-object-tracking-aruco.md
-          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/04-3d-depth-sensing.md
-          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/lab-07-pan-tilt-visual-turret.md
+          - "Module 7.1: Digital Images as Numeric Matrices": curriculum/unit-07-robot-vision/01-digital-images-matrices.md
+          - "Module 7.2: OpenCV Foundations in Python": curriculum/unit-07-robot-vision/02-opencv-python-foundations.md
+          - "Module 7.3: Object Tracking & Fiducial Markers (ArUco)": curriculum/unit-07-robot-vision/03-object-tracking-aruco.md
+          - "Module 7.4: 3D Depth Sensing Technologies": curriculum/unit-07-robot-vision/04-3d-depth-sensing.md
+          - "Lab 7: Real-Time Visual Pan-Tilt Tracking Turret": curriculum/unit-07-robot-vision/lab-07-pan-tilt-visual-turret.md
       - Unit 08 Ros2 Middleware:
-          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/01-why-middleware-ros2.md
-          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/02-computational-graph-nodes-topics.md
-          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/03-introspection-rviz2.md
-          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/04-tf2-coordinate-transforms.md
-          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/lab-08-modular-ros2-package.md
+          - "Module 8.1: Why Middleware? The Monolith Problem & ROS 2 Architecture": curriculum/unit-08-ros2-middleware/01-why-middleware-ros2.md
+          - "Module 8.2: The Core ROS 2 Computational Graph": curriculum/unit-08-ros2-middleware/02-computational-graph-nodes-topics.md
+          - "Module 8.3: Introspection & Visualization Tools (CLI, rqt, RViz2)": curriculum/unit-08-ros2-middleware/03-introspection-rviz2.md
+          - "Module 8.4: Spatial Relationships with TF2 (Transform Library)": curriculum/unit-08-ros2-middleware/04-tf2-coordinate-transforms.md
+          - "Lab 8: Building a Modular ROS 2 Robot Control Package": curriculum/unit-08-ros2-middleware/lab-08-modular-ros2-package.md
       - Unit 09 Autonomous Navigation:
-          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/01-fundamental-problem-of-slam.md
-          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/02-lidar-slam-algorithms.md
-          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/03-path-planning-and-costmaps.md
-          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/04-nav2-stack-architecture.md
-          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/lab-09-autonomous-warehouse-nav2.md
+          - "Module 9.1: The Fundamental Problem of SLAM & Occupancy Grids": curriculum/unit-09-autonomous-navigation/01-fundamental-problem-of-slam.md
+          - "Module 9.2: 2D LiDAR SLAM Algorithms (Scan Matching, AMCL, Loop Closure)": curriculum/unit-09-autonomous-navigation/02-lidar-slam-algorithms.md
+          - "Module 9.3: Path Planning & Costmaps ($A^*$, C-Space, DWA)": curriculum/unit-09-autonomous-navigation/03-path-planning-and-costmaps.md
+          - "Module 9.4: The ROS 2 Navigation Stack (Nav2 Architecture)": curriculum/unit-09-autonomous-navigation/04-nav2-stack-architecture.md
+          - "Lab 9: Autonomous Warehouse Delivery Challenge": curriculum/unit-09-autonomous-navigation/lab-09-autonomous-warehouse-nav2.md
       - Unit 10 Modern Ai Sim2Real:
-          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/01-classical-vs-ai-robotics.md
-          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/02-deep-learning-object-detection-yolo.md
-          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/03-sim2real-domain-randomization.md
-          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/04-vla-foundation-models.md
-          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/lab-10-semantic-object-fetching-capstone.md
+          - "Module 10.1: Classical Control vs. Machine Learning in Robotics": curriculum/unit-10-modern-ai-sim2real/01-classical-vs-ai-robotics.md
+          - "Module 10.2: Deep Learning Object Detection (YOLO) for Robots": curriculum/unit-10-modern-ai-sim2real/02-deep-learning-object-detection-yolo.md
+          - "Module 10.3: Simulation-to-Real (Sim2Real) Transfer & Domain Randomization": curriculum/unit-10-modern-ai-sim2real/03-sim2real-domain-randomization.md
+          - "Module 10.4: Vision-Language-Action (VLA) & Foundation Models in Robotics": curriculum/unit-10-modern-ai-sim2real/04-vla-foundation-models.md
+          - "Lab 10: Capstone: Semantic Object Fetching & Sorting Pipeline": curriculum/unit-10-modern-ai-sim2real/lab-10-semantic-object-fetching-capstone.md
   - "📓 Engineering Notebooks":
       - "Overview & CLI Guide": notebooks/README.md
       - "Master Notebook Template": notebooks/MASTER_NOTEBOOK_TEMPLATE.md

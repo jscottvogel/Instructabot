@@ -30,15 +30,35 @@ MKDOCS_YML = REPO_ROOT / "mkdocs.yml"
 
 
 def extract_title_from_md(filepath: Path) -> str:
-    """Extracts first H1 or H2 from a Markdown file to use as the menu label."""
+    """Extracts clean, distinct module or lab title from Markdown file for the sidebar menu."""
     try:
-        with open(filepath, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line.startswith("# "):
-                    return line[2:].strip()
-                if line.startswith("## ") and not line.startswith("## 1."):
-                    return line[3:].strip()
+        lines = filepath.read_text(encoding="utf-8").splitlines()
+        unit_num = ""
+        title_text = ""
+
+        for line in lines[:10]:
+            line = line.strip()
+            m_unit = re.match(r"# Unit\s*(\d+)", line, re.IGNORECASE)
+            if m_unit:
+                unit_num = m_unit.group(1)
+
+            m_mod = re.match(r"# (?:Module|Lab)\s*([\d\.]+):\s*(.+)", line, re.IGNORECASE)
+            if m_mod:
+                title_text = m_mod.group(2).strip()
+                break
+
+        filename = filepath.stem
+        if "lab-" in filename:
+            m = re.match(r"lab-(\d\d)-(.*)", filename)
+            lab_digits = int(m.group(1)) if m else 0
+            name_clean = m.group(2).replace("-", " ").title() if m else "Lab Capstone"
+            return f"Lab {lab_digits}: {title_text or name_clean}"
+        elif filename.startswith("0") or filename[0].isdigit():
+            num = filename[:2]
+            return f"Module {unit_num}.{num.lstrip('0') or '0'}: {title_text}"
+
+        if title_text:
+            return title_text
     except Exception:
         pass
     return filepath.stem.replace("-", " ").title()
@@ -155,9 +175,6 @@ def sync_textbook():
             dest_file.write_text(content, encoding="utf-8")
 
             page_title = extract_title_from_md(md_f)
-            # Truncate long titles for clean sidebar display
-            if ":" in page_title:
-                page_title = page_title.split(":")[-1].strip()
             rel_doc_path = f"curriculum/{unit_slug}/{md_f.name}"
             unit_nav_items.append({page_title: rel_doc_path})
 
