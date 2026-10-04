@@ -290,6 +290,33 @@
       "url": "https://cyberbotics.com/doc/reference/index",
       "license": "Apache License 2.0 (Open Source Simulation)",
       "relevance": ["Physics simulation engine (ODE)", "World scene tree and PROTO nodes", "DifferentialWheels / Motor nodes", "Supervisor API and Python controller"]
+    },
+    {
+      "id": "opencv-reference",
+      "title": "OpenCV (Open Source Computer Vision Library) Official Documentation",
+      "authors": ["OpenCV Team", "Gary Bradski", "Adrian Kaehler"],
+      "institution": "OpenCV.org / Open Source Vision Foundation",
+      "url": "https://docs.opencv.org/4.x/",
+      "license": "Apache License 2.0 (Open Source Computer Vision)",
+      "relevance": ["Image matrices", "Color space transformations (RGB/HSV)", "Morphological operations", "Contour finding", "ArUco pose estimation"]
+    },
+    {
+      "id": "szeliski-computer-vision",
+      "title": "Computer Vision: Algorithms and Applications (2nd Edition)",
+      "authors": ["Richard Szeliski"],
+      "institution": "Springer / University of Washington",
+      "url": "https://szeliski.org/Book/",
+      "license": "Open Access Electronic Textbook",
+      "relevance": ["Digital image formation", "Color representations", "Stereo vision and disparity maps", "Feature detection and camera models"]
+    },
+    {
+      "id": "aruco-fiducial-markers",
+      "title": "Automatic Generation and Detection of Highly Reliable Fiducial Markers Under Occlusion",
+      "authors": ["S. Garrido-Jurado", "R. Muñoz-Salinas", "F. J. Madrid-Cuevas", "M. J. Marín-Jiménez"],
+      "institution": "University of Córdoba / Pattern Recognition Journal",
+      "url": "https://www.uco.es/investiga/grupos/ava/portfolio/aruco/",
+      "license": "Academic Research & BSD Open Source",
+      "relevance": ["Fiducial marker dictionary", "Perspective-n-Point (PnP) pose estimation", "Camera calibration matrix", "Robotic visual docking"]
     }
   ]
 }

@@ -352,6 +352,46 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "Hierarchical node structure diagram of Webots 3D simulation scene tree including WorldInfo, Viewpoint, Solid, Robot, and Sensor nodes"
+    },
+    {
+      "id": "image-matrix-coordinates",
+      "filename": "image-matrix-coords.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Pixel coordinate system illustration showing origin (0,0) at top-left, image height rows (y) and width columns (x), and RGB/HSV multi-channel matrix layers"
+    },
+    {
+      "id": "opencv-pipeline-filter",
+      "filename": "opencv-pipeline.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Image processing pipeline flowchart showing raw camera input, Gaussian blur, HSV thresholding, contour extraction, and bounding box centroid calculation"
+    },
+    {
+      "id": "aruco-marker-axes",
+      "filename": "aruco-marker-pose.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Binary planar ArUco fiducial marker with projected 3D Cartesian pose coordinate axes (X red, Y green, Z blue) indicating spatial orientation"
+    },
+    {
+      "id": "depth-sensing-parallax",
+      "filename": "stereo-depth-parallax.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Binocular stereo vision geometry diagram showing baseline b, focal length f, optical disparity d, and triangulated depth distance Z"
     }
   ]
 }
