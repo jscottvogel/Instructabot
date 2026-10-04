@@ -155,6 +155,42 @@
       "url": "https://docs.wokwi.com/",
       "license": "Open Educational Documentation",
       "relevance": ["Browser microcontroller simulation", "RP2040 and ESP32 breadboarding", "MicroPython simulation"]
+    },
+    {
+      "id": "oppenheim-signals-and-systems",
+      "title": "Signals and Systems (6.007)",
+      "authors": ["Alan V. Oppenheim", "Alan S. Willsky"],
+      "institution": "Massachusetts Institute of Technology (MIT OpenCourseWare)",
+      "url": "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)",
+      "relevance": ["Continuous vs. discrete signals", "Sampling theorem", "Analog-to-digital conversion", "Quantization error"]
+    },
+    {
+      "id": "sparkfun-ultrasonic-guide",
+      "title": "HC-SR04 Ultrasonic Distance Sensor Hookup and Operating Guide",
+      "authors": ["SparkFun Electronics Technical Team"],
+      "institution": "SparkFun Electronics",
+      "url": "https://learn.sparkfun.com/tutorials/distance-sensing-basics",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
+      "relevance": ["Time of flight acoustics", "Speed of sound calculation", "Acoustic specular reflections", "Beam angle limits"]
+    },
+    {
+      "id": "invensense-mpu6050",
+      "title": "MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS MotionTracking Specification",
+      "authors": ["TDK InvenSense Engineering"],
+      "institution": "TDK InvenSense",
+      "url": "https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/",
+      "license": "Public Manufacturer Specification",
+      "relevance": ["MEMS accelerometer", "Coriolis vibratory gyroscopes", "Sensor drift", "Complementary filter"]
+    },
+    {
+      "id": "smith-dsp-guide",
+      "title": "The Scientist and Engineer's Guide to Digital Signal Processing",
+      "authors": ["Steven W. Smith"],
+      "institution": "California Technical Publishing",
+      "url": "https://www.dspguide.com/",
+      "license": "Open Access Educational Textbook",
+      "relevance": ["Moving average filter", "Median filter for outlier removal", "Noise reduction in sensor readings"]
     }
   ]
 }

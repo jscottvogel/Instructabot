@@ -172,6 +172,56 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "Wokwi simulated intersection with Raspberry Pi Pico, red/yellow/green LEDs, and pedestrian pushbutton"
+    },
+    {
+      "id": "adc-sampling-quantization",
+      "filename": "adc-sampling.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Diagram illustrating analog wave sampling, quantization steps, and bit resolution"
+    },
+    {
+      "id": "ultrasonic-time-of-flight",
+      "filename": "ultrasonic-tof.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Acoustic ping emission, reflection off target obstacle, and time of flight calculation"
+    },
+    {
+      "id": "imu-axes-gyro-accel",
+      "filename": "imu-coordinates.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "3-axis spatial orientation diagram showing acceleration vectors and gyroscope angular velocities (roll, pitch, yaw)"
+    },
+    {
+      "id": "sensor-noise-filtering",
+      "filename": "sensor-noise-filtering.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Signal plot showing noisy raw sensor readings smoothed by moving average and median filters"
+    },
+    {
+      "id": "wokwi-radar-scanner",
+      "filename": "wokwi-radar.png",
+      "media_type": "schematic",
+      "source_url": "https://docs.wokwi.com/",
+      "license": "Creative Commons Attribution 4.0 (Wokwi)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Wokwi simulation setup with Raspberry Pi Pico, HC-SR04 ultrasonic sensor, and sweeping micro servo"
     }
   ]
 }
