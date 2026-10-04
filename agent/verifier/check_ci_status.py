@@ -28,12 +28,12 @@ def get_token():
             stderr=subprocess.PIPE,
             text=True
         )
-        out, _ = p.communicate(input='protocol=https\nhost=github.com\n\n', timeout=5)
+        out, _ = p.communicate(input='protocol=https\nhost=github.com\n\n', timeout=15)
         for line in out.splitlines():
             if line.startswith('password='):
                 return line[len('password='):].strip()
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"DEBUG: git credential fill error: {e}")
     return None
 
 
