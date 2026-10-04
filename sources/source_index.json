@@ -344,6 +344,33 @@
       "url": "https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Introduction-To-Tf2.html",
       "license": "BSD-3-Clause / Creative Commons Attribution 3.0",
       "relevance": ["Coordinate frame trees", "Static and dynamic broadcasts", "Time-travel transform queries", "Matrix transformations (base_link, odom, map)"]
+    },
+    {
+      "id": "thrun-probabilistic-robotics",
+      "title": "Probabilistic Robotics (Intelligent Robotics and Autonomous Agents)",
+      "authors": ["Sebastian Thrun", "Wolfram Burgard", "Dieter Fox"],
+      "institution": "Massachusetts Institute of Technology (MIT Press)",
+      "url": "https://mitpress.mit.edu/9780262201629/probabilistic-robotics/",
+      "license": "Academic Textbook Reference (Autonomous Mobile Robotics)",
+      "relevance": ["Occupancy grid mapping", "Particle filters (Monte Carlo Localization)", "Simultaneous Localization and Mapping (SLAM)", "Log-odds Bayes filtering"]
+    },
+    {
+      "id": "nav2-documentation",
+      "title": "Nav2 (ROS 2 Navigation Framework) Official Documentation",
+      "authors": ["Steven Macenski", "Nav2 Working Group"],
+      "institution": "Open Navigation LLC / Open Robotics",
+      "url": "https://navigation.ros.org/",
+      "license": "Apache License 2.0 (Open Source Navigation)",
+      "relevance": ["Behavior trees for navigation", "Costmap2D (Inflation, Lethal, Inscribed layers)", "Global path planners (A*, NavFn)", "Local trajectory controllers (DWB, MPPI)"]
+    },
+    {
+      "id": "lavalle-planning-algorithms",
+      "title": "Planning Algorithms",
+      "authors": ["Steven M. LaValle"],
+      "institution": "Cambridge University Press / University of Illinois",
+      "url": "https://planning.cs.uiuc.edu/",
+      "license": "Open Access Electronic Textbook",
+      "relevance": ["Graph search (Dijkstra, A*)", "Rapidly-exploring Random Trees (RRT)", "Configuration space (C-space)", "Collision-checking geometry"]
     }
   ]
 }

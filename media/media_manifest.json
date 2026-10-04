@@ -432,6 +432,46 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "RViz2 3D robotics visualizer interface showing 3D scene display, Displays panel with RobotModel, LaserScan, TF axes, and fixed frame configuration"
+    },
+    {
+      "id": "occupancy-grid-slam",
+      "filename": "occupancy-grid.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "2D occupancy grid map showing discrete cells classified as free space (white, probability 0), lethal obstacles (black, probability 1), and unexplored unknown territory (gray, probability 0.5)"
+    },
+    {
+      "id": "slam-loop-closure",
+      "filename": "loop-closure-graph.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Graph SLAM pose graph showing sequential robot pose nodes, accumulated odometry drift error, and loop closure edge snapping drifted trajectory into alignment"
+    },
+    {
+      "id": "a-star-path-costmap",
+      "filename": "a-star-costmap.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://navigation.ros.org/",
+      "license": "Apache License 2.0 / CC BY-SA 4.0",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Global costmap architecture showing lethal obstacle core, inscribed footprint inflation radius, cost gradient decay, and computed A-star optimal search trajectory"
+    },
+    {
+      "id": "nav2-architecture-bt",
+      "filename": "nav2-architecture.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://navigation.ros.org/",
+      "license": "Apache License 2.0 / CC BY-SA 4.0",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "ROS 2 Nav2 software architecture block diagram showing Behavior Tree Navigator, Costmap2D, Global Planner (NavFn/A*), Local Controller (DWB), and Recovery Behaviors"
     }
   ]
 }
