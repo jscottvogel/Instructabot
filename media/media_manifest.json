@@ -82,6 +82,56 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "The iterative engineering design and documentation lifecycle"
+    },
+    {
+      "id": "water-pipe-electricity-analogy",
+      "filename": "water-pipe-electricity.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Visual diagram comparing voltage (height/pressure), current (water flow rate), and resistance (pipe constriction)"
+    },
+    {
+      "id": "breadboard-internal-rails",
+      "filename": "breadboard-internals.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "X-ray diagram showing horizontal power bus rails and vertical terminal tie clips of a solderless breadboard"
+    },
+    {
+      "id": "voltage-divider-schematic",
+      "filename": "voltage-divider.svg",
+      "media_type": "schematic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Two-resistor voltage divider circuit schematic and ratio formula"
+    },
+    {
+      "id": "tinkercad-nightlight-circuit",
+      "filename": "tinkercad-nightlight.png",
+      "media_type": "schematic",
+      "source_url": "https://www.tinkercad.com/",
+      "license": "Creative Commons Attribution 4.0 (Tinkercad Circuits)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Interactive breadboard wiring of NPN transistor, photoresistor, resistor, and LED nightlight"
+    },
+    {
+      "id": "linear-vs-buck-efficiency",
+      "filename": "linear-vs-buck.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Diagram contrasting heat dissipation of linear regulators with high-efficiency inductor-switched buck converters"
     }
   ]
 }

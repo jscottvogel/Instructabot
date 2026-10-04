@@ -92,6 +92,33 @@
       "url": "https://standards.ieee.org/industry-connections/ec/ead-v1/",
       "license": "Creative Commons Attribution-NonCommercial 3.0 (CC BY-NC 3.0)",
       "relevance": ["Human well-being", "Algorithmic accountability", "Transparency", "Safety in autonomous systems"]
+    },
+    {
+      "id": "kuphaldt-electric-circuits",
+      "title": "Lessons In Electric Circuits, Volume I - DC",
+      "authors": ["Tony R. Kuphaldt"],
+      "institution": "Open Textbook Library / All About Circuits",
+      "url": "https://open.umn.edu/opentextbooks/textbooks/lessons-in-electric-circuits-volume-i-dc",
+      "license": "Design Science License / Creative Commons Open Educational Resource",
+      "relevance": ["Ohm's Law", "Series and parallel circuits", "Voltage dividers", "Current flow"]
+    },
+    {
+      "id": "ti-buck-regulator-guide",
+      "title": "Basic Calculation of a Buck Converter's Power Stage (Application Report SLVA477B)",
+      "authors": ["Everett Rogers"],
+      "institution": "Texas Instruments",
+      "url": "https://www.ti.com/lit/an/slva477b/slva477b.pdf",
+      "license": "Technical White Paper / Public Application Report",
+      "relevance": ["Switching regulators", "DC-DC buck converters", "Voltage regulation efficiency", "Brownout prevention"]
+    },
+    {
+      "id": "sparkfun-breadboard-guide",
+      "title": "How to Use a Breadboard",
+      "authors": ["SparkFun Education Team"],
+      "institution": "SparkFun Electronics",
+      "url": "https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "relevance": ["Internal breadboard rails", "Tie points", "Prototyping circuits without soldering"]
     }
   ]
 }
