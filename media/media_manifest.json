@@ -392,6 +392,46 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "Binocular stereo vision geometry diagram showing baseline b, focal length f, optical disparity d, and triangulated depth distance Z"
+    },
+    {
+      "id": "ros2-computation-graph",
+      "filename": "ros2-computation-graph.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://docs.ros.org/",
+      "license": "Creative Commons Attribution 3.0 / Apache License 2.0",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "ROS 2 computational graph diagram showing Nodes communicating via Topics (Publish/Subscribe), Services (Request/Response), and Actions (Goal/Feedback/Result)"
+    },
+    {
+      "id": "tf2-transform-tree",
+      "filename": "tf2-transform-tree.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://docs.ros.org/",
+      "license": "Creative Commons Attribution 3.0 / Apache License 2.0",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Hierarchical spatial coordinate transform tree showing parent-child links from map to odom, base_link, and sensor frames (camera_link, laser_link)"
+    },
+    {
+      "id": "ros2-package-structure",
+      "filename": "ros2-package-structure.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://docs.ros.org/",
+      "license": "Creative Commons Attribution 3.0 / Apache License 2.0",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Directory architecture diagram of standard ROS 2 Python package including package.xml, setup.py, setup.cfg, launch files, and node scripts"
+    },
+    {
+      "id": "rviz2-visualization-interface",
+      "filename": "rviz2-interface.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://docs.ros.org/",
+      "license": "Creative Commons Attribution 3.0 / Apache License 2.0",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "RViz2 3D robotics visualizer interface showing 3D scene display, Displays panel with RobotModel, LaserScan, TF axes, and fixed frame configuration"
     }
   ]
 }
