@@ -56,6 +56,24 @@
       "url": "https://cyberbotics.com/doc/guide/index",
       "license": "Apache License 2.0",
       "relevance": ["Physics simulation", "Differential drive robot modeling", "LiDAR and camera sensor simulation", "Python robot controller API"]
+    },
+    {
+      "id": "iso-8373-2021",
+      "title": "ISO 8373:2021 Robotics - Vocabulary",
+      "authors": ["ISO/TC 299 Robotics Technical Committee"],
+      "institution": "International Organization for Standardization (ISO)",
+      "url": "https://www.iso.org/standard/75338.html",
+      "license": "Standard Reference (Public Abstract & Definitions)",
+      "relevance": ["Formal definition of robot", "Autonomy classification", "Industrial vs. Service robots"]
+    },
+    {
+      "id": "nasa-jpl-autonav",
+      "title": "Autonomous Planetary Rover Navigation: The Mars Exploration Rovers, Curiosity, and Perseverance",
+      "authors": ["Mark Maimone", "Yang Cheng", "Larry Matthies"],
+      "institution": "NASA Jet Propulsion Laboratory / IEEE Aerospace Conference",
+      "url": "https://trs.jpl.nasa.gov/handle/2014/37656",
+      "license": "Public Domain (NASA Technical Reports Server)",
+      "relevance": ["Autonomous navigation in space", "Communication latency constraints", "Stereo vision obstacle detection on Mars"]
     }
   ]
 }

@@ -22,6 +22,26 @@
       "author": "NASA/JPL-Caltech",
       "attribution_required": true,
       "description": "Annotated diagram showing power, mobility, mast camera, and robotic arm on Curiosity rover"
+    },
+    {
+      "id": "unimate-first-industrial-robot",
+      "filename": "unimate-1961.jpg",
+      "media_type": "photograph",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Unimate_robot.jpg",
+      "license": "Public Domain (Smithsonian Institution / U.S. Patent & Trademark Office)",
+      "author": "George Devol / Unimation / General Motors",
+      "attribution_required": false,
+      "description": "Unimate, the first industrial robot deployed at General Motors in 1961"
+    },
+    {
+      "id": "teleoperation-vs-autonomy-flowchart",
+      "filename": "teleop-vs-autonomy.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Flowchart contrasting human-in-the-loop teleoperation with autonomous closed-loop control"
     }
   ]
 }
