@@ -2878,11 +2878,11 @@
 2. <strong>A remote-controlled toy drone</strong>: You hold a joystick. When you push forward, radio waves travel to the drone's motors and spin the propellers faster. If you let go of the controls right as a gust of wind blows, the drone crashes into a tree unless you react quickly. Who did the thinking? You did.
 3. <strong>An autonomous vacuum cleaner (like a Roomba)</strong>: You press start and walk out the door. It rolls forward. An infrared sensor notices a staircase drop-off. An internal microprocessor calculates: <em>"Cliff detected on front bumper! Stop wheels immediately, back up 5 cm, rotate 45 degrees left, and resume cleaning."</em> It adapts to unexpected physical reality without human help.</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Non-Robotic Machine
+    subgraph "Non-Robotic Machine"
         A1[Fixed Timer or Human Hand] --&gt; B1[Motor or Heater Turns On] --&gt; C1[Fixed Output Regardless of Environment]
     end
 
-    subgraph Autonomous Robot
+    subgraph "Autonomous Robot"
         S[Sensors: Detect Environment] --&gt; T[Controller: Process &amp; Decide]
         T --&gt; A[Actuators: Move &amp; Change World]
         A -.-&gt;|Changes Environment| S
@@ -2951,7 +2951,7 @@ Mars is between 55 million and 400 million kilometers from Earth. Radio signals 
 <h3 id="33-the-heart-of-robotics-the-sense-think-act-loop">3.3 The Heart of Robotics: The Sense-Think-Act Loop</h3>
 <p>Pioneered in robotics education at institutions like MIT <sup id="fnref3:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, every autonomous robotic system operates on a continuous feedback loop:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The Continuous Loop
+    subgraph "The Continuous Loop"
         Sense["1. SENSE&lt;br/&gt;(Collect Data from Physical World)"]
         Think["2. THINK&lt;br/&gt;(Process Data &amp; Compute Action)"]
         Act["3. ACT&lt;br/&gt;(Exert Mechanical Force on World)"]

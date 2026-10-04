@@ -2927,17 +2927,17 @@ The speed of sound varies slightly with ambient temperature (<span class="arithm
 <h3 id="33-physical-failure-modes-when-sound-lies-to-robots">3.3 Physical Failure Modes: When Sound Lies to Robots</h3>
 <p>While ultrasonic sensors are inexpensive (<span class="arithmatex">\(\approx \$2\)</span>) and reliable for flat walls, every roboticist must know their physical failure modes <sup id="fnref6:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph 1. Specular Reflection (The Angled Mirror Trap)
+    subgraph "1. Specular Reflection (The Angled Mirror Trap)"
         A1["Sonic Ping"] --&gt;|Hits Wall at &gt;45° Angle| B1["Echo Bounces Away into Space!"]
         B1 --&gt; C1["Robot Thinks Space is Clear and Crashes!"]
     end
 
-    subgraph 2. Acoustic Absorption (The Soft Cushion Trap)
+    subgraph "2. Acoustic Absorption (The Soft Cushion Trap)"
         A2["Sonic Ping"] --&gt;|Hits Foam / Curtains / Pet Fur| B2["Energy Absorbed &amp; Dissipated"]
         B2 --&gt; C2["No Echo Returns!"]
     end
 
-    subgraph 3. The Blind Zone Trap (&lt; 2 cm)
+    subgraph "3. The Blind Zone Trap (&lt; 2 cm)"
         A3["Obstacle &lt; 2cm from Sensor"] --&gt;|Echo Returns While Mic is Ringing| B3["Sensor Blind!"]
     end</code></pre>
 <ol>

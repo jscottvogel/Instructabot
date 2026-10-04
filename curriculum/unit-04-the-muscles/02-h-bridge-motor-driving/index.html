@@ -2895,7 +2895,7 @@ To make it spin backwards, you must physically unplug both wires, swap them, and
 </code></pre></div>
 <p>By opening and closing pairs of switches electronically, the circuit controls direction, speed, and braking <sup id="fnref9:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph 1. FORWARD (Q1 and Q4 Closed)
+    subgraph "1. FORWARD (Q1 and Q4 Closed)"
         V1["+12V"] --&gt; Q1_on["Switch Q1 (ON)"]
         Q1_on --&gt; M_left["Motor Terminal (+)"]
         M_left --&gt; M_right["Motor Terminal (-)"]
@@ -2903,7 +2903,7 @@ To make it spin backwards, you must physically unplug both wires, swap them, and
         Q4_on --&gt; GND1["Ground (0V)"]
     end
 
-    subgraph 2. REVERSE (Q2 and Q3 Closed)
+    subgraph "2. REVERSE (Q2 and Q3 Closed)"
         V2["+12V"] --&gt; Q2_on["Switch Q2 (ON)"]
         Q2_on --&gt; M_right2["Motor Terminal (+)"]
         M_right2 --&gt; M_left2["Motor Terminal (-)"]

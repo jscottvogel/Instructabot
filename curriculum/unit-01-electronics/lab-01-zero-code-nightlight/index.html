@@ -2971,13 +2971,13 @@
 <li>The transistor Base turns on, current rushes through the Collector, and <strong>the LED lights up automatically!</strong></li>
 </ol>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Day Mode (Bright Light)
+    subgraph "Day Mode (Bright Light)"
         LDR1["LDR Resistance: LOW (~500 Ω)"] --&gt; PullDown["Base pulled down to ~0.4V"]
         PullDown --&gt; TransistorOff["Transistor CUTOFF (Closed Valve)"]
         TransistorOff --&gt; LEDOff["LED: OFF"]
     end
 
-    subgraph Night Mode (Darkness)
+    subgraph "Night Mode (Darkness)"
         LDR2["LDR Resistance: HIGH (&gt;100 kΩ)"] --&gt; PullUp["Base pulled up above 0.7V"]
         PullUp --&gt; TransistorOn["Transistor SATURATION (Open Valve)"]
         TransistorOn --&gt; LEDOn["LED: ON (Autonomous Response!)"]

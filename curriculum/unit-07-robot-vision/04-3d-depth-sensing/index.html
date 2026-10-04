@@ -2877,7 +2877,7 @@
 <p>A single 2D camera discards the third dimension (<span class="arithmatex">\(Z\)</span>). A small object close to the lens and a massive object far away produce the <strong>exact same pixel size on the sensor</strong> <sup id="fnref5:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
 <div class="arithmatex">\[\text{Pixel Size } p = \frac{f \cdot \text{Real Size } W}{Z}\]</div>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Monocular 2D Camera Ambiguity
+    subgraph "Monocular 2D Camera Ambiguity"
         ObjSmall["Toy Car (0.1m long) at 0.5m distance"] --&gt; Cam["2D Camera Sensor (Produces 100 Pixel Width)"]
         ObjLarge["Real Bus (10m long) at 50m distance"] --&gt; Cam
         Cam --&gt; Crash["❌ Robot cannot tell them apart!"]

@@ -2881,22 +2881,22 @@
 <em>"Physics equations are a crude approximation of reality. Just point a camera at the scene, feed pixels into a billion-parameter Transformer, and output motor voltages directly!"</em></li>
 </ol>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The Two Extremes &amp; The Modern Hybrid Synthesis
-        subgraph Pure Classical Control
+    subgraph "The Two Extremes &amp; The Modern Hybrid Synthesis"
+        subgraph "Pure Classical Control"
             C1["Newtonian Physics &amp; Kinematics"]
             C2["Deterministic Safety Certificates"]
             C3["❌ Fails on unstructured mess: crumpled laundry, apples, dirt"]
             C1 --&gt; C2 --&gt; C3
         end
 
-        subgraph Pure End-to-End Neural Policy
+        subgraph "Pure End-to-End Neural Policy"
             E1["Pixels-to-Torque Neural Network"]
             E2["Learns wild complex behaviors"]
             E3["❌ Black box: Can hallucinate &amp; smash into humans with 0 warning!"]
             E1 --&gt; E2 --&gt; E3
         end
 
-        subgraph The Modern Hybrid Architecture (The Gold Standard)
+        subgraph "The Modern Hybrid Architecture (The Gold Standard)"
             H1["🧠 AI Perception &amp; Semantics (YOLO / VLA): 'Pick up the red mug'"]
             H2["🛡️ Classical Control &amp; Planning (A* / PID / Inverse Kinematics): Deterministic &amp; Safe!"]
             H1 --&gt; H2

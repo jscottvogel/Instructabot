@@ -2876,11 +2876,11 @@
 <p>When you accidentally touch a scorching hot stove, your hand jerks back in a fraction of a second before you even consciously realize what happened. That rapid reaction is handled by a <strong>reflex arc</strong> in your spinal cord. Seconds later, your conscious brain (cortex) processes the event: <em>"That stove was hot. I should turn off the burner and get an ice pack."</em></p>
 <p>Modern advanced robotics mimics this biological division of labor:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The High-Level Cortex: Single-Board Computer (SBC)
+    subgraph "The High-Level Cortex: Single-Board Computer (SBC)"
         SBC["🧠 Raspberry Pi 5 / NVIDIA Jetson&lt;br/&gt;- Full Linux OS&lt;br/&gt;- Computer Vision (OpenCV)&lt;br/&gt;- SLAM &amp; Path Planning (ROS 2)&lt;br/&gt;- High-Level Decision Making"]
     end
 
-    subgraph The Real-Time Reflex Arc: Microcontroller (MCU)
+    subgraph "The Real-Time Reflex Arc: Microcontroller (MCU)"
         MCU["⚡ Raspberry Pi Pico (RP2040) / ESP32&lt;br/&gt;- Bare-Metal MicroPython / C++&lt;br/&gt;- Sub-Microsecond Precision&lt;br/&gt;- Direct Motor PWM &amp; Encoder Pulses&lt;br/&gt;- Hardware E-Stop Interlock"]
     end
 

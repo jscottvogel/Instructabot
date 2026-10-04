@@ -2880,7 +2880,7 @@
 - What if sunlight shifts from noon daylight to red sunset?</p>
 <p>Color tracking alone would send the drone crashing into the worker!</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The Evolution of Robotic Tracking
+    subgraph "The Evolution of Robotic Tracking"
         Color["Color Thresholding&lt;br/&gt;(Finds 'yellow/blue' blob)&lt;br/&gt;⚠️ Easily confused by lighting &amp; clutter"]
         Marker["Fiducial Markers (ArUco / AprilTags)&lt;br/&gt;(Binary 2D barcode with checksum)&lt;br/&gt;✅ Immune to lighting, 0% false positives"]
         Pose["6-DOF Pose Estimation&lt;br/&gt;(Calculates exact distance X, Y, Z in meters)&lt;br/&gt;🎯 Millimeter precision autonomous docking!"]

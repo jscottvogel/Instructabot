@@ -2881,7 +2881,7 @@
 <pre class="mermaid"><code>flowchart TD
     Start([Robot Boots Up]) --&gt; Loop{while True:}
 
-    subgraph The Heartbeat Loop
+    subgraph "The Heartbeat Loop"
         Read["1. Read Sensors&lt;br/&gt;(Bumper, Distance, Encoders)"]
         Decide["2. Think &amp; Calculate&lt;br/&gt;(Evaluate FSM State &amp; Paths)"]
         Act["3. Command Actuators&lt;br/&gt;(Set Motor Speeds &amp; Directions)"]

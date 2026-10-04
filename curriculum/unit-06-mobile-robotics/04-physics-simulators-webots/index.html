@@ -2877,7 +2877,7 @@
 <p>Imagine an aerospace company building a new $100 million jet. Do they let an apprentice programmer write the autopilot code, load it directly onto the real jet, and push it off a runway?</p>
 <p>Never! Every pilot and control engineer trains in an ultra-realistic flight simulator. If the code crashes in simulation, you reset the software in two seconds. If the code crashes on a real jet, you destroy the aircraft and endanger lives.</p>
 <pre class="mermaid"><code>flowchart LR
-    subgraph The Development Cycle
+    subgraph "The Development Cycle"
         Code["1. Write Robot Python Code"] --&gt; Sim["2. Test in Webots Physics Sim&lt;br/&gt;(Gravity, Collisions, Friction)"]
         Sim -- "Crashes? Tune &amp; Iterate (0$ Cost, 2 Seconds)" --&gt; Code
         Sim -- "Robust &amp; Verified" --&gt; Hardware["3. Deploy to Physical Hardware&lt;br/&gt;(Safe, Predictable, Reliable)"]
@@ -2892,7 +2892,7 @@
 <h3 id="31-what-is-inside-a-physics-simulator">3.1 What Is Inside a Physics Simulator?</h3>
 <p>A visual 3D video game engine (like Unreal or Unity) prioritizes <strong>visual beauty and high frame rates</strong>, often taking shortcuts with real-world physics. In contrast, a <strong>Robotics Physics Engine</strong> (such as the Open Dynamics Engine / ODE inside Webots) prioritizes <strong>mathematical rigor and physical law conservation</strong> <sup id="fnref7:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Inside the Webots Simulation Core
+    subgraph "Inside the Webots Simulation Core"
         Clock["Simulation Clock (basicTimeStep = 32 ms)"] --&gt; Integrator["Numerical Physics Integrator (ODE)"]
 
         Integrator --&gt; Grav["Gravity Vector (g = -9.81 m/s²)"]

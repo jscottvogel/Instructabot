@@ -2974,12 +2974,12 @@
 <pre class="mermaid"><code>flowchart TD
     Battery[🔋 11.1V / 12V Main Battery] --&gt; EStop[🛑 Physical E-Stop / Switch]
 
-    subgraph Actuator Power Rail (High Current / Noisy)
+    subgraph "Actuator Power Rail (High Current / Noisy)"
         EStop ==&gt; MotorDriver[Motor Driver H-Bridges]
         MotorDriver ==&gt; Motors[DC Motors &amp; Servos]
     end
 
-    subgraph Logic Power Rail (Clean / Regulated)
+    subgraph "Logic Power Rail (Clean / Regulated)"
         EStop ==&gt; Buck[Buck Converter: 12V to 5V]
         Buck --&gt; Cap[Large Smoothing Capacitor: 470uF]
         Cap --&gt; MCU[Microcontroller / Single Board Computer]

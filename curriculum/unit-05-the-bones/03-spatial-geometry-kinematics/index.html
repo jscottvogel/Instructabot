@@ -2940,7 +2940,7 @@ The reverse problem—<strong>Inverse Kinematics (IK)</strong>—is much trickie
 <h3 id="33-the-reachable-workspace-singularities">3.3 The Reachable Workspace &amp; Singularities</h3>
 <p>A robotic arm cannot reach every point in the universe. The set of all spatial coordinates <span class="arithmatex">\((X, Y)\)</span> that the gripper can physically touch is called the <strong>Reachable Workspace</strong> <sup id="fnref9:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The Workspace Limits
+    subgraph "The Workspace Limits"
         Outer["Outer Boundary: R_max = L1 + L2&lt;br/&gt;(Arm stretched completely straight)"]
         Inner["Inner Hole: R_min = |L1 - L2|&lt;br/&gt;(Arm folded back onto itself)"]
     end</code></pre>

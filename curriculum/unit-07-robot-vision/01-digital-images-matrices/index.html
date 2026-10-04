@@ -2937,7 +2937,7 @@ While the rest of computer science uses <strong>RGB</strong>, the OpenCV library
 - In RGB, brightness is mixed inextricably into every single channel! Changing the room's lamp causes all three values (<span class="arithmatex">\(R, G, B\)</span>) to collapse, breaking hardcoded thresholds.</p>
 <p>To solve this, roboticists convert camera frames into <strong>HSV (Hue, Saturation, Value)</strong> <sup id="fnref11:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref6:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph HSV Cylindrical Color Space
+    subgraph "HSV Cylindrical Color Space"
         H["HUE (H): What Color Is It? (0° to 180° in OpenCV)&lt;br/&gt;Red ≈ 0/180, Yellow ≈ 30, Green ≈ 60, Blue ≈ 120"]
         S["SATURATION (S): How Pure / Vivid Is It? (0 to 255)&lt;br/&gt;0 = Washed out gray, 255 = Rich vibrant neon color"]
         V["VALUE (V): How Bright Is It? (0 to 255)&lt;br/&gt;0 = Pitch black shadow, 255 = Blinding bright light"]

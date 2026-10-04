@@ -3169,12 +3169,12 @@
 <hr />
 <h2 id="autonomous-workflow-while-youre-at-work">🔄 Autonomous Workflow: "While You're at Work"</h2>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Research &amp; Evolution
+    subgraph "Research &amp; Evolution"
         Scout["🔭 Trend Scout&lt;br/&gt;(arXiv, ROS 2, SOTA Webots)"] --&gt; ECR["📝 Evolution Change Request"]
         ECR --&gt; Updater["⚡ Autonomous Lesson Updater&lt;br/&gt;(Citations &amp; Media Sync)"]
     end
 
-    subgraph Quality Gauntlet
+    subgraph "Quality Gauntlet"
         Updater --&gt; ReviewPanel["🏛️ Multi-Agent Editorial Board"]
         ReviewPanel --&gt; Pedagogy["🎓 Pedagogical Critic&lt;br/&gt;(Jargon Police &amp; Physical Analogies)"]
         ReviewPanel --&gt; Personas["🧒 Simulated Learner Personas&lt;br/&gt;(Maya, Jordan, Sam Friction Index)"]
@@ -3183,7 +3183,7 @@
         ReviewPanel --&gt; Verifier["📚 Citation &amp; Media Integrity&lt;br/&gt;(100% Verifiable Academic Sources)"]
     end
 
-    subgraph Human-in-the-Loop Approval
+    subgraph "Human-in-the-Loop Approval"
         ReviewPanel --&gt; Report["📊 Daily Audit &amp; ECR Packet&lt;br/&gt;(Overall Score &gt;= 90/100)"]
         Report --&gt; UserReview["🧑‍💻 Human Review (You, after work)"]
         UserReview --&gt;|Approved| Merge["✅ Merge to main"]

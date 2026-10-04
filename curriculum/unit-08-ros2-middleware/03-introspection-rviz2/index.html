@@ -2880,14 +2880,14 @@
 - Is the motor driver receiving commands but unable to move?</p>
 <p>Trying to debug a robot without introspection tools is like performing surgery in the dark. ROS 2 provides an industrial-grade <strong>Introspection Suite</strong>: command-line diagnostic probes and 3D visualization tools that act as an X-ray machine for your robot's digital nervous system <sup id="fnref6:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup>!</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Live Robot System (Black Box)
+    subgraph "Live Robot System (Black Box)"
         N1["/lidar_node"] --&gt; T1["/scan"]
         N2["/camera_node"] --&gt; T2["/image_raw"]
         T1 &amp; T2 --&gt; N3["/nav_planner"]
         N3 --&gt; T3["/cmd_vel"]
     end
 
-    subgraph Introspection &amp; Diagnostic Suite
+    subgraph "Introspection &amp; Diagnostic Suite"
         CLI["Command-Line Interface (ros2 topic echo, hz)"] -. "Inspect Packets" .-&gt; T3
         RQT["rqt_graph (2D Topology Visualizer)"] -. "Verify Connections" .-&gt; N1 &amp; N2 &amp; N3
         RVIZ["RViz2 (3D Sensor Visualizer)"] -. "Render 3D Point Clouds &amp; Rays" .-&gt; T1 &amp; T2

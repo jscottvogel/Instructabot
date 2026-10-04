@@ -2930,13 +2930,13 @@
 3. The true voltage driving current through the motor windings is only the <strong>difference</strong> between the battery voltage and Back-EMF <sup id="fnref7:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
 <div class="arithmatex">\[I_{\text{motor}} = \frac{V_{\text{battery}} - V_{\text{bemf}}}{R_{\text{winding}}}\]</div>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Free-Running Motor (High RPM)
+    subgraph "Free-Running Motor (High RPM)"
         A1["High Speed (ω)"] --&gt; B1["High Opposing Back-EMF (V_bemf ≈ 11V)"]
         B1 --&gt; C1["Net Voltage = 12V - 11V = 1V"]
         C1 --&gt; D1["Current = 1V / 1Ω = 1.0 Amp (Runs cool!)"]
     end
 
-    subgraph Stalled Motor (0 RPM - Mechanical Jam)
+    subgraph "Stalled Motor (0 RPM - Mechanical Jam)"
         A2["Speed = 0 RPM"] --&gt; B2["Zero Back-EMF (V_bemf = 0V)"]
         B2 --&gt; C2["Net Voltage = 12V - 0V = 12V!"]
         C2 --&gt; D2["Current = 12V / 1Ω = 12.0 Amps! (Smokes in seconds!)"]

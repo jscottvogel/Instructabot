@@ -2877,7 +2877,7 @@
 <p>Building an autonomous mobile robot without a framework is like asking a single captain to steer the ship, shovel coal into the boilers, check the nautical charts, scan the horizon for icebergs, and fix engine breakdowns all at the exact same second.</p>
 <p>In commercial robotics, engineers don't write navigation from scratch. They use <strong>Nav2</strong>—the battle-tested, open-source navigation stack powering hundreds of thousands of robots worldwide <sup id="fnref6:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Nav2 Autonomous Bridge
+    subgraph "Nav2 Autonomous Bridge"
         Navigator["🧠 BT Navigator (The Captain)&lt;br/&gt;Evaluates Behavior Tree: Plans, checks health, triggers recoveries"]
 
         Navigator --&gt; Planner["🗺️ Planner Server (The Navigator)&lt;br/&gt;Computes global shortest path on static map"]

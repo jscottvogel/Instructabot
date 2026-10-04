@@ -2875,7 +2875,7 @@
 <hr />
 <h2 id="2-warehouse-environment-hardware-topology">2. Warehouse Environment &amp; Hardware Topology</h2>
 <pre class="mermaid"><code>flowchart LR
-    subgraph Simulated 3D Warehouse (10m x 10m)
+    subgraph "Simulated 3D Warehouse (10m x 10m)"
         BayStart["Origin / Charging Pad (x=0, y=0)"]
         Aisle1["Aisle 1 (Pallet Racks)"]
         Aisle2["Aisle 2 (Alternative Route)"]
@@ -2885,7 +2885,7 @@
         BayStart --&gt; Aisle1 &amp; Aisle2 --&gt; DockA &amp; DockB
     end
 
-    subgraph Robot Software Stack
+    subgraph "Robot Software Stack"
         Sensors["2D LiDAR (/scan) &amp; Odometry (/odom)"] --&gt; SLAM["slam_toolbox / AMCL"]
         SLAM --&gt; Costmap["Global &amp; Local Costmaps"]
         Costmap --&gt; Nav2["Nav2 Planner &amp; DWB Controller"]

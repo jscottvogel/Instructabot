@@ -2878,7 +2878,7 @@
 - To draw an accurate blueprint of the warehouse, <strong>you need to know your exact location <span class="arithmatex">\((x, y)\)</span></strong> whenever you see a wall.
 - But to calculate your exact location <span class="arithmatex">\((x, y)\)</span> when your footsteps slip, <strong>you need an accurate blueprint of the warehouse</strong>!</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The Chicken-and-Egg Dilemma of Robotics
+    subgraph "The Chicken-and-Egg Dilemma of Robotics"
         Where["Where am I? (Localization)"] -- "Requires an accurate map!" --&gt; Map["What does the room look like? (Mapping)"]
         Map -- "Requires knowing where the robot is!" --&gt; Where
     end</code></pre>

@@ -2883,7 +2883,7 @@
 </code></pre></div></p>
 <p>This works fine for a simple toy car. But imagine an autonomous delivery robot navigating a city sidewalk with 4 cameras, 2 LiDARs, GPS, IMU, battery monitors, and motor drivers:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The Fragile Monolith Script (Single Process)
+    subgraph "The Fragile Monolith Script (Single Process)"
         Camera["1. Camera Buffer Hangs (250 ms)"] --&gt; MotorLoop["❌ Motor Control Loop Freezes!"]
         MotorLoop --&gt; Crash["💥 Robot slams into pedestrian at full speed!"]
         Bug["2. Unhandled KeyError in Vision Code"] --&gt; CrashProc["❌ Entire Python Script Crashes &amp; Terminates!"]
@@ -2903,18 +2903,18 @@
 <h3 id="31-what-is-ros-2">3.1 What Is ROS 2?</h3>
 <p>Despite its name, <strong>ROS 2 (Robot Operating System 2)</strong> is not an operating system like Windows or Ubuntu Linux. ROS 2 is an open-source <strong>Robotics Middleware Suite</strong> that runs on top of Linux, macOS, or Windows <sup id="fnref7:1"><a class="footnote-ref" href="#fn:1">2</a></sup>:</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Hardware &amp; OS Layer
+    subgraph "Hardware &amp; OS Layer"
         Hardware["Robot Hardware (Motors, Cameras, LiDAR, Microcontrollers)"]
         Linux["Host Operating System (Ubuntu Linux 22.04 LTS / 24.04 LTS)"]
         Hardware --&gt; Linux
     end
 
-    subgraph ROS 2 Middleware Layer (DDS Transport)
+    subgraph "ROS 2 Middleware Layer (DDS Transport)"
         DDS["DDS (Data Distribution Service) Peer-to-Peer Bus"]
         Linux --&gt; DDS
     end
 
-    subgraph Modular Distributed Nodes
+    subgraph "Modular Distributed Nodes"
         DDS &lt;--&gt; N1["Node: LiDAR Driver (C++)"]
         DDS &lt;--&gt; N2["Node: Visual Tracker (Python / PyTorch)"]
         DDS &lt;--&gt; N3["Node: Motor Controller (Real-Time C++)"]
@@ -2934,10 +2934,10 @@
 <h3 id="33-quality-of-service-qos-tuning-the-data-plumbing">3.3 Quality of Service (QoS): Tuning the Data Plumbing</h3>
 <p>Different robot sensors require completely different network transmission guarantees <sup id="fnref11:1"><a class="footnote-ref" href="#fn:1">2</a></sup>:</p>
 <pre class="mermaid"><code>flowchart LR
-    subgraph Sensor Stream: Camera / LiDAR (30 FPS)
+    subgraph "Sensor Stream: Camera / LiDAR (30 FPS)"
         Cam["Camera Node"] -- "Best Effort QoS (Drop late frames, Lowest Latency)" --&gt; Display["Visualizer"]
     end
-    subgraph Mission Critical: E-Stop / Map Data
+    subgraph "Mission Critical: E-Stop / Map Data"
         Stop["Emergency Stop Button"] -- "Reliable QoS (Guaranteed Delivery, Retries)" --&gt; Brakes["Brakes"]
     end</code></pre>
 <p>ROS 2 allows developers to configure <strong>Quality of Service (QoS)</strong> policies per communication channel <sup id="fnref12:1"><a class="footnote-ref" href="#fn:1">2</a></sup>:</p>

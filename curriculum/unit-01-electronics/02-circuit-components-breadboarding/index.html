@@ -2876,7 +2876,7 @@
 <p>In the early days of electronics, hobbyists and engineers literally hammered copper nails into wooden bread-slicing cutting boards to solder wires together—giving rise to the term <strong>"breadboard"</strong> <sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 <p>Today, we use <strong>solderless breadboards</strong>. A breadboard is a reusable plastic grid filled with hundreds of spring-loaded spring-bronze clips hidden underneath the surface. When you push a wire or component leg into a hole, the metal clip grips the lead firmly, completing an electrical circuit instantly without hot soldering irons or melted lead <sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Solderless Breadboard Anatomy
+    subgraph "Solderless Breadboard Anatomy"
         Rails["⚡ Power Rails (+ and -)&lt;br/&gt;Connected HORIZONTALLY along the edges"]
         Trough["🛑 Center Valley / Trough&lt;br/&gt;Separates left and right sides for IC chips"]
         Terminals["🔌 Terminal Strips (Rows 1 to 30/60)&lt;br/&gt;Connected VERTICALLY in 5-hole groups (A-B-C-D-E) and (F-G-H-I-J)"]
@@ -3013,13 +3013,13 @@
 <li>When you release the button, what does the pin read?</li>
 </ul>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The Floating Trap (Unconnected Wire)
+    subgraph "The Floating Trap (Unconnected Wire)"
         VCC[+5V] --- Button[Open Switch]
         Button --- Wire[Floating Input Wire]
         Wire --&gt; Micro[MCU Pin: Reads Random Jitter like an Antenna!]
     end
 
-    subgraph The Pull-Down Solution
+    subgraph "The Pull-Down Solution"
         VCC2[+5V] --- Button2[Open Switch]
         Button2 --- Pin2[MCU Pin: Deterministic LOW]
         Pin2 --- Resistor[10kΩ Pull-Down Resistor]

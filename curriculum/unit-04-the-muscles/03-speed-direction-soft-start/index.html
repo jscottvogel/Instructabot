@@ -2876,13 +2876,13 @@
 <p>Imagine riding in a car driven by someone who only knows two gas pedal positions: completely off (<span class="arithmatex">\(0\%\)</span>) or slammed down to the metal (<span class="arithmatex">\(100\%\)</span>). </p>
 <p>Every time the light turns green, the tires screech, rubber burns, passengers get whiplash, and the transmission gears take a brutal mechanical hammer blow. </p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph The Amateur Way (Step Command)
+    subgraph "The Amateur Way (Step Command)"
         A1["0% Speed --&gt; Instant 100% Speed"] --&gt; B1["Tires Slip (Odometry ruined!)"]
         B1 --&gt; C1["Massive Inrush Current Spike (Battery sags!)"]
         C1 --&gt; D1["Gearbox Teeth Strip Under Shock Load!"]
     end
 
-    subgraph The Professional Way (Soft-Start Ramp)
+    subgraph "The Professional Way (Soft-Start Ramp)"
         A2["0% Speed --&gt; Controlled Acceleration Ramp --&gt; 100%"] --&gt; B2["100% Traction Maintained"]
         B2 --&gt; C2["Current Rises Smoothly within Safe Limits"]
         C2 --&gt; D2["Zero Gear Shock &amp; Buttery-Smooth Motion"]

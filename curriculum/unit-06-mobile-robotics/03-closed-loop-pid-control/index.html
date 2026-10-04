@@ -2883,13 +2883,13 @@
 - The grease inside Gearbox A has slightly more friction than Gearbox B.
 - Wheel A is <span class="arithmatex">\(70.1\text{mm}\)</span> in diameter; Wheel B is <span class="arithmatex">\(69.8\text{mm}\)</span> due to rubber mold tolerances.</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Open-Loop Control (Blind Driving)
+    subgraph "Open-Loop Control (Blind Driving)"
         Command["Command: 50% Power to Both Motors"] --&gt; Motor1["Motor A: 120 RPM"]
         Command --&gt; Motor2["Motor B: 114 RPM (Friction!)"]
         Motor1 &amp; Motor2 --&gt; Veer["❌ Robot Veers Off Course! Zero Self-Correction."]
     end
 
-    subgraph Closed-Loop Feedback Control (Eyes Open!)
+    subgraph "Closed-Loop Feedback Control (Eyes Open!)"
         Goal["Target: Heading = 0.0°"] --&gt; Subtractor(( - ))
         Subtractor --&gt; Error["Error = Target - Measured"]
         Error --&gt; PID["🧠 PID Controller (Computes Steering Correction)"]

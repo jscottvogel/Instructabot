@@ -2878,12 +2878,12 @@
 - If your camera mount flexes by just <span class="arithmatex">\(2^\circ\)</span> when the robot drives over a bump, an obstacle detected 5 meters away will appear to jump by <strong>35 centimeters</strong> in software!
 - If your heavy battery is mounted high on top of the chassis, braking quickly will pitch the robot forward, smashing expensive LiDAR sensors into the floor <sup id="fnref5:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref4:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph Flimsy Structural Chassis
+    subgraph "Flimsy Structural Chassis"
         Flex["Chassis Twists Under Motor Torque"] --&gt; SensorError["Sensor Coordinate Frames Wobble"]
         SensorError --&gt; SoftwareCrash["Autonomous Navigation Fails!"]
     end
 
-    subgraph Rigid Structural Skeleton
+    subgraph "Rigid Structural Skeleton"
         Rigid["Rigid Frame &amp; Low Center of Gravity"] --&gt; GroundTruth["Stable Sensors &amp; Zero Tip-Over"]
         GroundTruth --&gt; Success["Deterministic Robotic Control"]
     end</code></pre>
