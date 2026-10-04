@@ -302,6 +302,56 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "Parametric 3D CAD model of a 2-DOF robotic arm bracket with servo motor cutout and mounting holes in Onshape"
+    },
+    {
+      "id": "differential-drive-kinematics",
+      "filename": "diff-drive-kinematics.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Differential drive mobile robot kinematic diagram showing wheel baseline L, radius r, and Instantaneous Center of Curvature (ICC)"
+    },
+    {
+      "id": "quadrature-encoder-waveforms",
+      "filename": "quadrature-encoder.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Quadrature encoder Channel A and B waveforms with 90-degree phase shift illustrating forward and reverse direction decoding"
+    },
+    {
+      "id": "pid-controller-block-diagram",
+      "filename": "pid-block-diagram.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Block diagram of Proportional-Integral-Derivative closed-loop feedback controller showing error calculation and control effort"
+    },
+    {
+      "id": "webots-epuck-maze",
+      "filename": "webots-maze-sim.png",
+      "media_type": "schematic",
+      "source_url": "https://cyberbotics.com/",
+      "license": "Apache License 2.0 (Cyberbotics Webots)",
+      "author": "Cyberbotics Ltd. / Instructabot",
+      "attribution_required": true,
+      "description": "Webots 3D simulation environment showing e-puck differential drive robot navigating a walled maze"
+    },
+    {
+      "id": "webots-scene-tree-nodes",
+      "filename": "webots-scene-tree.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://cyberbotics.com/",
+      "license": "Apache License 2.0 (Cyberbotics Webots)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Hierarchical node structure diagram of Webots 3D simulation scene tree including WorldInfo, Viewpoint, Solid, Robot, and Sensor nodes"
     }
   ]
 }

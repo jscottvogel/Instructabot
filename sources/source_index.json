@@ -254,6 +254,42 @@
       "url": "https://standards.nasa.gov/standard/nasa/nasa-hdbk-7005",
       "license": "Public Domain (U.S. Government Work)",
       "relevance": ["Center of gravity", "Structural stability polygons", "Fasteners and locking mechanisms", "Vibration damping"]
+    },
+    {
+      "id": "siegwart-mobile-robots",
+      "title": "Introduction to Autonomous Mobile Robots (2nd Edition)",
+      "authors": ["Roland Siegwart", "Illah R. Nourbakhsh", "Davide Scaramuzza"],
+      "institution": "Massachusetts Institute of Technology (MIT Press)",
+      "url": "https://mitpress.mit.edu/9780262015356/introduction-to-autonomous-mobile-robots/",
+      "license": "Academic Textbook Reference (Autonomous Mobile Robotics)",
+      "relevance": ["Differential drive kinematics", "Instantaneous center of curvature (ICC)", "Dead-reckoning odometry", "Wheel slip error modeling"]
+    },
+    {
+      "id": "astrom-murray-feedback",
+      "title": "Feedback Systems: An Introduction for Scientists and Engineers (2nd Edition)",
+      "authors": ["Karl Johan Astrom", "Richard M. Murray"],
+      "institution": "Princeton University Press / Caltech",
+      "url": "https://fbswiki.org/wiki/index.php/Feedback_Systems:_An_Introduction_for_Scientists_and_Engineers",
+      "license": "Creative Commons Attribution-ShareAlike 3.0 (OER Edition)",
+      "relevance": ["PID control loop principles", "Proportional, integral, derivative action", "Tuning heuristics", "Steady-state error elimination"]
+    },
+    {
+      "id": "cyberbotics-epuck-guide",
+      "title": "e-puck Mobile Robot Simulation Model Reference",
+      "authors": ["Cyberbotics Ltd. / EPFL DISAL Laboratory"],
+      "institution": "Cyberbotics Ltd.",
+      "url": "https://cyberbotics.com/doc/guide/epuck",
+      "license": "Apache License 2.0 (Open Source Robotics)",
+      "relevance": ["Differential drive simulation", "Infrared proximity sensors", "Wheel encoder simulation", "Python robot controller API"]
+    },
+    {
+      "id": "cyberbotics-webots-reference",
+      "title": "Webots Open-Source Robot Simulator User Guide & Reference Manual",
+      "authors": ["Olivier Michel", "Cyberbotics Technical Team"],
+      "institution": "Cyberbotics Ltd.",
+      "url": "https://cyberbotics.com/doc/reference/index",
+      "license": "Apache License 2.0 (Open Source Simulation)",
+      "relevance": ["Physics simulation engine (ODE)", "World scene tree and PROTO nodes", "DifferentialWheels / Motor nodes", "Supervisor API and Python controller"]
     }
   ]
 }
