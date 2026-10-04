@@ -102,7 +102,7 @@ To solve this, roboticists convert camera frames into **HSV (Hue, Saturation, Va
 
 ```mermaid
 flowchart TD
-    subgraph HSV Cylindrical Color Space
+    subgraph "HSV Cylindrical Color Space"
         H["HUE (H): What Color Is It? (0° to 180° in OpenCV)<br/>Red ≈ 0/180, Yellow ≈ 30, Green ≈ 60, Blue ≈ 120"]
         S["SATURATION (S): How Pure / Vivid Is It? (0 to 255)<br/>0 = Washed out gray, 255 = Rich vibrant neon color"]
         V["VALUE (V): How Bright Is It? (0 to 255)<br/>0 = Pitch black shadow, 255 = Blinding bright light"]

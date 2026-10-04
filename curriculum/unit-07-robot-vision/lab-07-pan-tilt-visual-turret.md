@@ -26,7 +26,7 @@ flowchart TD
     Camera["Camera Sensor (640 x 480 Frame)"] --> HSV["HSV Color Mask & Morphology"]
     HSV --> Centroid["Extract Target Centroid (u, v)"]
     
-    subgraph Visual Servoing Control Loop
+    subgraph "Visual Servoing Control Loop"
         Centroid --> ErrCalc["Compute Error Offsets:<br/>ex = u - 320<br/>ey = v - 240"]
         ErrCalc --> Deadband{"|Error| > Deadband (5 px)?"}
         Deadband -- No --> Hold["Hold Motor Position (Zero Chattering)"]

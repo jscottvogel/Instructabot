@@ -65,15 +65,15 @@ $$\omega = \frac{v_R - v_L}{L}$$
 
 ```mermaid
 flowchart TD
-    subgraph Case 1: Drive Straight
+    subgraph "Case 1: Drive Straight"
         C1["v_L == v_R"] --> R1["Forward: v = v_R, Angular: ω = 0 (Straight Line)"]
     end
 
-    subgraph Case 2: Zero-Radius Turn in Place
+    subgraph "Case 2: Zero-Radius Turn in Place"
         C2["v_L == -v_R"] --> R2["Forward: v = 0, Angular: ω = (2 * v_R) / L (Spins in Place!)"]
     end
 
-    subgraph Case 3: Pivot Around Frozen Wheel
+    subgraph "Case 3: Pivot Around Frozen Wheel"
         C3["v_L == 0, v_R > 0"] --> R3["Pivots cleanly around the stationary Left Wheel!"]
     end
 ```

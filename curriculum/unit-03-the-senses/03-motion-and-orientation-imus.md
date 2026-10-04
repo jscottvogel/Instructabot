@@ -47,7 +47,7 @@ In three-dimensional space, an object can move along three linear axes ($X, Y, Z
 
 ```mermaid
 flowchart TD
-    subgraph 3D Orientation Axes
+    subgraph "3D Orientation Axes"
         X["🔴 X-Axis (Points Forward): ROLL (Tilting Left/Right)"]
         Y["🟢 Y-Axis (Points Right): PITCH (Tilting Nose Up/Down)"]
         Z["🔵 Z-Axis (Points Up): YAW (Compass Heading / Turning)"]

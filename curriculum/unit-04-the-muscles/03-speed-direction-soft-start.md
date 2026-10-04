@@ -26,13 +26,13 @@ Every time the light turns green, the tires screech, rubber burns, passengers ge
 
 ```mermaid
 flowchart TD
-    subgraph The Amateur Way (Step Command)
+    subgraph "The Amateur Way (Step Command)"
         A1["0% Speed --> Instant 100% Speed"] --> B1["Tires Slip (Odometry ruined!)"]
         B1 --> C1["Massive Inrush Current Spike (Battery sags!)"]
         C1 --> D1["Gearbox Teeth Strip Under Shock Load!"]
     end
 
-    subgraph The Professional Way (Soft-Start Ramp)
+    subgraph "The Professional Way (Soft-Start Ramp)"
         A2["0% Speed --> Controlled Acceleration Ramp --> 100%"] --> B2["100% Traction Maintained"]
         B2 --> C2["Current Rises Smoothly within Safe Limits"]
         C2 --> D2["Zero Gear Shock & Buttery-Smooth Motion"]

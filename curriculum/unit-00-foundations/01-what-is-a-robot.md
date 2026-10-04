@@ -27,11 +27,11 @@ Imagine three different machines in your house:
 
 ```mermaid
 flowchart TD
-    subgraph Non-Robotic Machine
+    subgraph "Non-Robotic Machine"
         A1[Fixed Timer or Human Hand] --> B1[Motor or Heater Turns On] --> C1[Fixed Output Regardless of Environment]
     end
 
-    subgraph Autonomous Robot
+    subgraph "Autonomous Robot"
         S[Sensors: Detect Environment] --> T[Controller: Process & Decide]
         T --> A[Actuators: Move & Change World]
         A -.->|Changes Environment| S
@@ -88,7 +88,7 @@ Pioneered in robotics education at institutions like MIT [^3], every autonomous 
 
 ```mermaid
 flowchart TD
-    subgraph The Continuous Loop
+    subgraph "The Continuous Loop"
         Sense["1. SENSE<br/>(Collect Data from Physical World)"]
         Think["2. THINK<br/>(Process Data & Compute Action)"]
         Act["3. ACT<br/>(Exert Mechanical Force on World)"]

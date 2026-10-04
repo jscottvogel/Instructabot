@@ -32,7 +32,7 @@ Every robot operates on an infinite heartbeat known as the **Control Loop** [^3]
 flowchart TD
     Start([Robot Boots Up]) --> Loop{while True:}
     
-    subgraph The Heartbeat Loop
+    subgraph "The Heartbeat Loop"
         Read["1. Read Sensors<br/>(Bumper, Distance, Encoders)"]
         Decide["2. Think & Calculate<br/>(Evaluate FSM State & Paths)"]
         Act["3. Command Actuators<br/>(Set Motor Speeds & Directions)"]

@@ -26,11 +26,11 @@ Modern advanced robotics mimics this biological division of labor:
 
 ```mermaid
 flowchart TD
-    subgraph The High-Level Cortex: Single-Board Computer (SBC)
+    subgraph "The High-Level Cortex: Single-Board Computer (SBC)"
         SBC["🧠 Raspberry Pi 5 / NVIDIA Jetson<br/>- Full Linux OS<br/>- Computer Vision (OpenCV)<br/>- SLAM & Path Planning (ROS 2)<br/>- High-Level Decision Making"]
     end
 
-    subgraph The Real-Time Reflex Arc: Microcontroller (MCU)
+    subgraph "The Real-Time Reflex Arc: Microcontroller (MCU)"
         MCU["⚡ Raspberry Pi Pico (RP2040) / ESP32<br/>- Bare-Metal MicroPython / C++<br/>- Sub-Microsecond Precision<br/>- Direct Motor PWM & Encoder Pulses<br/>- Hardware E-Stop Interlock"]
     end
 

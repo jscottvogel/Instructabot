@@ -28,12 +28,12 @@ In robotics, **the software can only be as accurate as the physical skeleton hol
 
 ```mermaid
 flowchart TD
-    subgraph Flimsy Structural Chassis
+    subgraph "Flimsy Structural Chassis"
         Flex["Chassis Twists Under Motor Torque"] --> SensorError["Sensor Coordinate Frames Wobble"]
         SensorError --> SoftwareCrash["Autonomous Navigation Fails!"]
     end
 
-    subgraph Rigid Structural Skeleton
+    subgraph "Rigid Structural Skeleton"
         Rigid["Rigid Frame & Low Center of Gravity"] --> GroundTruth["Stable Sensors & Zero Tip-Over"]
         GroundTruth --> Success["Deterministic Robotic Control"]
     end

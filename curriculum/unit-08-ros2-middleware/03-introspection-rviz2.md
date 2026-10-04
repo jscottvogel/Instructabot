@@ -30,14 +30,14 @@ Trying to debug a robot without introspection tools is like performing surgery i
 
 ```mermaid
 flowchart TD
-    subgraph Live Robot System (Black Box)
+    subgraph "Live Robot System (Black Box)"
         N1["/lidar_node"] --> T1["/scan"]
         N2["/camera_node"] --> T2["/image_raw"]
         T1 & T2 --> N3["/nav_planner"]
         N3 --> T3["/cmd_vel"]
     end
 
-    subgraph Introspection & Diagnostic Suite
+    subgraph "Introspection & Diagnostic Suite"
         CLI["Command-Line Interface (ros2 topic echo, hz)"] -. "Inspect Packets" .-> T3
         RQT["rqt_graph (2D Topology Visualizer)"] -. "Verify Connections" .-> N1 & N2 & N3
         RVIZ["RViz2 (3D Sensor Visualizer)"] -. "Render 3D Point Clouds & Rays" .-> T1 & T2

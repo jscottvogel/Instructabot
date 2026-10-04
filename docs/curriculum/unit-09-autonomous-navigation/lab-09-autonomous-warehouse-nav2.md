@@ -23,7 +23,7 @@ By completing this hands-on lab, you will:
 
 ```mermaid
 flowchart LR
-    subgraph Simulated 3D Warehouse (10m x 10m)
+    subgraph "Simulated 3D Warehouse (10m x 10m)"
         BayStart["Origin / Charging Pad (x=0, y=0)"]
         Aisle1["Aisle 1 (Pallet Racks)"]
         Aisle2["Aisle 2 (Alternative Route)"]
@@ -33,7 +33,7 @@ flowchart LR
         BayStart --> Aisle1 & Aisle2 --> DockA & DockB
     end
 
-    subgraph Robot Software Stack
+    subgraph "Robot Software Stack"
         Sensors["2D LiDAR (/scan) & Odometry (/odom)"] --> SLAM["slam_toolbox / AMCL"]
         SLAM --> Costmap["Global & Local Costmaps"]
         Costmap --> Nav2["Nav2 Planner & DWB Controller"]

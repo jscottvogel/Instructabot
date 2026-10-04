@@ -126,12 +126,12 @@ To build a robot that never brownouts, follow this standard robotics power distr
 flowchart TD
     Battery[🔋 11.1V / 12V Main Battery] --> EStop[🛑 Physical E-Stop / Switch]
     
-    subgraph Actuator Power Rail (High Current / Noisy)
+    subgraph "Actuator Power Rail (High Current / Noisy)"
         EStop ==> MotorDriver[Motor Driver H-Bridges]
         MotorDriver ==> Motors[DC Motors & Servos]
     end
 
-    subgraph Logic Power Rail (Clean / Regulated)
+    subgraph "Logic Power Rail (Clean / Regulated)"
         EStop ==> Buck[Buck Converter: 12V to 5V]
         Buck --> Cap[Large Smoothing Capacitor: 470uF]
         Cap --> MCU[Microcontroller / Single Board Computer]

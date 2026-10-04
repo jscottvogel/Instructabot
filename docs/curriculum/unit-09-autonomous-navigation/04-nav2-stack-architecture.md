@@ -27,7 +27,7 @@ In commercial robotics, engineers don't write navigation from scratch. They use 
 
 ```mermaid
 flowchart TD
-    subgraph Nav2 Autonomous Bridge
+    subgraph "Nav2 Autonomous Bridge"
         Navigator["🧠 BT Navigator (The Captain)<br/>Evaluates Behavior Tree: Plans, checks health, triggers recoveries"]
         
         Navigator --> Planner["🗺️ Planner Server (The Navigator)<br/>Computes global shortest path on static map"]

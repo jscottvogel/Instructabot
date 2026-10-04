@@ -29,22 +29,22 @@ In modern robotics engineering, two philosophical factions often clash:
 
 ```mermaid
 flowchart TD
-    subgraph The Two Extremes & The Modern Hybrid Synthesis
-        subgraph Pure Classical Control
+    subgraph "The Two Extremes & The Modern Hybrid Synthesis"
+        subgraph "Pure Classical Control"
             C1["Newtonian Physics & Kinematics"]
             C2["Deterministic Safety Certificates"]
             C3["❌ Fails on unstructured mess: crumpled laundry, apples, dirt"]
             C1 --> C2 --> C3
         end
 
-        subgraph Pure End-to-End Neural Policy
+        subgraph "Pure End-to-End Neural Policy"
             E1["Pixels-to-Torque Neural Network"]
             E2["Learns wild complex behaviors"]
             E3["❌ Black box: Can hallucinate & smash into humans with 0 warning!"]
             E1 --> E2 --> E3
         end
 
-        subgraph The Modern Hybrid Architecture (The Gold Standard)
+        subgraph "The Modern Hybrid Architecture (The Gold Standard)"
             H1["🧠 AI Perception & Semantics (YOLO / VLA): 'Pick up the red mug'"]
             H2["🛡️ Classical Control & Planning (A* / PID / Inverse Kinematics): Deterministic & Safe!"]
             H1 --> H2

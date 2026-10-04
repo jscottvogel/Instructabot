@@ -28,7 +28,7 @@ Imagine a diver swimming through an underwater cave system.
 
 ```mermaid
 flowchart TD
-    subgraph The Graph SLAM Lifecycle
+    subgraph "The Graph SLAM Lifecycle"
         Drive["1. Robot Drives & Maps: Pose Nodes (x1, x2, x3... x100)<br/>Small errors accumulate like a stretching spring"]
         Drift["2. Trajectory Drifts 1.5 meters off ground truth!"]
         Recognize["3. Loop Closure: Robot recognizes Room A from 20 minutes ago!"]

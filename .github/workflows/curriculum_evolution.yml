@@ -39,6 +39,10 @@ jobs:
         run: |
           python agent/verifier/check_citations.py
 
+      - name: 📐 Step 1.1: Verify Mermaid Diagram Syntax
+        run: |
+          python agent/verifier/fix_mermaid_syntax.py
+
       - name: 🚀 Step 2: Run Autonomous Continuous Evolution Cycle
         run: |
           python agent/evolution/run_evolution_cycle.py

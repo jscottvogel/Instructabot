@@ -96,17 +96,17 @@ While ultrasonic sensors are inexpensive ($\approx \$2$) and reliable for flat w
 
 ```mermaid
 flowchart TD
-    subgraph 1. Specular Reflection (The Angled Mirror Trap)
+    subgraph "1. Specular Reflection (The Angled Mirror Trap)"
         A1["Sonic Ping"] -->|Hits Wall at >45° Angle| B1["Echo Bounces Away into Space!"]
         B1 --> C1["Robot Thinks Space is Clear and Crashes!"]
     end
 
-    subgraph 2. Acoustic Absorption (The Soft Cushion Trap)
+    subgraph "2. Acoustic Absorption (The Soft Cushion Trap)"
         A2["Sonic Ping"] -->|Hits Foam / Curtains / Pet Fur| B2["Energy Absorbed & Dissipated"]
         B2 --> C2["No Echo Returns!"]
     end
 
-    subgraph 3. The Blind Zone Trap (< 2 cm)
+    subgraph "3. The Blind Zone Trap (< 2 cm)"
         A3["Obstacle < 2cm from Sensor"] -->|Echo Returns While Mic is Ringing| B3["Sensor Blind!"]
     end
 ```

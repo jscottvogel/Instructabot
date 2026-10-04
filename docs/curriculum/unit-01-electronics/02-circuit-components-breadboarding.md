@@ -26,7 +26,7 @@ Today, we use **solderless breadboards**. A breadboard is a reusable plastic gri
 
 ```mermaid
 flowchart TD
-    subgraph Solderless Breadboard Anatomy
+    subgraph "Solderless Breadboard Anatomy"
         Rails["⚡ Power Rails (+ and -)<br/>Connected HORIZONTALLY along the edges"]
         Trough["🛑 Center Valley / Trough<br/>Separates left and right sides for IC chips"]
         Terminals["🔌 Terminal Strips (Rows 1 to 30/60)<br/>Connected VERTICALLY in 5-hole groups (A-B-C-D-E) and (F-G-H-I-J)"]
@@ -113,13 +113,13 @@ When connecting a pushbutton to a microcontroller, beginners often connect one s
 
 ```mermaid
 flowchart TD
-    subgraph The Floating Trap (Unconnected Wire)
+    subgraph "The Floating Trap (Unconnected Wire)"
         VCC[+5V] --- Button[Open Switch]
         Button --- Wire[Floating Input Wire]
         Wire --> Micro[MCU Pin: Reads Random Jitter like an Antenna!]
     end
 
-    subgraph The Pull-Down Solution
+    subgraph "The Pull-Down Solution"
         VCC2[+5V] --- Button2[Open Switch]
         Button2 --- Pin2[MCU Pin: Deterministic LOW]
         Pin2 --- Resistor[10kΩ Pull-Down Resistor]

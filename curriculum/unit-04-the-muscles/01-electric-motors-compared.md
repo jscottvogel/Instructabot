@@ -89,13 +89,13 @@ $$I_{\text{motor}} = \frac{V_{\text{battery}} - V_{\text{bemf}}}{R_{\text{windin
 
 ```mermaid
 flowchart TD
-    subgraph Free-Running Motor (High RPM)
+    subgraph "Free-Running Motor (High RPM)"
         A1["High Speed (ω)"] --> B1["High Opposing Back-EMF (V_bemf ≈ 11V)"]
         B1 --> C1["Net Voltage = 12V - 11V = 1V"]
         C1 --> D1["Current = 1V / 1Ω = 1.0 Amp (Runs cool!)"]
     end
 
-    subgraph Stalled Motor (0 RPM - Mechanical Jam)
+    subgraph "Stalled Motor (0 RPM - Mechanical Jam)"
         A2["Speed = 0 RPM"] --> B2["Zero Back-EMF (V_bemf = 0V)"]
         B2 --> C2["Net Voltage = 12V - 0V = 12V!"]
         C2 --> D2["Current = 12V / 1Ω = 12.0 Amps! (Smokes in seconds!)"]

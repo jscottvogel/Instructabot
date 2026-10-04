@@ -23,19 +23,19 @@ By completing this hands-on lab, you will:
 
 ```mermaid
 flowchart LR
-    subgraph Webots Simulation World
+    subgraph "Webots Simulation World"
         Maze["3D Maze Arena (Wooden Walled Labyrinth, 1.5m x 1.5m)"]
         Robot["GCtronic e-puck Differential Robot"]
         Maze --> Robot
     end
 
-    subgraph Robot Subsystems
+    subgraph "Robot Subsystems"
         Robot --> Sensors["8x Infrared Proximity Sensors (ps0 - ps7)"]
         Robot --> Encoders["2x Optical Wheel Encoders (PositionSensors)"]
         Robot --> Motors["2x Differential Stepper Motors (left/right)"]
     end
 
-    subgraph Python Controller (maze_solver.py)
+    subgraph "Python Controller (maze_solver.py)"
         Sensors --> FSM["Finite State Machine & PID Wall Follower"]
         Encoders --> Odom["Odometry Estimator (x, y, theta)"]
         FSM & Odom --> Motors

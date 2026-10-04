@@ -30,11 +30,11 @@ In robotics, **software controls physical mass, inertia, and high electrical cur
 
 ```mermaid
 flowchart TD
-    subgraph Pure Software Engineering
+    subgraph "Pure Software Engineering"
         Bug1[Code Error] --> Screen[Error on Screen] --> Fix1[Fix & Refresh]
     end
 
-    subgraph Robotics Engineering
+    subgraph "Robotics Engineering"
         Bug2[Code Error] --> Physical[High-Current Motor Spins Wildly] --> Hazard[Mechanical Smash / Thermal Event]
         Hazard --> Rigor[Mandatory Physical Safety & E-Stops]
     end

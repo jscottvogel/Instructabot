@@ -35,13 +35,13 @@ In the real physical world, **this robot will immediately curve off into a wide 
 
 ```mermaid
 flowchart TD
-    subgraph Open-Loop Control (Blind Driving)
+    subgraph "Open-Loop Control (Blind Driving)"
         Command["Command: 50% Power to Both Motors"] --> Motor1["Motor A: 120 RPM"]
         Command --> Motor2["Motor B: 114 RPM (Friction!)"]
         Motor1 & Motor2 --> Veer["❌ Robot Veers Off Course! Zero Self-Correction."]
     end
 
-    subgraph Closed-Loop Feedback Control (Eyes Open!)
+    subgraph "Closed-Loop Feedback Control (Eyes Open!)"
         Goal["Target: Heading = 0.0°"] --> Subtractor(( - ))
         Subtractor --> Error["Error = Target - Measured"]
         Error --> PID["🧠 PID Controller (Computes Steering Correction)"]

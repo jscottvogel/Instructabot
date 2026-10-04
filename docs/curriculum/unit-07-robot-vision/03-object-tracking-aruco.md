@@ -31,7 +31,7 @@ Color tracking alone would send the drone crashing into the worker!
 
 ```mermaid
 flowchart TD
-    subgraph The Evolution of Robotic Tracking
+    subgraph "The Evolution of Robotic Tracking"
         Color["Color Thresholding<br/>(Finds 'yellow/blue' blob)<br/>⚠️ Easily confused by lighting & clutter"]
         Marker["Fiducial Markers (ArUco / AprilTags)<br/>(Binary 2D barcode with checksum)<br/>✅ Immune to lighting, 0% false positives"]
         Pose["6-DOF Pose Estimation<br/>(Calculates exact distance X, Y, Z in meters)<br/>🎯 Millimeter precision autonomous docking!"]

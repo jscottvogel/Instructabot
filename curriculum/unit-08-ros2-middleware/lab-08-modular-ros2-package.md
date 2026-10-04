@@ -24,7 +24,7 @@ By completing this hands-on lab, you will:
 
 ```mermaid
 flowchart TD
-    subgraph instructabot_controller ROS 2 Package
+    subgraph "instructabot_controller ROS 2 Package"
         Launch["instructabot_launch.py<br/>(Launches All 3 Nodes Simultaneously)"]
         
         Launch --> NodeOdom["Node 1: /odom_publisher<br/>(Calculates Kinematics)"]

@@ -34,7 +34,7 @@ This works fine for a simple toy car. But imagine an autonomous delivery robot n
 
 ```mermaid
 flowchart TD
-    subgraph The Fragile Monolith Script (Single Process)
+    subgraph "The Fragile Monolith Script (Single Process)"
         Camera["1. Camera Buffer Hangs (250 ms)"] --> MotorLoop["❌ Motor Control Loop Freezes!"]
         MotorLoop --> Crash["💥 Robot slams into pedestrian at full speed!"]
         Bug["2. Unhandled KeyError in Vision Code"] --> CrashProc["❌ Entire Python Script Crashes & Terminates!"]
@@ -62,18 +62,18 @@ Despite its name, **ROS 2 (Robot Operating System 2)** is not an operating syste
 
 ```mermaid
 flowchart TD
-    subgraph Hardware & OS Layer
+    subgraph "Hardware & OS Layer"
         Hardware["Robot Hardware (Motors, Cameras, LiDAR, Microcontrollers)"]
         Linux["Host Operating System (Ubuntu Linux 22.04 LTS / 24.04 LTS)"]
         Hardware --> Linux
     end
 
-    subgraph ROS 2 Middleware Layer (DDS Transport)
+    subgraph "ROS 2 Middleware Layer (DDS Transport)"
         DDS["DDS (Data Distribution Service) Peer-to-Peer Bus"]
         Linux --> DDS
     end
 
-    subgraph Modular Distributed Nodes
+    subgraph "Modular Distributed Nodes"
         DDS <--> N1["Node: LiDAR Driver (C++)"]
         DDS <--> N2["Node: Visual Tracker (Python / PyTorch)"]
         DDS <--> N3["Node: Motor Controller (Real-Time C++)"]
@@ -104,10 +104,10 @@ Different robot sensors require completely different network transmission guaran
 
 ```mermaid
 flowchart LR
-    subgraph Sensor Stream: Camera / LiDAR (30 FPS)
+    subgraph "Sensor Stream: Camera / LiDAR (30 FPS)"
         Cam["Camera Node"] -- "Best Effort QoS (Drop late frames, Lowest Latency)" --> Display["Visualizer"]
     end
-    subgraph Mission Critical: E-Stop / Map Data
+    subgraph "Mission Critical: E-Stop / Map Data"
         Stop["Emergency Stop Button"] -- "Reliable QoS (Guaranteed Delivery, Retries)" --> Brakes["Brakes"]
     end
 ```

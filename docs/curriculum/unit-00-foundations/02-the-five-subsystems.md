@@ -34,7 +34,7 @@ The easiest way to understand this is through the analogy of the human body:
 
 ```mermaid
 flowchart TD
-    subgraph The Five Subsystems
+    subgraph "The Five Subsystems"
         Power["⚡ 1. POWER<br/>(Battery & Regulators)"]
         Structure["🦴 2. STRUCTURE<br/>(Chassis, Brackets, Bearings)"]
         Sensors["👁️ 3. SENSORS<br/>(Cameras, LiDAR, Encoders)"]
@@ -88,13 +88,13 @@ Every functioning robot is governed by two simultaneous, interconnected networks
 flowchart TD
     Battery[🔋 Battery: e.g., 11.1V LiPo]
     
-    subgraph Energy Network (Power Rails)
+    subgraph "Energy Network (Power Rails)"
         Regulator[⚡ Voltage Regulator / Buck Converter: 5.0V]
         Driver[🔌 Motor Driver H-Bridge]
         Motors[💪 Actuators: Drive Motors]
     end
     
-    subgraph Information Network (Data Signals)
+    subgraph "Information Network (Data Signals)"
         Controller[🧠 Microcontroller: 3.3V / 5.0V Logic]
         Sensors[👁️ Sensors: Encoders & Ultrasonic]
     end

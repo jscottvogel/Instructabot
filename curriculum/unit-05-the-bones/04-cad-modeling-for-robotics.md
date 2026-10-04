@@ -68,17 +68,17 @@ Designing a part on a computer screen does not guarantee it can physically exist
 
 ```mermaid
 flowchart TD
-    subgraph Rule 1: The Hole Shrinkage Clearance
+    subgraph "Rule 1: The Hole Shrinkage Clearance"
         HoleDesign["Model M3 Bolt Hole at Ø 3.2mm"] --> Shrink["Plastic Shrinks on Cooling"]
         Shrink --> PerfectFit["Yields Perfect Ø 3.0mm Clearance Fit!"]
     end
 
-    subgraph Rule 2: The 45° Overhang Limit
+    subgraph "Rule 2: The 45° Overhang Limit"
         Angle45["Angles ≤ 45° Print Cleanly in Mid-Air"]
         Angle90["Horizontal 90° Ceilings Droop into Stringy Spaghetti!"]
     end
 
-    subgraph Rule 3: Anisotropic Grain Orientation
+    subgraph "Rule 3: Anisotropic Grain Orientation"
         Layers["Print Layers = Wood Grain"] --> WeakShear["Weakest Along Layer Lines"]
         WeakShear --> Orient["Orient Part So Tensile Stress Acts Along Length, Not Across Layers!"]
     end

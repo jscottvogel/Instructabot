@@ -66,12 +66,12 @@ Instructabot/
 
 ```mermaid
 flowchart TD
-    subgraph Research & Evolution
+    subgraph "Research & Evolution"
         Scout["🔭 Trend Scout<br/>(arXiv, ROS 2, SOTA Webots)"] --> ECR["📝 Evolution Change Request"]
         ECR --> Updater["⚡ Autonomous Lesson Updater<br/>(Citations & Media Sync)"]
     end
 
-    subgraph Quality Gauntlet
+    subgraph "Quality Gauntlet"
         Updater --> ReviewPanel["🏛️ Multi-Agent Editorial Board"]
         ReviewPanel --> Pedagogy["🎓 Pedagogical Critic<br/>(Jargon Police & Physical Analogies)"]
         ReviewPanel --> Personas["🧒 Simulated Learner Personas<br/>(Maya, Jordan, Sam Friction Index)"]
@@ -80,7 +80,7 @@ flowchart TD
         ReviewPanel --> Verifier["📚 Citation & Media Integrity<br/>(100% Verifiable Academic Sources)"]
     end
 
-    subgraph Human-in-the-Loop Approval
+    subgraph "Human-in-the-Loop Approval"
         ReviewPanel --> Report["📊 Daily Audit & ECR Packet<br/>(Overall Score >= 90/100)"]
         Report --> UserReview["🧑‍💻 Human Review (You, after work)"]
         UserReview -->|Approved| Merge["✅ Merge to main"]

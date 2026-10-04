@@ -28,7 +28,7 @@ $$\text{Pixel Size } p = \frac{f \cdot \text{Real Size } W}{Z}$$
 
 ```mermaid
 flowchart TD
-    subgraph Monocular 2D Camera Ambiguity
+    subgraph "Monocular 2D Camera Ambiguity"
         ObjSmall["Toy Car (0.1m long) at 0.5m distance"] --> Cam["2D Camera Sensor (Produces 100 Pixel Width)"]
         ObjLarge["Real Bus (10m long) at 50m distance"] --> Cam
         Cam --> Crash["❌ Robot cannot tell them apart!"]

@@ -67,7 +67,7 @@ If you train a robot in a simulator where the table texture changes every 10 sec
 
 ```mermaid
 flowchart TD
-    subgraph Domain Randomization Pipeline
+    subgraph "Domain Randomization Pipeline"
         Sim1["Simulation 1: Mass = 0.8 kg, Friction = 0.4, Wood Texture, Dim Light"]
         Sim2["Simulation 2: Mass = 1.3 kg, Friction = 1.1, Blue Marble, Neon Glare"]
         Sim3["Simulation 3: Mass = 1.0 kg, Friction = 0.7, Zebra Stripes, Heavy Shadows"]

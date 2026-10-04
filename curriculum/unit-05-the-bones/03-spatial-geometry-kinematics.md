@@ -102,7 +102,7 @@ A robotic arm cannot reach every point in the universe. The set of all spatial c
 
 ```mermaid
 flowchart TD
-    subgraph The Workspace Limits
+    subgraph "The Workspace Limits"
         Outer["Outer Boundary: R_max = L1 + L2<br/>(Arm stretched completely straight)"]
         Inner["Inner Hole: R_min = |L1 - L2|<br/>(Arm folded back onto itself)"]
     end

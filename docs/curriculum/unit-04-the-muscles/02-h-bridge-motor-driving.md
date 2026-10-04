@@ -54,7 +54,7 @@ By opening and closing pairs of switches electronically, the circuit controls di
 
 ```mermaid
 flowchart TD
-    subgraph 1. FORWARD (Q1 and Q4 Closed)
+    subgraph "1. FORWARD (Q1 and Q4 Closed)"
         V1["+12V"] --> Q1_on["Switch Q1 (ON)"]
         Q1_on --> M_left["Motor Terminal (+)"]
         M_left --> M_right["Motor Terminal (-)"]
@@ -62,7 +62,7 @@ flowchart TD
         Q4_on --> GND1["Ground (0V)"]
     end
 
-    subgraph 2. REVERSE (Q2 and Q3 Closed)
+    subgraph "2. REVERSE (Q2 and Q3 Closed)"
         V2["+12V"] --> Q2_on["Switch Q2 (ON)"]
         Q2_on --> M_right2["Motor Terminal (+)"]
         M_right2 --> M_left2["Motor Terminal (-)"]

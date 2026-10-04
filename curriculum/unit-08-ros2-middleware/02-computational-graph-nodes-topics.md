@@ -27,7 +27,7 @@ Imagine a symphony orchestra performing Beethoven's Fifth Symphony.
 
 ```mermaid
 flowchart TD
-    subgraph The ROS 2 Computational Graph
+    subgraph "The ROS 2 Computational Graph"
         LaserNode["Node: /lidar_driver"] -- "Topic: /scan (sensor_msgs/LaserScan)" --> NavNode["Node: /nav2_planner"]
         CameraNode["Node: /camera_driver"] -- "Topic: /image_raw (sensor_msgs/Image)" --> DetectNode["Node: /object_detector"]
         

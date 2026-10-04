@@ -62,7 +62,7 @@ Now analyze an indoor autonomous warehouse robot (e.g., an Amazon Proteus or OTT
 
 ```mermaid
 flowchart TD
-    subgraph Warehouse AMR Architecture
+    subgraph "Warehouse AMR Architecture"
         LiDAR[360° Safety LiDAR] --> Controller[Industrial PC / Microcontroller]
         FloorCam[Downward 2D Barcode Camera] --> Controller
         Controller --> Driver[Motor Inverter / Driver]

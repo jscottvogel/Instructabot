@@ -133,13 +133,13 @@ The transistor has three legs:
 
 ```mermaid
 flowchart TD
-    subgraph Day Mode (Bright Light)
+    subgraph "Day Mode (Bright Light)"
         LDR1["LDR Resistance: LOW (~500 Ω)"] --> PullDown["Base pulled down to ~0.4V"]
         PullDown --> TransistorOff["Transistor CUTOFF (Closed Valve)"]
         TransistorOff --> LEDOff["LED: OFF"]
     end
 
-    subgraph Night Mode (Darkness)
+    subgraph "Night Mode (Darkness)"
         LDR2["LDR Resistance: HIGH (>100 kΩ)"] --> PullUp["Base pulled up above 0.7V"]
         PullUp --> TransistorOn["Transistor SATURATION (Open Valve)"]
         TransistorOn --> LEDOn["LED: ON (Autonomous Response!)"]

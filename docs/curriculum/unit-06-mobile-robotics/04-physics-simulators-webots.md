@@ -27,7 +27,7 @@ Never! Every pilot and control engineer trains in an ultra-realistic flight simu
 
 ```mermaid
 flowchart LR
-    subgraph The Development Cycle
+    subgraph "The Development Cycle"
         Code["1. Write Robot Python Code"] --> Sim["2. Test in Webots Physics Sim<br/>(Gravity, Collisions, Friction)"]
         Sim -- "Crashes? Tune & Iterate (0$ Cost, 2 Seconds)" --> Code
         Sim -- "Robust & Verified" --> Hardware["3. Deploy to Physical Hardware<br/>(Safe, Predictable, Reliable)"]
@@ -51,7 +51,7 @@ A visual 3D video game engine (like Unreal or Unity) prioritizes **visual beauty
 
 ```mermaid
 flowchart TD
-    subgraph Inside the Webots Simulation Core
+    subgraph "Inside the Webots Simulation Core"
         Clock["Simulation Clock (basicTimeStep = 32 ms)"] --> Integrator["Numerical Physics Integrator (ODE)"]
         
         Integrator --> Grav["Gravity Vector (g = -9.81 m/s²)"]

@@ -27,7 +27,7 @@ Imagine waking up in the center of an unfamiliar, pitch-black warehouse with not
 
 ```mermaid
 flowchart TD
-    subgraph The Chicken-and-Egg Dilemma of Robotics
+    subgraph "The Chicken-and-Egg Dilemma of Robotics"
         Where["Where am I? (Localization)"] -- "Requires an accurate map!" --> Map["What does the room look like? (Mapping)"]
         Map -- "Requires knowing where the robot is!" --> Where
     end
