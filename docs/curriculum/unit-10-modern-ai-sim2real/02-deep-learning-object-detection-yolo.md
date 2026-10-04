@@ -188,3 +188,11 @@ In **Module 10.3: Simulation-to-Real (Sim2Real) Transfer & Domain Randomization*
 | `yolo-detection-grid.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `classical-vs-ai-robotics` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `opencv-pipeline.svg` | Vector Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 10.1: Classical Control vs. Machine Learning in Robotics](01-classical-vs-ai-robotics.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 10.3: Simulation-to-Real (Sim2Real) Transfer & Domain Randomization →**](03-sim2real-domain-randomization.md) |

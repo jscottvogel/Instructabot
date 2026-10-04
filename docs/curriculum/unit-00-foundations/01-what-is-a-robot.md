@@ -206,3 +206,11 @@ In the next module, **Module 0.2: The Five Subsystems of Any Robot**, we will op
 | `curiosity-rover-annotated.jpg` | Photograph / Schematic | NASA / Jet Propulsion Laboratory | Public Domain | NASA/JPL-Caltech [^4] |
 | `unimate-1961.jpg` | Historical Photograph | Smithsonian Institution / USPTO | Public Domain | George Devol / Unimation / GM Archives |
 | `teleop-vs-autonomy.svg` | Systems Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [🚀 Getting Started Guide](../../getting_started.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 0.2: The Five Subsystems of Any Robot →**](02-the-five-subsystems.md) |

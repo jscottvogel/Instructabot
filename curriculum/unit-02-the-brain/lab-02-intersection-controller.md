@@ -243,3 +243,19 @@ Eliminating `time.sleep()` in favor of `time.ticks_ms()` timestamp comparisons a
 | `wokwi-traffic-system.png` | Screenshot / Schematic | Wokwi / Instructabot Educational Team | CC BY 4.0 | Wokwi Simulator / Instructabot [^1] |
 | `fsm-traffic-light.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
 | `pico-pinout.svg` | Schematic Diagram | Raspberry Pi Ltd. / Instructabot | CC BY-SA 4.0 | Raspberry Pi Ltd. [^2] |
+
+---
+
+## 🏆 Milestone Achieved: Unit 2 Computational Thinking Capstone Complete!
+
+🎉 You engineered an autonomous pedestrian intersection controller with non-blocking state machines and interrupt handling in MicroPython.
+
+> 💡 **What's Next?** In **Unit 3: The Senses**, you will connect distance sensors and IMUs to give your robot spatial awareness and sensory perception!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 2.3: Microcontrollers vs. Single-Board Computers & GPIO](03-microcontrollers-vs-sbcs.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 3.1: Analog vs. Digital Signals & The ADC →**](../unit-03-the-senses/01-analog-vs-digital-signals.md) |

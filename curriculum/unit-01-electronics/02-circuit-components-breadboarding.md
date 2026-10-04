@@ -243,3 +243,11 @@ In our next module, **Module 1.3: Power Delivery & Regulators**, we will solve t
 | `breadboard-internals.svg` | Vector Graphic / X-Ray Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `voltage-divider.svg` | Schematic Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `tinkercad-nightlight.png` | Circuit Schematic | Tinkercad Circuits / Instructabot | CC BY 4.0 | Autodesk Tinkercad / Instructabot |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 1.1: Intuitive Electrical Physics](01-intuitive-electrical-physics.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 1.3: Power Delivery, Voltage Regulators, & Brownout Prevention →**](03-power-delivery-and-regulators.md) |

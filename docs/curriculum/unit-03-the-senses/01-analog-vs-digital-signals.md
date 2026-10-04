@@ -193,3 +193,11 @@ In our next module, **Module 3.2: Distance & Proximity Sensing**, we will explor
 | `adc-sampling.svg` | Vector Graphic / Signal Plot | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `pico-pinout.svg` | Schematic Diagram | Raspberry Pi Ltd. / Instructabot | CC BY-SA 4.0 | Raspberry Pi Ltd. [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 2: The Pedestrian-Responsive Intersection Controller](../unit-02-the-brain/lab-02-intersection-controller.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 3.2: Distance & Proximity Sensing (Ultrasonic & Time-of-Flight) →**](02-distance-and-proximity.md) |

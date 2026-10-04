@@ -44,19 +44,104 @@ Ready to wire the components together yourself?
 - Follow the full step-by-step breadboard assembly guide in [Lab 1: The Zero-Code Light-Sensitive Nightlight](curriculum/unit-01-electronics/lab-01-zero-code-nightlight.md).
 - In Unit 2, we introduce programmable microcontrollers using Wokwi with pre-configured project files in [`simulations/wokwi/`](https://github.com/jscottvogel/Instructabot/tree/main/simulations/wokwi).
 
-🎉 **Congratulations! You just analyzed your first autonomous sensor-actuator robotic circuit!**
-
 ---
 
 ## 🗺️ Choose Your Learning Track
 
-Not everyone learns at the same pace or has the same goals. Choose the track that fits your schedule:
+Not everyone learns at the same pace or has the same goals. Pick the track that fits your schedule and click **Start Track** to begin your journey immediately:
 
-| Track | Who It's For | Weekly Commitment | Path Highlights |
-| :--- | :--- | :--- | :--- |
-| **🎒 High School / Explorer Track** | High school students, curious beginners, after-school robotics clubs. | 2–3 hours / week | Units 0 through 4 (Electronics, MicroPython, Sensors, Motors). Focus on hands-on Wokwi circuits and intuitive mechanical analogies. |
-| **🎓 College / Engineering Track** | Undergraduate CS/ME/EE students, STEM majors, career transitioners. | 5–8 hours / week | Units 0 through 10 (Full Curriculum). Deep dive into C++/Python, kinematics, ROS 2 middleware, SLAM, and YOLO computer vision. |
-| **🛠️ Weekend Maker Track** | Adults and hobbyists building practical physical projects. | 3–4 hours / week | Units 1, 2, 4, 6, 7. Focus on physical motor control, 3D printing/CAD, and OpenCV pan-tilt turrets. |
+| Track | Who It's For | Weekly Commitment | Coverage | Immediate Action |
+| :--- | :--- | :--- | :--- | :--- |
+| [**🎒 High School / Explorer Track**](#track-1) | High school students, curious beginners, robotics teams (FIRST/VEX). | 2–3 hrs / wk (10 weeks) | Units 0 – 4 (Electronics, MicroPython, Senses, Muscles) | [**▶️ Start Track 1**](curriculum/unit-00-foundations/01-what-is-a-robot.md) |
+| [**🎓 College / Engineering Track**](#track-2) | Undergraduate CS/ME/EE students, STEM majors, career transitioners. | 5–8 hrs / wk (15 weeks) | Units 0 – 10 (Full Curriculum: ROS 2, SLAM, Vision, AI) | [**▶️ Start Track 2**](curriculum/unit-00-foundations/01-what-is-a-robot.md) |
+| [**🛠️ Weekend Maker Track**](#track-3) | Adult hobbyists, tinkerers, and builders creating physical hardware. | 3–4 hrs / wk (6 weeks) | Units 1, 2, 4, 6, 7 (Practical Circuits, Motors, 3D CAD, Vision) | [**▶️ Start Track 3**](curriculum/unit-01-electronics/01-intuitive-electrical-physics.md) |
+
+---
+
+<a id="track-1"></a>
+### 🎒 Track 1: High School / Explorer Track (Units 0 – 4)
+*Goal: Build an intuitive foundation in electronics, programming, sensors, and motors without software headaches.*  
+**Environment**: 100% In-Browser (Wokwi & In-Browser Python). Zero software installation required.
+
+> 🚀 **Ready to begin? [Click Here to Start Lesson 0.1: What Makes a Robot a Robot? →](curriculum/unit-00-foundations/01-what-is-a-robot.md)**
+
+#### Sequential Track Checklist:
+- [ ] **Unit 0: Foundations & Systems Thinking**
+  - [x] [Module 0.1: What Makes a Robot a Robot? (Sense-Think-Act)](curriculum/unit-00-foundations/01-what-is-a-robot.md)
+  - [ ] [Module 0.2: The Five Subsystems of Any Robot](curriculum/unit-00-foundations/02-the-five-subsystems.md)
+  - [ ] [Module 0.3: Engineering Notebooks, Safety, and Ethics](curriculum/unit-00-foundations/03-safety-ethics-notebook.md)
+  - [ ] [Lab 0: Reverse-Engineering Systems Decomposition](curriculum/unit-00-foundations/lab-00-systems-decomposition.md)
+- [ ] **Unit 1: Electricity & Electronics from Scratch**
+  - [ ] [Module 1.1: Intuitive Electrical Physics](curriculum/unit-01-electronics/01-intuitive-electrical-physics.md)
+  - [ ] [Module 1.2: Circuit Components & Breadboarding](curriculum/unit-01-electronics/02-circuit-components-breadboarding.md)
+  - [ ] [Module 1.3: Power Delivery & Voltage Regulators](curriculum/unit-01-electronics/03-power-delivery-and-regulators.md)
+  - [ ] [Lab 1: The Zero-Code Light-Sensitive Nightlight](curriculum/unit-01-electronics/lab-01-zero-code-nightlight.md)
+- [ ] **Unit 2: Computational Thinking & Microcontrollers**
+  - [ ] [Module 2.1: Algorithmic Logic & Flowcharts](curriculum/unit-02-the-brain/01-algorithmic-logic-and-flowcharts.md)
+  - [ ] [Module 2.2: Python for Robotics (MicroPython on Raspberry Pi Pico)](curriculum/unit-02-the-brain/02-python-for-robotics.md)
+  - [ ] [Module 2.3: Microcontrollers vs. Single-Board Computers](curriculum/unit-02-the-brain/03-microcontrollers-vs-sbcs.md)
+  - [ ] [Lab 2: Autonomous Traffic Intersection Controller](curriculum/unit-02-the-brain/lab-02-intersection-controller.md)
+- [ ] **Unit 3: Sensors, Signals, & Perception**
+  - [ ] [Module 3.1: Analog vs. Digital Signals](curriculum/unit-03-the-senses/01-analog-vs-digital-signals.md)
+  - [ ] [Module 3.2: Distance & Proximity Sensing](curriculum/unit-03-the-senses/02-distance-and-proximity.md)
+  - [ ] [Module 3.3: Motion & Orientation IMUs](curriculum/unit-03-the-senses/03-motion-and-orientation-imus.md)
+  - [ ] [Module 3.4: Noise & Signal Conditioning](curriculum/unit-03-the-senses/04-noise-and-signal-conditioning.md)
+  - [ ] [Lab 3: Ultrasonic Sonar Radar Scanner](curriculum/unit-03-the-senses/lab-03-sonar-radar-scanner.md)
+- [ ] **Unit 4: Motors, Actuation, & Power Electronics**
+  - [ ] [Module 4.1: Electric Motors Compared](curriculum/unit-04-the-muscles/01-electric-motors-compared.md)
+  - [ ] [Module 4.2: H-Bridge Motor Driving](curriculum/unit-04-the-muscles/02-h-bridge-motor-driving.md)
+  - [ ] [Module 4.3: Speed, Direction & Soft-Start Acceleration](curriculum/unit-04-the-muscles/03-speed-direction-soft-start.md)
+  - [ ] [Lab 4: PWM Motor Driver & S-Curve Profiling](curriculum/unit-04-the-muscles/lab-04-motor-drive-acceleration.md)
+
+---
+
+<a id="track-2"></a>
+### 🎓 Track 2: College / Engineering Undergraduate Track (Units 0 – 10)
+*Goal: Master end-to-end autonomous robotics engineering, from circuit breadboarding and kinematics to industry-standard ROS 2, LiDAR SLAM, and modern AI vision.*  
+**Environment**: Progressive 3-Stage Setup (Browser $\to$ Free Webots 3D Physics Simulator $\to$ Ubuntu Linux / ROS 2 Humble).
+
+> 🚀 **Ready to begin? [Click Here to Start Module 0.1: What Makes a Robot a Robot? →](curriculum/unit-00-foundations/01-what-is-a-robot.md)**
+
+#### Track Milestones:
+1. **Stage 1 (Units 0 – 4)**: Mechatronic Hardware & Microcontroller Firmware Foundations (In-Browser).
+2. **Stage 2 (Units 5 – 7)**: 3D CAD Modeling, Closed-Loop PID Control, and OpenCV Vision in Webots:
+   - [Unit 5: Mechanics, Kinematics, & CAD Modeling](curriculum/unit-05-the-bones/01-structural-fundamentals.md)
+   - [Unit 6: Driving the Physical World & Webots 3D Simulation](curriculum/unit-06-mobile-robotics/01-drive-architectures.md)
+   - [Unit 7: Computer Vision with OpenCV & Pan-Tilt Turret](curriculum/unit-07-robot-vision/01-digital-images-matrices.md)
+3. **Stage 3 (Units 8 – 10)**: Industry Middleware & Autonomous AI Agents:
+   - [Unit 8: ROS 2 Middleware Architecture & Nodes](curriculum/unit-08-ros2-middleware/01-why-middleware-ros2.md)
+   - [Unit 9: Autonomous Navigation & LiDAR SLAM](curriculum/unit-09-autonomous-navigation/01-fundamental-problem-of-slam.md)
+   - [Unit 10: Modern AI, Foundation Models, & Sim2Real Capstone](curriculum/unit-10-modern-ai-sim2real/01-classical-vs-ai-robotics.md)
+- 🗺️ Review the comprehensive syllabus: [**Open Master Syllabus (51 Modules & Labs)**](syllabus.md).
+
+---
+
+<a id="track-3"></a>
+### 🛠️ Track 3: Weekend Maker / Hobbyist Track (Units 1, 2, 4, 6, 7)
+*Goal: Fast-track to physical maker builds—learn how to wire sensors, control motors, design 3D parts, and track objects with computer vision.*  
+**Environment**: Raspberry Pi Pico, standard breadboard components, Webots 3D sim, and Python.
+
+> 🚀 **Ready to begin? [Click Here to Start Unit 1: Intuitive Electrical Physics →](curriculum/unit-01-electronics/01-intuitive-electrical-physics.md)**
+
+#### Curated 5-Project Fast-Track:
+1. **Project 1: Analog Circuits & Autonomous Nightlight**
+   - [Module 1.1: Intuitive Electrical Physics](curriculum/unit-01-electronics/01-intuitive-electrical-physics.md)
+   - [Module 1.2: Breadboarding & Circuit Schematics](curriculum/unit-01-electronics/02-circuit-components-breadboarding.md)
+   - [Lab 1: Build the Zero-Code Autonomous Nightlight](curriculum/unit-01-electronics/lab-01-zero-code-nightlight.md)
+2. **Project 2: MicroPython Firmware & State Machines**
+   - [Module 2.1: Algorithmic Logic & Flowcharts](curriculum/unit-02-the-brain/01-algorithmic-logic-and-flowcharts.md)
+   - [Module 2.2: Python for Robotics on Raspberry Pi Pico](curriculum/unit-02-the-brain/02-python-for-robotics.md)
+   - [Lab 2: Program an Autonomous Traffic Intersection](curriculum/unit-02-the-brain/lab-02-intersection-controller.md)
+3. **Project 3: High-Power Motor Driving & PWM**
+   - [Module 4.1: DC Motors, Servos, and Steppers](curriculum/unit-04-the-muscles/01-electric-motors-compared.md)
+   - [Module 4.2: H-Bridge Motor Drivers](curriculum/unit-04-the-muscles/02-h-bridge-motor-driving.md)
+   - [Lab 4: Smooth S-Curve Motor Acceleration Profile](curriculum/unit-04-the-muscles/lab-04-motor-drive-acceleration.md)
+4. **Project 4: 3D CAD Modeling & Robotic Arm Sizing**
+   - [Module 5.4: CAD Modeling for 3D Printing & Laser Cutting](curriculum/unit-05-the-bones/04-cad-modeling-for-robotics.md)
+   - [Lab 5: Design and Size a 3-DOF Robotic Arm](curriculum/unit-05-the-bones/lab-05-robotic-arm-cad-sizing.md)
+5. **Project 5: Computer Vision & Color / Face Tracking Turret**
+   - [Module 7.2: OpenCV Python Foundations](curriculum/unit-07-robot-vision/02-opencv-python-foundations.md)
+   - [Lab 7: Autonomous Pan-Tilt Visual Tracking Turret](curriculum/unit-07-robot-vision/lab-07-pan-tilt-visual-turret.md)
 
 ---
 

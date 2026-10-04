@@ -204,3 +204,11 @@ In **Lab 9: Autonomous Warehouse Delivery Challenge**, you will bring together 2
 | `nav2-architecture.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^2] |
 | `a-star-costmap.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `ros2-computation-graph.svg` | Vector Graphic | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^2] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 9.3: Path Planning & Costmaps ($A^*$, C-Space, DWA)](03-path-planning-and-costmaps.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Lab 9: Autonomous Warehouse Delivery Challenge →**](lab-09-autonomous-warehouse-nav2.md) |

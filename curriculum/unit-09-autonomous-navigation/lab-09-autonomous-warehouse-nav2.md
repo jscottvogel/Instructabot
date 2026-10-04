@@ -249,3 +249,19 @@ if __name__ == '__main__':
 | `a-star-costmap.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `nav2-architecture.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^3] |
 | `loop-closure-graph.svg` | Vector Graphic / Pose Graph | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] [^3] |
+
+---
+
+## 🏆 Milestone Achieved: Unit 9 SLAM & Navigation Capstone Complete!
+
+🎉 You mapped an unfamiliar warehouse with 2D LiDAR SLAM and commanded obstacle-aware waypoint navigation via Nav2.
+
+> 💡 **What's Next?** In **Unit 10: Modern AI & Sim2Real**, you will complete the grand capstone: YOLO object detection, 3D point clouds, and mobile manipulation!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 9.4: The ROS 2 Navigation Stack (Nav2 Architecture)](04-nav2-stack-architecture.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 10.1: Classical Control vs. Machine Learning in Robotics →**](../unit-10-modern-ai-sim2real/01-classical-vs-ai-robotics.md) |

@@ -217,3 +217,11 @@ In our unit capstone, **Lab 2: The Pedestrian-Responsive Intersection Controller
 | `mcu-vs-sbc.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `pico-pinout.svg` | Schematic Diagram | Raspberry Pi Ltd. / Instructabot | CC BY-SA 4.0 | Raspberry Pi Ltd. [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 2.2: Python for Robotics Foundations](02-python-for-robotics.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Lab 2: The Pedestrian-Responsive Intersection Controller →**](lab-02-intersection-controller.md) |

@@ -191,3 +191,11 @@ In **Module 9.3: Path Planning & Obstacle Avoidance**, we will learn how robots 
 | `loop-closure-graph.svg` | Vector Graphic / Pose Graph | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^3] |
 | `occupancy-grid.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `diff-drive-kinematics.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 9.1: The Fundamental Problem of SLAM & Occupancy Grids](01-fundamental-problem-of-slam.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 9.3: Path Planning & Costmaps ($A^*$, C-Space, DWA) →**](03-path-planning-and-costmaps.md) |

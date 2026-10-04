@@ -186,3 +186,11 @@ In **Module 10.4: Vision-Language-Action (VLA) & Foundation Models in Robotics**
 | `domain-randomization-sim2real` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `classical-vs-ai-robotics` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `webots-scene-tree.svg` | Vector Graphic | Instructabot Educational Team | Apache License 2.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 10.2: Deep Learning Object Detection (YOLO) for Robots](02-deep-learning-object-detection-yolo.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 10.4: Vision-Language-Action (VLA) & Foundation Models in Robotics →**](04-vla-foundation-models.md) |

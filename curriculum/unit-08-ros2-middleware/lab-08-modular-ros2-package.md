@@ -435,3 +435,19 @@ def generate_launch_description():
 | `ros2-computation-graph.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^1] [^3] |
 | `tf2-transform-tree.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^2] |
 | `rviz2-interface.svg` | Vector Graphic / UI Mockup | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^1] |
+
+---
+
+## 🏆 Milestone Achieved: Unit 8 ROS 2 Middleware Capstone Complete!
+
+🎉 You architected modular ROS 2 publisher, subscriber, and service nodes with live RViz2 coordinate transform telemetry.
+
+> 💡 **What's Next?** In **Unit 9: Autonomous Navigation**, you will solve the fundamental problem of SLAM with 2D LiDAR and Nav2 costmaps!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 8.4: Spatial Relationships with TF2 (Transform Library)](04-tf2-coordinate-transforms.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 9.1: The Fundamental Problem of SLAM & Occupancy Grids →**](../unit-09-autonomous-navigation/01-fundamental-problem-of-slam.md) |

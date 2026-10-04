@@ -298,3 +298,19 @@ finally:
 | `opencv-pipeline.svg` | Vector Graphic / Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^2] |
 | `image-matrix-coords.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `pid-block-diagram.svg` | Vector Graphic / Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
+
+---
+
+## 🏆 Milestone Achieved: Unit 7 Computer Vision Capstone Complete!
+
+🎉 You engineered a real-time 2-DOF pan-tilt tracking gimbal capable of centering optical targets dynamically at 30 FPS.
+
+> 💡 **What's Next?** In **Unit 8: ROS 2 Middleware**, you will enter the industry standard robot operating system with multi-node pub/sub graphs!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 7.4: 3D Depth Sensing Technologies](04-3d-depth-sensing.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 8.1: Why Middleware? The Monolith Problem & ROS 2 Architecture →**](../unit-08-ros2-middleware/01-why-middleware-ros2.md) |

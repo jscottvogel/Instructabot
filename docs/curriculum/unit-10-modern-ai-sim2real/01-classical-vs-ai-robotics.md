@@ -196,3 +196,11 @@ In **Module 10.2: Deep Learning Object Detection (YOLO) for Robots**, we will de
 | `classical-vs-ai-robotics` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `opencv-pipeline.svg` | Vector Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 9: Autonomous Warehouse Delivery Challenge](../unit-09-autonomous-navigation/lab-09-autonomous-warehouse-nav2.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 10.2: Deep Learning Object Detection (YOLO) for Robots →**](02-deep-learning-object-detection-yolo.md) |

@@ -335,3 +335,19 @@ while robot.step(TIME_STEP) != -1:
 | `webots-scene-tree.svg` | Vector Graphic / Architecture | Instructabot Educational Team | Apache License 2.0 | Instructabot Project [^1] |
 | `pid-block-diagram.svg` | Vector Graphic / Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^4] |
 | `diff-drive-kinematics.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
+
+---
+
+## 🏆 Milestone Achieved: Unit 6 Mobile Robotics Capstone Complete!
+
+🎉 You tuned closed-loop PID wall-following controllers and odometry dead-reckoning to solve complex 3D mazes autonomously.
+
+> 💡 **What's Next?** In **Unit 7: Robot Vision**, you will give your robot sight using OpenCV, computer vision color segmentation, and visual tracking!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 6.4: Open-Source Physics Simulators (Webots)](04-physics-simulators-webots.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 7.1: Digital Images as Numeric Matrices →**](../unit-07-robot-vision/01-digital-images-matrices.md) |

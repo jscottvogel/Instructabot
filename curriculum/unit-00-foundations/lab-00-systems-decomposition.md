@@ -151,3 +151,19 @@ To verify your work, review your engineering log against these criteria:
 | `curiosity-rover-annotated.jpg` | Photograph / Schematic | NASA / Jet Propulsion Laboratory | Public Domain | NASA/JPL-Caltech [^2] |
 | `estop-circuit.svg` | Schematic Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🏆 Milestone Achieved: Unit 0 Foundations Capstone Complete!
+
+🎉 You have deconstructed real autonomous robots and established NASA/JPL-standard engineering logs and safety protocols.
+
+> 💡 **What's Next?** In **Unit 1: The Spark**, you will wire your first circuits and build autonomous solid-state hardware from scratch!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 0.3: Engineering Notebooks, Safety, and Ethics](03-safety-ethics-notebook.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 1.1: Intuitive Electrical Physics →**](../unit-01-electronics/01-intuitive-electrical-physics.md) |

@@ -227,3 +227,11 @@ In **Module 9.2: 2D LiDAR SLAM Algorithms**, we will discover how algorithms eli
 | `occupancy-grid.svg` | Vector Graphic / Map Schematic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `diff-drive-kinematics.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 8: Building a Modular ROS 2 Robot Control Package](../unit-08-ros2-middleware/lab-08-modular-ros2-package.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 9.2: 2D LiDAR SLAM Algorithms (Scan Matching, AMCL, Loop Closure) →**](02-lidar-slam-algorithms.md) |

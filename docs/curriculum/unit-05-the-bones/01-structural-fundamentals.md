@@ -179,3 +179,11 @@ In our next module, **Module 5.2: Mechanical Power Transmission & Gears**, we wi
 | `stability-polygon.svg` | Vector Graphic / Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `engineering-design-cycle.svg` | Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 4: Precision Bi-Directional Motor Drive with Soft Acceleration](../unit-04-the-muscles/lab-04-motor-drive-acceleration.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 5.2: Mechanical Power Transmission, Gears, & Belts →**](02-mechanical-power-transmission.md) |

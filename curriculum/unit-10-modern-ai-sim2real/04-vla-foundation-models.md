@@ -197,3 +197,11 @@ You have now reached the summit of our curriculum! In our **Capstone Lab 10: Sem
 | `vla-foundation-model-architecture` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `classical-vs-ai-robotics` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^2] |
 | `yolo-detection-grid.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 10.3: Simulation-to-Real (Sim2Real) Transfer & Domain Randomization](03-sim2real-domain-randomization.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Lab 10: Capstone: Semantic Object Fetching & Sorting Pipeline →**](lab-10-semantic-object-fetching-capstone.md) |

@@ -249,3 +249,19 @@ Rate-limiting velocity commands in software is the single most effective way to 
 | `tb6612-wiring.png` | Schematic Diagram | SparkFun Electronics / Instructabot | CC BY-SA 4.0 | SparkFun Electronics [^2] |
 | `h-bridge-circuit.svg` | Schematic Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `motor-soft-start.svg` | Vector Graphic / Plot | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
+
+---
+
+## 🏆 Milestone Achieved: Unit 4 Actuation & Power Capstone Complete!
+
+🎉 You constructed high-current H-bridge drivers with S-curve soft acceleration, preventing battery brownouts and gear lash.
+
+> 💡 **What's Next?** In **Unit 5: The Bones**, you will step into 3D CAD modeling, mechanics, gear ratios, and torque sizing for robotic arms!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 4.3: Speed & Direction Control: Soft-Start Acceleration Ramping](03-speed-direction-soft-start.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 5.1: Structural Fundamentals, Materials, & Stability →**](../unit-05-the-bones/01-structural-fundamentals.md) |

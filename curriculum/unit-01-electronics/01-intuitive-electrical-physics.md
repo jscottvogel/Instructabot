@@ -197,3 +197,11 @@ In our next module, **Module 1.2: Essential Circuit Components & Breadboarding**
 | `water-pipe-electricity.svg` | Vector Graphic / Analogy | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `tinkercad-nightlight.png` | Circuit Schematic | Tinkercad Circuits / Instructabot | CC BY 4.0 | Autodesk Tinkercad / Instructabot |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 0: Reverse-Engineering Systems Decomposition](../unit-00-foundations/lab-00-systems-decomposition.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 1.2: Essential Circuit Components & Breadboarding →**](02-circuit-components-breadboarding.md) |

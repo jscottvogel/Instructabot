@@ -236,3 +236,19 @@ Mechanical servo movement generates electrical noise and physical vibrations. Wa
 | `wokwi-radar.png` | Screenshot / Schematic | Wokwi / Instructabot Educational Team | CC BY 4.0 | Wokwi Simulator / Instructabot [^1] |
 | `ultrasonic-tof.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `sensor-noise-filtering.svg` | Signal Plot | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
+
+---
+
+## 🏆 Milestone Achieved: Unit 3 Sensory Perception Capstone Complete!
+
+🎉 You built an active ultrasonic polar radar and implemented digital filtering to reject acoustic multipath noise.
+
+> 💡 **What's Next?** In **Unit 4: The Muscles**, you will drive high-power DC motors, servos, and steppers using H-Bridges and PWM velocity curves!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 3.4: Real-World Sensor Noise & Digital Signal Filtering](04-noise-and-signal-conditioning.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 4.1: Electric Motors Compared (DC, Servos, Steppers, & BLDC) →**](../unit-04-the-muscles/01-electric-motors-compared.md) |

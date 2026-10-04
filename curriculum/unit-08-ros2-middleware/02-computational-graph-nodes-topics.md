@@ -227,3 +227,11 @@ In **Module 8.3: Introspection & Visualization Tools**, we will learn how to ins
 | `ros2-computation-graph.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^1] [^2] |
 | `ros2-package-structure.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^1] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 8.1: Why Middleware? The Monolith Problem & ROS 2 Architecture](01-why-middleware-ros2.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 8.3: Introspection & Visualization Tools (CLI, rqt, RViz2) →**](03-introspection-rviz2.md) |

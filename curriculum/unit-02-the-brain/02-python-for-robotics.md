@@ -257,3 +257,11 @@ In our next module, **Module 2.3: Microcontrollers vs. Single-Board Computers**,
 | `pico-pinout.svg` | Schematic | Raspberry Pi Ltd. / Instructabot | CC BY-SA 4.0 | Raspberry Pi Ltd. [^2] |
 | `fsm-traffic-light.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 2.1: Algorithmic Logic, Flowcharts, & State Machines](01-algorithmic-logic-and-flowcharts.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 2.3: Microcontrollers vs. Single-Board Computers & GPIO →**](03-microcontrollers-vs-sbcs.md) |

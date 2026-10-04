@@ -214,3 +214,11 @@ In **Module 8.2: The Core ROS 2 Computational Graph**, we will dive into the fou
 | `ros2-computation-graph.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^1] [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `opencv-pipeline.svg` | Vector Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 7: Real-Time Visual Pan-Tilt Tracking Turret](../unit-07-robot-vision/lab-07-pan-tilt-visual-turret.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 8.2: The Core ROS 2 Computational Graph →**](02-computational-graph-nodes-topics.md) |

@@ -223,3 +223,11 @@ In **Module 7.3: Object Tracking & Fiducial Markers**, we will learn how to trac
 | `opencv-pipeline.svg` | Vector Graphic / Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `image-matrix-coords.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 7.1: Digital Images as Numeric Matrices](01-digital-images-matrices.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 7.3: Object Tracking & Fiducial Markers (ArUco) →**](03-object-tracking-aruco.md) |

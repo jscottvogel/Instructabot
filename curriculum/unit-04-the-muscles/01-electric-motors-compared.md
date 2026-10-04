@@ -193,3 +193,11 @@ In our next module, **Module 4.2: Motor Driving & Power Isolation (The H-Bridge)
 | `motor-types.svg` | Vector Graphic / Infographic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `linear-vs-buck.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 3: The Ultrasonic Sonar Radar Scanner](../unit-03-the-senses/lab-03-sonar-radar-scanner.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 4.2: Motor Driving & Power Isolation (The H-Bridge) →**](02-h-bridge-motor-driving.md) |

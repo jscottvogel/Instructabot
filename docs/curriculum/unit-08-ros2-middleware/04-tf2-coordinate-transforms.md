@@ -231,3 +231,11 @@ Now that you master nodes, topics, introspection, and coordinate transforms, you
 | `tf2-transform-tree.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^1] [^2] |
 | `ros2-computation-graph.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^1] |
 | `rviz2-interface.svg` | Vector Graphic / UI Mockup | Instructabot Educational Team | CC BY 3.0 | Instructabot Project [^1] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 8.3: Introspection & Visualization Tools (CLI, rqt, RViz2)](03-introspection-rviz2.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Lab 8: Building a Modular ROS 2 Robot Control Package →**](lab-08-modular-ros2-package.md) |

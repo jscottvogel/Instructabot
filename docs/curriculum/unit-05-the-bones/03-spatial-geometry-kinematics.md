@@ -215,3 +215,11 @@ In our next module, **Module 5.4: Computer-Aided Design (CAD) for Robotics**, we
 | `arm-forward-kinematics.svg` | Vector Graphic / Geometry | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `gear-ratios.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 5.2: Mechanical Power Transmission, Gears, & Belts](02-mechanical-power-transmission.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 5.4: Computer-Aided Design (CAD) & Designing for 3D Printing →**](04-cad-modeling-for-robotics.md) |

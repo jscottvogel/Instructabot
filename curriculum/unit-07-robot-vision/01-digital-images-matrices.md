@@ -201,3 +201,11 @@ In **Module 7.2: OpenCV Foundations in Python**, we will load live camera stream
 | `image-matrix-coords.svg` | Vector Graphic / Coordinate Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^2] |
 | `opencv-pipeline.svg` | Vector Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 6: Autonomous Maze-Navigating Mobile Robot in Webots](../unit-06-mobile-robotics/lab-06-maze-navigation-webots.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 7.2: OpenCV Foundations in Python →**](02-opencv-python-foundations.md) |

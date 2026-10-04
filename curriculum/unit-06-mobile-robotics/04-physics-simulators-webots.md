@@ -271,3 +271,11 @@ Now that you understand the Webots physics engine and its Python controller pipe
 | `webots-scene-tree.svg` | Vector Graphic / Architecture | Instructabot Educational Team | Apache License 2.0 | Instructabot Project [^1] |
 | `webots-maze-sim.png` | Simulation Screenshot / Diagram | Cyberbotics Ltd. / Instructabot | Apache License 2.0 | Cyberbotics Webots [^1] [^3] |
 | `diff-drive-kinematics.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 6.3: Closed-Loop Control: The PID Controller](03-closed-loop-pid-control.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Lab 6: Autonomous Maze-Navigating Mobile Robot in Webots →**](lab-06-maze-navigation-webots.md) |

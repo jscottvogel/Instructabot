@@ -242,3 +242,11 @@ In **Module 9.4: The ROS 2 Navigation Stack (Nav2)**, we will discover how all t
 | `a-star-costmap.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^2] |
 | `occupancy-grid.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
 | `diff-drive-kinematics.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 9.2: 2D LiDAR SLAM Algorithms (Scan Matching, AMCL, Loop Closure)](02-lidar-slam-algorithms.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 9.4: The ROS 2 Navigation Stack (Nav2 Architecture) →**](04-nav2-stack-architecture.md) |

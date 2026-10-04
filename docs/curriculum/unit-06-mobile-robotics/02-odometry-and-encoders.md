@@ -242,3 +242,11 @@ In our next module, **Module 6.3: Closed-Loop Control (The PID Controller)**, we
 | `quadrature-encoder.svg` | Vector Graphic / Waveforms | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `diff-drive-kinematics.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 6.1: Mobile Robot Drive Architectures & Kinematics](01-drive-architectures.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 6.3: Closed-Loop Control: The PID Controller →**](03-closed-loop-pid-control.md) |

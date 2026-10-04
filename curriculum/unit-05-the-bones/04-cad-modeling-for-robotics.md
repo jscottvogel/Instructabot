@@ -181,3 +181,11 @@ In our unit capstone, **Lab 5: Designing and Sizing a 2-DOF Robotic Arm Link**, 
 | `onshape-arm-model.png` | Screenshot / CAD | PTC Onshape / Instructabot Educational Team | CC BY 4.0 | PTC Onshape / Instructabot [^1] |
 | `stability-polygon.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 5.3: Spatial Geometry & Forward Kinematics](03-spatial-geometry-kinematics.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Lab 5: Designing & Sizing a 2-DOF Robotic Arm Link →**](lab-05-robotic-arm-cad-sizing.md) |

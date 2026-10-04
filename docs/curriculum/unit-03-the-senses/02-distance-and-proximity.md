@@ -234,3 +234,11 @@ In our next module, **Module 3.3: Motion & Orientation Sensing (IMUs)**, we will
 | `ultrasonic-tof.svg` | Vector Graphic / Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `voltage-divider.svg` | Schematic Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `pico-pinout.svg` | Schematic Diagram | Raspberry Pi Ltd. / Instructabot | CC BY-SA 4.0 | Raspberry Pi Ltd. [^2] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 3.1: Analog vs. Digital Signals & The ADC](01-analog-vs-digital-signals.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 3.3: Motion & Orientation Sensing (IMUs & Gyroscopes) →**](03-motion-and-orientation-imus.md) |

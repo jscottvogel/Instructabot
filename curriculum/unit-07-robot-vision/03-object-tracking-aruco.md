@@ -216,3 +216,11 @@ In **Module 7.4: 3D Depth Sensing Technologies**, we will explore how robots per
 | `aruco-marker-pose.svg` | Vector Graphic / 3D Axes | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^3] |
 | `opencv-pipeline.svg` | Vector Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `image-matrix-coords.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 7.2: OpenCV Foundations in Python](02-opencv-python-foundations.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 7.4: 3D Depth Sensing Technologies →**](04-3d-depth-sensing.md) |

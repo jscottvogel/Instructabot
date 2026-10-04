@@ -225,3 +225,11 @@ In our unit capstone, **Lab 3: The Ultrasonic Sonar Radar Scanner**, we will put
 | `sensor-noise-filtering.svg` | Signal Plot | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `adc-sampling.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 3.3: Motion & Orientation Sensing (IMUs & Gyroscopes)](03-motion-and-orientation-imus.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Lab 3: The Ultrasonic Sonar Radar Scanner →**](lab-03-sonar-radar-scanner.md) |

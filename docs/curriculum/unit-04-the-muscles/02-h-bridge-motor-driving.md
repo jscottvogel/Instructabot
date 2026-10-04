@@ -251,3 +251,11 @@ In our next module, **Module 4.3: Speed & Direction Control (Acceleration Rampin
 | `h-bridge-circuit.svg` | Schematic Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `tb6612-wiring.png` | Schematic Diagram | SparkFun Electronics / Instructabot | CC BY-SA 4.0 | SparkFun Electronics [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 4.1: Electric Motors Compared (DC, Servos, Steppers, & BLDC)](01-electric-motors-compared.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 4.3: Speed & Direction Control: Soft-Start Acceleration Ramping →**](03-speed-direction-soft-start.md) |

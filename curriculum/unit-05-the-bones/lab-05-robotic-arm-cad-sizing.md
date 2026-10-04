@@ -156,3 +156,19 @@ Over 50% of the required shoulder torque (0.245 N*m out of 0.448 N*m) is caused 
 | `onshape-arm-model.png` | CAD Schematic | PTC Onshape / Instructabot Educational Team | CC BY 4.0 | PTC Onshape / Instructabot [^1] |
 | `arm-forward-kinematics.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `gear-ratios.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
+
+---
+
+## 🏆 Milestone Achieved: Unit 5 Mechanics & CAD Capstone Complete!
+
+🎉 You modeled structural robotic limbs in parametric CAD and verified structural safety margins under gravitational payloads.
+
+> 💡 **What's Next?** In **Unit 6: Movement & Mobile Robotics**, you will deploy mobile wheeled robots into the Webots 3D physics simulator!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 5.4: Computer-Aided Design (CAD) & Designing for 3D Printing](04-cad-modeling-for-robotics.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 6.1: Mobile Robot Drive Architectures & Kinematics →**](../unit-06-mobile-robotics/01-drive-architectures.md) |

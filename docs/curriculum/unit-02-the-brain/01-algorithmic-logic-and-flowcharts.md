@@ -189,3 +189,11 @@ In our next module, **Module 2.2: Python for Robotics Foundations**, we will tra
 | `fsm-traffic-light.svg` | Vector Graphic / State Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `engineering-design-cycle.svg` | Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 1: The Zero-Code Light-Sensitive Nightlight](../unit-01-electronics/lab-01-zero-code-nightlight.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 2.2: Python for Robotics Foundations →**](02-python-for-robotics.md) |

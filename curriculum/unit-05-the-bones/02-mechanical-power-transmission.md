@@ -211,3 +211,11 @@ In our next module, **Module 5.3: Spatial Geometry & Forward Kinematics**, we wi
 | `gear-ratios.svg` | Vector Graphic / Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `motor-types.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 5.1: Structural Fundamentals, Materials, & Stability](01-structural-fundamentals.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 5.3: Spatial Geometry & Forward Kinematics →**](03-spatial-geometry-kinematics.md) |

@@ -209,3 +209,11 @@ In our capstone for this unit, **Lab 1: The Zero-Code Light-Sensitive Nightlight
 | `linear-vs-buck.svg` | Vector Graphic / Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `tinkercad-nightlight.png` | Circuit Schematic | Tinkercad Circuits / Instructabot | CC BY 4.0 | Autodesk Tinkercad / Instructabot |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 1.2: Essential Circuit Components & Breadboarding](02-circuit-components-breadboarding.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Lab 1: The Zero-Code Light-Sensitive Nightlight →**](lab-01-zero-code-nightlight.md) |

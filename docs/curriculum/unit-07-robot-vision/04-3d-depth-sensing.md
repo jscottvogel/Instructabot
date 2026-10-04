@@ -200,3 +200,11 @@ In our upcoming **Lab 7: Real-Time Visual Pan-Tilt Tracking Turret**, you will b
 | `stereo-depth-parallax.svg` | Vector Graphic / Geometry | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] [^2] |
 | `image-matrix-coords.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `opencv-pipeline.svg` | Vector Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 7.3: Object Tracking & Fiducial Markers (ArUco)](03-object-tracking-aruco.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Lab 7: Real-Time Visual Pan-Tilt Tracking Turret →**](lab-07-pan-tilt-visual-turret.md) |

@@ -237,3 +237,11 @@ In our unit capstone, **Lab 4: Precision Bi-Directional Motor Drive with Soft Ac
 | `motor-soft-start.svg` | Vector Graphic / Plot | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `h-bridge-circuit.svg` | Schematic Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 4.2: Motor Driving & Power Isolation (The H-Bridge)](02-h-bridge-motor-driving.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Lab 4: Precision Bi-Directional Motor Drive with Soft Acceleration →**](lab-04-motor-drive-acceleration.md) |

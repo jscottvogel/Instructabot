@@ -213,3 +213,11 @@ In our next module, **Module 6.2: Odometry & Encoders**, we will learn how robot
 | `diff-drive-kinematics.svg` | Vector Graphic / Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^1] |
 | `gear-ratios.svg` | Vector Graphic | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Lab 5: Designing & Sizing a 2-DOF Robotic Arm Link](../unit-05-the-bones/lab-05-robotic-arm-cad-sizing.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 6.2: Odometry & Encoders: Tracking Position in Space →**](02-odometry-and-encoders.md) |

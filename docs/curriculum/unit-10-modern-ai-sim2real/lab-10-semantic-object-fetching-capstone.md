@@ -216,3 +216,19 @@ To earn your **Instructabot Autonomous Robotics Certificate of Completion**, you
 | `nav2-architecture.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^4] |
 | `yolo-detection-grid.svg` | Vector Graphic / Architecture | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🏆 Milestone Achieved: 🎓 Master Capstone Complete: You Are a Full-Stack Autonomous Roboticist!
+
+🎉 You integrated end-to-end deep learning perception, 3D point-cloud coordinate projection, MoveIt 2 arm trajectory planning, and autonomous mobile navigation.
+
+> 💡 **What's Next?** You have mastered the entire spectrum of autonomous robotics from discrete transistor electronics to state-of-the-art AI foundation models!
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 10.4: Vision-Language-Action (VLA) & Foundation Models in Robotics](04-vla-foundation-models.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [🎓 **Autonomous Robotics Graduation & Community →**](../../index.md) |

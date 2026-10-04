@@ -198,3 +198,11 @@ In our next module, **Module 0.3: Engineering Notebooks, Safety, and Ethics**, w
 | `five-subsystems-flow.svg` | Vector Graphic / Flowchart | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
 | `turtlebot3-subsystems.png` | Engineering Schematic | ROBOTIS Co., Ltd. Open Hardware | CC BY 4.0 | ROBOTIS e-Manual [^4] |
 | `sense-think-act.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 0.1: What Makes a Robot a Robot?](01-what-is-a-robot.md) | [**Master Syllabus**](../SYLLABUS.md) • [**Getting Started**](../GETTING_STARTED.md) | [**Module 0.3: Engineering Notebooks, Safety, and Ethics →**](03-safety-ethics-notebook.md) |

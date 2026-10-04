@@ -227,3 +227,11 @@ In our next module, **Module 3.4: Real-World Noise & Signal Conditioning**, we w
 | `imu-coordinates.svg` | Vector Graphic / 3D Axes | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^2] |
 | `sensor-noise-filtering.svg` | Signal Plot | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project [^3] |
 | `five-subsystems-flow.svg` | Vector Diagram | Instructabot Educational Team | CC BY-SA 4.0 | Instructabot Project |
+
+---
+
+## 🧭 Lesson Navigation
+
+| ⬅️ Previous Lesson | 🗺️ Course Hub | ➡️ Next Lesson |
+| :--- | :---: | ---: |
+| [← Module 3.2: Distance & Proximity Sensing (Ultrasonic & Time-of-Flight)](02-distance-and-proximity.md) | [**Master Syllabus**](../../syllabus.md) • [**Getting Started**](../../getting_started.md) | [**Module 3.4: Real-World Sensor Noise & Digital Signal Filtering →**](04-noise-and-signal-conditioning.md) |
