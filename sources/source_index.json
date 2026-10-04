@@ -74,6 +74,24 @@
       "url": "https://trs.jpl.nasa.gov/handle/2014/37656",
       "license": "Public Domain (NASA Technical Reports Server)",
       "relevance": ["Autonomous navigation in space", "Communication latency constraints", "Stereo vision obstacle detection on Mars"]
+    },
+    {
+      "id": "ansi-ria-r15-06",
+      "title": "ANSI/RIA R15.06-2012: Industrial Robots and Robot Systems - Safety Requirements",
+      "authors": ["Robotics Industries Association (RIA) / ANSI"],
+      "institution": "Association for Advancing Automation (A3) / ANSI",
+      "url": "https://www.automate.org/a3-content/ansi-ria-r15-06-2012-robot-safety-standard",
+      "license": "Standard Reference (Safety Compliance Specifications)",
+      "relevance": ["E-Stops", "Pinch points", "Protective stop circuits", "Risk assessments"]
+    },
+    {
+      "id": "ieee-ethics-ead",
+      "title": "Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems",
+      "authors": ["IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems"],
+      "institution": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "url": "https://standards.ieee.org/industry-connections/ec/ead-v1/",
+      "license": "Creative Commons Attribution-NonCommercial 3.0 (CC BY-NC 3.0)",
+      "relevance": ["Human well-being", "Algorithmic accountability", "Transparency", "Safety in autonomous systems"]
     }
   ]
 }

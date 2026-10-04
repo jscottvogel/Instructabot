@@ -62,6 +62,26 @@
       "author": "ROBOTIS Co., Ltd. Open Hardware Documentation",
       "attribution_required": true,
       "description": "Exploded subsystems view of TurtleBot3 Burger showing LiDAR, OpenCR controller, DYNAMIXEL actuators, and frame"
+    },
+    {
+      "id": "emergency-stop-circuit",
+      "filename": "estop-circuit.svg",
+      "media_type": "schematic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Schematic of hardwired dual-channel emergency stop circuit isolating actuator power rails"
+    },
+    {
+      "id": "engineering-notebook-cycle",
+      "filename": "engineering-design-cycle.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "The iterative engineering design and documentation lifecycle"
     }
   ]
 }
