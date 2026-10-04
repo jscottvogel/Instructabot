@@ -110,6 +110,7 @@ while robot.step(TIME_STEP) != -1:
     # 1. Read virtual sensors
     # 2. Compute PID / navigation logic
     # 3. Write new actuator speeds
+    pass
 ```
 Whenever `robot.step(TIME_STEP)` is called, your controller pauses, Webots advances the entire 3D physical universe forward by `TIME_STEP` milliseconds, updates all sensor readings, and returns control to your Python script [^1] [^3]!
 

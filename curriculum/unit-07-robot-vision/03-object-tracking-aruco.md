@@ -161,13 +161,14 @@ if ids is not None and len(ids) > 0:
         [-MARKER_REAL_SIZE/2, -MARKER_REAL_SIZE/2, 0]
     ], dtype=np.float32)
 
-    for i in range(len(ids)):
+    flat_ids = ids.flatten()
+    for i in range(len(flat_ids)):
         # Solve PnP for corner pixels
         success, rvec, tvec = cv2.solvePnP(obj_points, corners[i][0], camera_matrix, dist_coeffs)
         
         if success:
             x_m, y_m, z_m = tvec.flatten()
-            print(f"🎯 Marker ID {ids[i][0]} Pose:")
+            print(f"🎯 Marker ID {flat_ids[i]} Pose:")
             print(f"   Position: X={x_m:+6.3f}m, Y={y_m:+6.3f}m, Z={z_m:6.3f}m")
             print(f"   Straight-Line Euclidean Distance: {np.linalg.norm(tvec):6.3f} meters")
             

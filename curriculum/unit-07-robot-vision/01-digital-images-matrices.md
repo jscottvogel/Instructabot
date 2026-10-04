@@ -157,8 +157,10 @@ print(f"⚠️ Standard uint8 Overflow: 250 + 10 = {bad_sum}")
 
 # Safe OpenCV saturated arithmetic clamps to 255
 import cv2
-safe_sum = cv2.add(val_a, val_b)
-print(f"✅ cv2.add Saturated Arithmetic: 250 + 10 = {safe_sum[0][0]}")
+arr_a = np.array([250], dtype=np.uint8)
+arr_b = np.array([10], dtype=np.uint8)
+safe_sum = cv2.add(arr_a, arr_b)
+print(f"✅ cv2.add Saturated Arithmetic: 250 + 10 = {safe_sum[0]}")
 ```
 
 ---
