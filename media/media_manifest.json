@@ -222,6 +222,46 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "Wokwi simulation setup with Raspberry Pi Pico, HC-SR04 ultrasonic sensor, and sweeping micro servo"
+    },
+    {
+      "id": "motor-types-comparison",
+      "filename": "motor-types.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Visual comparison of DC brushed, RC servo, stepper, and brushless DC motors"
+    },
+    {
+      "id": "h-bridge-circuit-topology",
+      "filename": "h-bridge-circuit.svg",
+      "media_type": "schematic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "H-Bridge 4-transistor schematic illustrating forward, reverse, active brake, and freewheeling coast states"
+    },
+    {
+      "id": "motor-soft-start-acceleration",
+      "filename": "motor-soft-start.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Current and velocity plots contrasting aggressive step inrush currents with linear and S-curve acceleration ramps"
+    },
+    {
+      "id": "tb6612-wiring-diagram",
+      "filename": "tb6612-wiring.png",
+      "media_type": "schematic",
+      "source_url": "https://learn.sparkfun.com/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
+      "author": "SparkFun Electronics / Instructabot",
+      "attribution_required": true,
+      "description": "Wiring diagram connecting Raspberry Pi Pico to TB6612FNG dual motor driver and geared DC motors"
     }
   ]
 }

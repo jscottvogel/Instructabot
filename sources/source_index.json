@@ -191,6 +191,33 @@
       "url": "https://www.dspguide.com/",
       "license": "Open Access Educational Textbook",
       "relevance": ["Moving average filter", "Median filter for outlier removal", "Noise reduction in sensor readings"]
+    },
+    {
+      "id": "chapman-electric-machinery",
+      "title": "Electric Machinery Fundamentals (5th Edition)",
+      "authors": ["Stephen J. Chapman"],
+      "institution": "McGraw-Hill Education / BAE Systems",
+      "url": "https://www.mheducation.com/highered/product/electric-machinery-fundamentals-chapman/M9780073529547.html",
+      "license": "Academic Reference (DC Motors & Machinery Principles)",
+      "relevance": ["DC motor fundamentals", "Back-EMF equation", "Torque-speed curves", "Brushless DC and Stepper motors"]
+    },
+    {
+      "id": "toshiba-tb6612fng",
+      "title": "TB6612FNG Driver IC for Dual DC Motors Datasheet",
+      "authors": ["Toshiba Semiconductor & Storage Products"],
+      "institution": "Toshiba Corporation",
+      "url": "https://toshiba.semicon-storage.com/info/TB6612FNG_datasheet_en_20141001.pdf",
+      "license": "Public Manufacturer Specification",
+      "relevance": ["H-Bridge circuit topology", "MOSFET motor driving", "Shoot-through protection", "PWM direction truth tables"]
+    },
+    {
+      "id": "ti-motor-driver-primer",
+      "title": "Understanding Motor Driver Current Ratings and Thermal Dissipation (SLVA714)",
+      "authors": ["Nicholas Oborny"],
+      "institution": "Texas Instruments",
+      "url": "https://www.ti.com/lit/an/slva714/slva714.pdf",
+      "license": "Technical White Paper / Public Application Report",
+      "relevance": ["Inductive flyback diodes", "Inrush current management", "Thermal design in motor drivers", "Decoupling motor noise"]
     }
   ]
 }
