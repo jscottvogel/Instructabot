@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "description": "Verified registry of primary public sources, textbooks, and documentation for Instructabot",
+  "sources": [
+    {
+      "id": "mit-ocw-601sc",
+      "title": "Introduction to Electrical Engineering and Computer Science I",
+      "authors": ["Leslie Kaelbling", "Tomas Lozano-Perez", "Dennis Freeman"],
+      "institution": "Massachusetts Institute of Technology (MIT OpenCourseWare)",
+      "url": "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+      "relevance": ["Sense-Think-Act paradigm", "State machines", "Circuits and operational amplifiers", "Robot obstacle avoidance"]
+    },
+    {
+      "id": "nasa-rap",
+      "title": "NASA Robotics Alliance Project - Educational Resources",
+      "authors": ["NASA RAP Engineering Team"],
+      "institution": "National Aeronautics and Space Administration (NASA)",
+      "url": "https://robotics.nasa.gov/educational-resources/",
+      "license": "Public Domain (U.S. Government Work)",
+      "relevance": ["Robotics subsystems", "Engineering notebooks", "Mechanical principles", "Power systems and safety"]
+    },
+    {
+      "id": "ros2-humble-docs",
+      "title": "ROS 2 Humble Hawksbill Documentation",
+      "authors": ["Open Source Robotics Foundation (OSRF)"],
+      "institution": "Open Robotics",
+      "url": "https://docs.ros.org/en/humble/",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "relevance": ["ROS 2 nodes, topics, services, actions", "TF2 transform library", "RViz2 visualization", "Nav2 navigation stack"]
+    },
+    {
+      "id": "lynch-park-modern-robotics",
+      "title": "Modern Robotics: Mechanics, Planning, and Control",
+      "authors": ["Kevin M. Lynch", "Frank C. Park"],
+      "institution": "Northwestern University / Seoul National University (Cambridge University Press)",
+      "url": "https://modernrobotics.northwestern.edu/",
+      "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (Preprint edition)",
+      "relevance": ["Rigid-body kinematics", "Forward and inverse kinematics", "Mobile robot drive kinematics", "Motion planning"]
+    },
+    {
+      "id": "phet-circuits",
+      "title": "Circuit Construction Kit (DC) Interactive Simulation",
+      "authors": ["PhET Interactive Simulations Team"],
+      "institution": "University of Colorado Boulder",
+      "url": "https://phet.colorado.edu/en/simulations/circuit-construction-kit-dc",
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "relevance": ["Ohm's Law visual intuition", "Series and parallel circuits", "Current flow and voltage drop"]
+    },
+    {
+      "id": "webots-docs",
+      "title": "Cyberbotics Webots Open-Source Robot Simulator Documentation",
+      "authors": ["Cyberbotics Ltd."],
+      "institution": "Cyberbotics",
+      "url": "https://cyberbotics.com/doc/guide/index",
+      "license": "Apache License 2.0",
+      "relevance": ["Physics simulation", "Differential drive robot modeling", "LiDAR and camera sensor simulation", "Python robot controller API"]
+    }
+  ]
+}

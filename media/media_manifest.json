@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "description": "Registry of public-domain and Creative Commons images, schematics, and video embeds used in Instructabot",
+  "media_assets": [
+    {
+      "id": "sense-think-act-diagram",
+      "filename": "sense-think-act.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Wikimedia Commons Contributors / Instructabot Project",
+      "attribution_required": true,
+      "description": "Foundational robotics Sense-Think-Act loop diagram"
+    },
+    {
+      "id": "curiosity-rover-subsystems",
+      "filename": "curiosity-rover-annotated.jpg",
+      "media_type": "photograph",
+      "source_url": "https://photojournal.jpl.nasa.gov/",
+      "license": "Public Domain (NASA/JPL-Caltech)",
+      "author": "NASA/JPL-Caltech",
+      "attribution_required": true,
+      "description": "Annotated diagram showing power, mobility, mast camera, and robotic arm on Curiosity rover"
+    }
+  ]
+}
