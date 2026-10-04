@@ -42,6 +42,26 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "Flowchart contrasting human-in-the-loop teleoperation with autonomous closed-loop control"
+    },
+    {
+      "id": "robot-five-subsystems-flow",
+      "filename": "five-subsystems-flow.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Dual-bus architecture showing energy distribution and information communication between the five subsystems"
+    },
+    {
+      "id": "turtlebot3-subsystems-architecture",
+      "filename": "turtlebot3-subsystems.png",
+      "media_type": "schematic",
+      "source_url": "https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/",
+      "license": "Creative Commons Attribution 4.0 International (ROBOTIS Co., Ltd.)",
+      "author": "ROBOTIS Co., Ltd. Open Hardware Documentation",
+      "attribution_required": true,
+      "description": "Exploded subsystems view of TurtleBot3 Burger showing LiDAR, OpenCR controller, DYNAMIXEL actuators, and frame"
     }
   ]
 }
