@@ -49,7 +49,7 @@ With Lab 0 complete, **Unit 0: The Robotic Mindset & Anatomy of Systems** is ful
 - ✅ [Module 0.2: The Five Subsystems of Any Robot](../curriculum/unit-00-foundations/02-the-five-subsystems.md)
 - ✅ [Module 0.3: Engineering Notebooks, Safety, and Ethics](../curriculum/unit-00-foundations/03-safety-ethics-notebook.md)
 - ✅ [Lab 0: Reverse-Engineering Systems Decomposition](../curriculum/unit-00-foundations/lab-00-systems-decomposition.md)
-- ✅ Automated Verification Tool: [`agent/verifier/check_citations.py`](../agent/verifier/check_citations.py)
+- ✅ Automated Verification Tool: [`agent/verifier/check_citations.py`](https://github.com/jscottvogel/Instructabot/blob/main/agent/verifier/check_citations.py)
 
 ---
 

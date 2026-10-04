@@ -21,19 +21,19 @@ Traditional educational robotics kits suffer from two major flaws:
 
 ```mermaid
 flowchart TD
-    subgraph Tier 1: The Spark & Brain Kit
+    subgraph "Tier 1: The Spark & Brain Kit"
         T1["🔋 Tier 1: The Spark & Brain Kit<br/>Retail: $39.99 | BOM Cost: $12.40 | Margin: 69%<br/>Units 1 – 4: Electricity, MicroPython, Sensors, Motors"]
     end
 
-    subgraph Tier 2: The Mobile Explorer Rover
+    subgraph "Tier 2: The Mobile Explorer Rover"
         T2["🚗 Tier 2: The Mobile Explorer Rover<br/>Retail: $89.99 | BOM Cost: $29.50 | Margin: 67%<br/>Units 5 – 8: Kinematics, Encoders, PID Control, Micro-ROS"]
     end
 
-    subgraph Tier 3: The SOTA AI Vision & Nav2 Pro
+    subgraph "Tier 3: The SOTA AI Vision & Nav2 Pro"
         T3["👁️ Tier 3: The SOTA AI Vision & Nav2 Pro<br/>Retail: $169.99 | BOM Cost: $68.00 | Margin: 60%<br/>Units 9 – 10: 360° LiDAR, OpenCV Vision, Nav2 SLAM, VLA AI"]
     end
 
-    subgraph Tier 4: Institutional Classroom 10-Pack
+    subgraph "Tier 4: Institutional Classroom 10-Pack"
         T4["🏫 Tier 4: School Classroom 10-Pack<br/>Retail: $899.00 | BOM Cost: $260.00 | Margin: 71%<br/>10x Mobile Rovers + Teacher Binder + Spare Parts Crash Kit"]
     end
 

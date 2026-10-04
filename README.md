@@ -23,7 +23,7 @@ The curriculum is structured across 11 comprehensive units (Units 0 through 10):
 
 | Unit | Title | Level | Hands-On Simulation | Capstone Milestone | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [**Unit 0**](curriculum/SYLLABUS.md#unit-0-the-robotic-mindset--anatomy-of-systems) | **The Robotic Mindset & Anatomy of Systems** | Beginner | Systems Decomposition | Reverse-engineer real robots (Curiosity, Roomba) | ✅ [Reviewed](reviews/2026-10-04-unit-00-lesson-01-review.md) |
+| [**Unit 0**](curriculum/SYLLABUS.md#unit-0-the-robotic-mindset--anatomy-of-systems) | **The Robotic Mindset & Anatomy of Systems** | Beginner | Systems Decomposition | Reverse-engineer real robots (Curiosity, Roomba) | ✅ [Reviewed](reviews/2026-10-04-unit-00-module-01-review.md) |
 | [**Unit 1**](curriculum/SYLLABUS.md#unit-1-the-spark-electricity--electronics-from-scratch) | **The Spark: Electricity & Electronics from Scratch** | Beginner | Tinkercad Circuits / PhET | Autonomously triggered nightlight circuit (no code) | ✅ [Reviewed](reviews/2026-10-04-unit-01-electronics-review.md) |
 | [**Unit 2**](curriculum/SYLLABUS.md#unit-2-the-brain-computational-thinking--microcontrollers) | **The Brain: Computational Thinking & Microcontrollers** | Beginner | Wokwi (ESP32/Pico) & Python | Multi-state smart traffic & pedestrian crosswalk | ✅ [Reviewed](reviews/2026-10-04-unit-02-the-brain-review.md) |
 | [**Unit 3**](curriculum/SYLLABUS.md#unit-3-the-senses-sensors-signals--perception) | **The Senses: Sensors, Signals, & Perception** | Intermediate | Wokwi & Python | Ultrasonic radar scanner with noise filter | ✅ [Reviewed](reviews/2026-10-04-unit-03-the-senses-review.md) |

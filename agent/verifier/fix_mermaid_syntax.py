@@ -82,6 +82,8 @@ def main():
     total_fixed = 0
     search_dirs = [
         REPO_ROOT / "curriculum",
+        REPO_ROOT / "hardware",
+        REPO_ROOT / "simulations",
         REPO_ROOT / "docs",
         REPO_ROOT / "reviews",
         REPO_ROOT / "README.md"

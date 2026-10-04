@@ -60,6 +60,8 @@ def sync_textbook():
     if readme_path.exists():
         content = readme_path.read_text(encoding="utf-8")
         content = content.replace("curriculum/SYLLABUS.md", "syllabus.md")
+        # Collapse multiple dashes in anchors (e.g. syllabus.md#unit-0-...--... -> -...)
+        content = re.sub(r"(syllabus\.md#[a-z0-9\-]+)", lambda m: re.sub(r"-+", "-", m.group(1)), content)
         content = content.replace(".github/workflows/curriculum_evolution.yml", "https://github.com/jscottvogel/Instructabot/blob/main/.github/workflows/curriculum_evolution.yml")
         (DOCS_DIR / "index.md").write_text(content, encoding="utf-8")
         print("✅ Synced & sanitized Home: README.md -> docs/index.md")
