@@ -75,7 +75,9 @@ def sync_textbook():
     # 3.1 Copy Getting Started & Glossary
     getting_started_path = CURRICULUM_DIR / "GETTING_STARTED.md"
     if getting_started_path.exists():
-        shutil.copy2(getting_started_path, DOCS_DIR / "getting_started.md")
+        gs_content = getting_started_path.read_text(encoding="utf-8")
+        gs_content = re.sub(r'\(unit-(\d\d-[a-z\-]+)/', r'(curriculum/unit-\1/', gs_content)
+        (DOCS_DIR / "getting_started.md").write_text(gs_content, encoding="utf-8")
         print("✅ Synced Getting Started Guide -> docs/getting_started.md")
 
     glossary_path = CURRICULUM_DIR / "GLOSSARY.md"
