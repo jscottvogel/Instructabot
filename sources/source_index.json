@@ -218,6 +218,42 @@
       "url": "https://www.ti.com/lit/an/slva714/slva714.pdf",
       "license": "Technical White Paper / Public Application Report",
       "relevance": ["Inductive flyback diodes", "Inrush current management", "Thermal design in motor drivers", "Decoupling motor noise"]
+    },
+    {
+      "id": "shigley-mechanical-engineering",
+      "title": "Shigley's Mechanical Engineering Design (11th Edition)",
+      "authors": ["Richard G. Budynas", "J. Keith Nisbett"],
+      "institution": "McGraw-Hill Education",
+      "url": "https://www.mheducation.com/highered/product/shigley-s-mechanical-engineering-design-budynas-nisbett/M9780073398204.html",
+      "license": "Academic Reference (Mechanical Principles & Machine Elements)",
+      "relevance": ["Gear train ratios", "Torque transmission", "Spur, worm, and planetary gears", "Shaft stress and fasteners"]
+    },
+    {
+      "id": "craig-intro-robotics",
+      "title": "Introduction to Robotics: Mechanics and Control (4th Edition)",
+      "authors": ["John J. Craig"],
+      "institution": "Pearson Education / Stanford University",
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-robotics-mechanics-and-control/P200000003290",
+      "license": "Academic Textbook Reference",
+      "relevance": ["Spatial coordinate transformations", "Forward and inverse kinematics", "Degrees of freedom", "Workspace reachability"]
+    },
+    {
+      "id": "onshape-education-guide",
+      "title": "Onshape Fundamentals: Parametric 3D CAD Curriculum",
+      "authors": ["PTC Education Team"],
+      "institution": "PTC Inc.",
+      "url": "https://learn.onshape.com/",
+      "license": "Open Educational Curriculum",
+      "relevance": ["Cloud parametric modeling", "Sketch constraints", "Assembly mating", "Design for 3D printing"]
+    },
+    {
+      "id": "nasa-structures-mechanisms",
+      "title": "NASA Technical Handbook: Structural and Mechanical Design Guidelines (NASA-HDBK-7005)",
+      "authors": ["NASA Engineering and Safety Center (NESC)"],
+      "institution": "National Aeronautics and Space Administration (NASA)",
+      "url": "https://standards.nasa.gov/standard/nasa/nasa-hdbk-7005",
+      "license": "Public Domain (U.S. Government Work)",
+      "relevance": ["Center of gravity", "Structural stability polygons", "Fasteners and locking mechanisms", "Vibration damping"]
     }
   ]
 }

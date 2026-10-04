@@ -262,6 +262,46 @@
       "author": "SparkFun Electronics / Instructabot",
       "attribution_required": true,
       "description": "Wiring diagram connecting Raspberry Pi Pico to TB6612FNG dual motor driver and geared DC motors"
+    },
+    {
+      "id": "gear-train-ratio",
+      "filename": "gear-ratios.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Spur gear meshing diagram illustrating gear teeth ratio, mechanical advantage, speed reduction, and torque multiplication"
+    },
+    {
+      "id": "robot-arm-forward-kinematics",
+      "filename": "arm-forward-kinematics.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "2-link planar robotic manipulator geometry showing joint angles theta1 and theta2, link lengths L1 and L2, and end-effector coordinates"
+    },
+    {
+      "id": "stability-polygon-cg",
+      "filename": "stability-polygon.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Center of gravity projection onto mobile robot wheel ground contact polygon showing tipping thresholds"
+    },
+    {
+      "id": "onshape-cad-robotic-link",
+      "filename": "onshape-arm-model.png",
+      "media_type": "schematic",
+      "source_url": "https://learn.onshape.com/",
+      "license": "Creative Commons Attribution 4.0 (PTC Onshape)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Parametric 3D CAD model of a 2-DOF robotic arm bracket with servo motor cutout and mounting holes in Onshape"
     }
   ]
 }
