@@ -472,6 +472,46 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "ROS 2 Nav2 software architecture block diagram showing Behavior Tree Navigator, Costmap2D, Global Planner (NavFn/A*), Local Controller (DWB), and Recovery Behaviors"
+    },
+    {
+      "id": "classical-vs-ai-robotics",
+      "filename": "classical-vs-ai.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Comparative architecture diagram contrasting classical modular robotics pipeline (Perception -> State Estimation -> Planning -> PID) with end-to-end and hybrid neural robotics pipelines"
+    },
+    {
+      "id": "yolo-detection-grid",
+      "filename": "yolo-detection-grid.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://docs.ultralytics.com/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "YOLO neural network single-stage detection diagram showing S x S grid cell division, bounding box anchor regression, class probability scores, and Non-Maximum Suppression (NMS)"
+    },
+    {
+      "id": "domain-randomization-sim2real",
+      "filename": "domain-randomization.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://arxiv.org/abs/1703.06907",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Domain randomization Sim2Real transfer concept diagram showing wide randomized variations in simulated textures, lighting, friction, and mass encompassing physical real-world test conditions"
+    },
+    {
+      "id": "vla-foundation-model-architecture",
+      "filename": "vla-architecture.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://robotics-transformer2.github.io/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Vision-Language-Action (VLA) foundation model pipeline showing natural language prompt and camera image tokens processed by a multimodal Transformer to generate robotic end-effector action tokens"
     }
   ]
 }

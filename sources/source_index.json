@@ -371,6 +371,42 @@
       "url": "https://planning.cs.uiuc.edu/",
       "license": "Open Access Electronic Textbook",
       "relevance": ["Graph search (Dijkstra, A*)", "Rapidly-exploring Random Trees (RRT)", "Configuration space (C-space)", "Collision-checking geometry"]
+    },
+    {
+      "id": "yolo-realtime-detection",
+      "title": "You Only Look Once: Unified, Real-Time Object Detection",
+      "authors": ["Joseph Redmon", "Santosh Divvala", "Ross Girshick", "Ali Farhadi"],
+      "institution": "University of Washington / IEEE CVPR / Ultralytics",
+      "url": "https://docs.ultralytics.com/",
+      "license": "AGPL-3.0 / Open Source Computer Vision",
+      "relevance": ["Single-stage object detection", "Real-time edge inference", "Bounding box regression", "Class probability estimation"]
+    },
+    {
+      "id": "tobin-domain-randomization",
+      "title": "Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World",
+      "authors": ["Josh Tobin", "Rachel Fong", "Alex Ray", "Jonas Schneider", "Wojciech Zaremba", "Pieter Abbeel"],
+      "institution": "OpenAI / UC Berkeley / IEEE IROS",
+      "url": "https://arxiv.org/abs/1703.06907",
+      "license": "Open Access Scientific Publication",
+      "relevance": ["The Sim2Real reality gap", "Visual domain randomization", "Physical dynamics randomization", "Zero-shot real-world transfer"]
+    },
+    {
+      "id": "rt2-vla-foundation-models",
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "authors": ["Anthony Brohan", "Noah Brown", "Justice Carbajal", "Yevgen Chebotar", "Google DeepMind Team"],
+      "institution": "Google DeepMind",
+      "url": "https://robotics-transformer2.github.io/",
+      "license": "Open Access Scientific Publication (CoRL 2023)",
+      "relevance": ["Vision-Language-Action (VLA) architecture", "Web-scale multimodal pre-training", "Robotic action tokenization", "Semantic spatial reasoning"]
+    },
+    {
+      "id": "diffusion-policy-manipulation",
+      "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+      "authors": ["Cheng Chi", "Siyuan Feng", "Yilun Du", "Zhenjia Xu", "Eric Cousineau", "Benjamin Burchfiel", "Shuran Song"],
+      "institution": "Columbia University / MIT / Toyota Research Institute",
+      "url": "https://diffusion-policy.cs.columbia.edu/",
+      "license": "Open Access Scientific Publication (RSS 2023)",
+      "relevance": ["Visuomotor policy learning", "Generative diffusion models for robot actions", "Multimodal action distributions", "Complex manipulation tasks"]
     }
   ]
 }
