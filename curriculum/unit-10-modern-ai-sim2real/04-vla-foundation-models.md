@@ -89,6 +89,14 @@ To solve this, Cheng Chi and researchers at Columbia/MIT developed **Diffusion P
 
 ---
 
+### 3.4 Open-Source VLA Breakthroughs: OpenVLA and LeRobot
+
+While Google RT-1 and RT-2 proved that web-scale foundation models could command robot arms, their model weights remained proprietary. In 2024, the open robotics community achieved two landmark breakthroughs:
+- **OpenVLA (7B Parameters)**: Built on open vision-language architectures, OpenVLA allows students and researchers to run and fine-tune robotic manipulation policies on consumer GPUs or Google Colab [^4].
+- **Hugging Face LeRobot**: A democratized, open-source PyTorch framework providing pre-trained imitation learning and VLA policies designed specifically to lower the cost barrier of robotics experimentation [^4].
+
+---
+
 ## 4. Practical Hands-On: Action Tokenization & Decoding in Python
 
 Let's write a Python module that demonstrates how VLA models discretize physical actions and decode tokens into continuous metric trajectories [^1]:
@@ -178,6 +186,7 @@ You have now reached the summit of our curriculum! In our **Capstone Lab 10: Sem
 ## 7. Sources & Media Provenance
 
 ### Cited References
+[^4]: **Moo Jin Kim, Karl Pertsch, Siddharth Karamcheti, Ted Xiao, Chelsea Finn, Percy Liang**, *"OpenVLA: An Open-Source Vision-Language-Action Model"*, arXiv:2406.09246. Available: [arXiv OpenVLA Paper](https://arxiv.org/abs/2406.09246).
 [^1]: **Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Google DeepMind Team**, *"RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"*, Conference on Robot Learning (CoRL 2023). Available: [Robotics Transformer 2 Website](https://robotics-transformer2.github.io/).  
 [^2]: **Open X-Embodiment Collaboration**, *"Open X-Embodiment: Robotic Learning Datasets and RT-X Models"*, arXiv:2310.08864 (2023). Available: [Open X-Embodiment Project](https://robotics-transformer-x.github.io/).  
 [^3]: **Cheng Chi, Siyuan Feng, Yilun Du, Zhenjia Xu, Eric Cousineau, Benjamin Burchfiel, Shuran Song**, *"Diffusion Policy: Visuomotor Policy Learning via Action Diffusion"*, Robotics: Science and Systems (RSS 2023). Available: [Diffusion Policy Website](https://diffusion-policy.cs.columbia.edu/).

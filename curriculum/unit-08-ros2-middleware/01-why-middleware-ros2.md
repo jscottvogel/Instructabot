@@ -53,6 +53,9 @@ The solution is **Robotic Middleware**: breaking the robot into dozens of indepe
 
 ## 3. The Core Concept Explained
 
+> [!NOTE]
+> **Forward-Looking LTS Note (ROS 2 Jazzy Jalisco)**: While this curriculum standardizes on **ROS 2 Humble Hawksbill** (Ubuntu 22.04 LTS, supported through 2027) for rock-solid stability and maximum simulator compatibility, the ROS 2 project released **ROS 2 Jazzy Jalisco** (Ubuntu 24.04 LTS, supported through May 2029) [^4]. All computational graph primitives (Nodes, Topics, Services, Actions) and RCL APIs taught across Units 8 through 10 remain 100% identical and portable to Jazzy.
+
 ### 3.1 What Is ROS 2?
 
 Despite its name, **ROS 2 (Robot Operating System 2)** is not an operating system like Windows or Ubuntu Linux. ROS 2 is an open-source **Robotics Middleware Suite** that runs on top of Linux, macOS, or Windows [^1]:
@@ -200,6 +203,7 @@ In **Module 8.2: The Core ROS 2 Computational Graph**, we will dive into the fou
 ## 7. Sources & Media Provenance
 
 ### Cited References
+[^4]: **Open Robotics**, *"ROS 2 Jazzy Jalisco Release Notes & System Requirements"*, Open Source Robotics Foundation. Available: [ROS 2 Jazzy Official Documentation](https://docs.ros.org/en/jazzy/Releases/Release-Jazzy-Jalisco.html).
 [^1]: **Open Robotics**, *"ROS 2 Documentation: Architecture & Quality of Service (Humble / Iron)"*, Open Source Robotics Foundation. License: Creative Commons Attribution 3.0 / Apache License 2.0. Available: [ROS 2 Official Documentation](https://docs.ros.org/en/humble/index.html).  
 [^2]: **Steven Macenski, Tully Foote, Brian Gerkey, Michael Carroll, Dirk Thomas**, *"Robot Operating System 2: Design, architecture, and uses in the wild"*, Science Robotics, Vol. 7, No. 66. Available: [Science Robotics ROS 2 Article](https://www.science.org/doi/10.1126/scirobotics.abm6074).  
 [^3]: **Roland Siegwart, Illah R. Nourbakhsh, Davide Scaramuzza**, *"Introduction to Autonomous Mobile Robots (Chapter 4: Middleware & Software Architectures)"*, MIT Press. Available: [MIT Press Autonomous Mobile Robots](https://mitpress.mit.edu/9780262015356/introduction-to-autonomous-mobile-robots/).

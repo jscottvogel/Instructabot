@@ -65,18 +65,64 @@ Instructabot/
 ## 🔄 Autonomous Workflow: "While You're at Work"
 
 ```mermaid
-flowchart LR
-    A["Syllabus Queue"] --> B["Source Research & Citation Ingestion"]
-    B --> C["Media Harvester (CC / Public Domain)"]
-    C --> D["Lesson Drafting (Template-Constrained)"]
-    D --> E["Automated Citation & Fact Verifier"]
-    E --> F["Git Feature Branch & Daily Review Packet"]
-    F --> G["Human Review (You, after work)"]
-    G -->|Approved| H["Merge to main"]
-    G -->|Feedback / Revisions| D
+flowchart TD
+    subgraph Research & Evolution
+        Scout["🔭 Trend Scout<br/>(arXiv, ROS 2, SOTA Webots)"] --> ECR["📝 Evolution Change Request"]
+        ECR --> Updater["⚡ Autonomous Lesson Updater<br/>(Citations & Media Sync)"]
+    end
+
+    subgraph Quality Gauntlet
+        Updater --> ReviewPanel["🏛️ Multi-Agent Editorial Board"]
+        ReviewPanel --> Pedagogy["🎓 Pedagogical Critic<br/>(Jargon Police & Physical Analogies)"]
+        ReviewPanel --> Personas["🧒 Simulated Learner Personas<br/>(Maya, Jordan, Sam Friction Index)"]
+        ReviewPanel --> CodeHarness["💻 AST Syntax & Headless Execution<br/>(21+ Standalone Test Scripts)"]
+        ReviewPanel --> Sentinel["📡 Dependency Sentinel<br/>(22+ Libraries, LTS Lifecycles)"]
+        ReviewPanel --> Verifier["📚 Citation & Media Integrity<br/>(100% Verifiable Academic Sources)"]
+    end
+
+    subgraph Human-in-the-Loop Approval
+        ReviewPanel --> Report["📊 Daily Audit & ECR Packet<br/>(Overall Score >= 90/100)"]
+        Report --> UserReview["🧑‍💻 Human Review (You, after work)"]
+        UserReview -->|Approved| Merge["✅ Merge to main"]
+    end
 ```
 
-1. **Autonomous Drafting**: The agent picks the next lesson from `SYLLABUS.md`, retrieves authoritative sources, and drafts the lesson strictly grounded in those sources.
-2. **Citation Verification**: An automated check validates that all claims reference registered sources in `sources/source_index.json` and all media has verified licenses in `media/media_manifest.json`.
-3. **Daily Review Packet**: The agent commits to a branch and leaves a review summary in `reviews/` detailing the newly drafted lesson, core analogies used, and citations for you to inspect.
-4. **Your Approval**: You review the git diff, test or inspect the simulation steps, and approve or request adjustments.
+---
+
+## 🏛️ Autonomous Multi-Agent Editorial Board
+
+To ensure the curriculum remains accessible, academically sound, and functionally executable, a panel of specialized reviewer agents audits every change before human review:
+
+| Agent / Engine | Mission & Responsibilities | Key Metric | Target Threshold |
+| :--- | :--- | :--- | :--- |
+| **🎓 Pedagogical Critic** | Audits lesson structure, readability, and flags abstract mathematical formulas introduced without immediate physical analogies. | Pedagogical Score | $\ge 85 / 100$ |
+| **🧒 Learner Personas** | Simulates three distinct student archetypes:<br/>• **Maya** (10th Grader, zero coding)<br/>• **Jordan** (College ME Sophomore, needs physical units)<br/>• **Sam** (Vocational Technician, demands hardware safety) | Student Friction Index | $\le 10 / 100$ |
+| **💻 Code Execution Harness** | Headless AST syntax checker and subprocess execution harness testing all Python code blocks. | Syntax & Execution Pass Rate | $100\%$ Valid Syntax |
+| **📡 Dependency Sentinel** | Scans 22+ upstream libraries (`rclpy`, `opencv-python`, `numpy`, `controller`) for deprecated APIs and LTS release lifecycles. | Dependency Health Score | $100 / 100$ |
+| **📚 Citation & Media Verifier** | Validates that every footnote citation `[^n]` maps to an authoritative peer-reviewed or institutional source with valid HTTPS links. | Academic Integrity Score | $100 / 100$ (0 Errors) |
+
+---
+
+## 🚀 Running the Autonomous Evolution Suite
+
+You can trigger the entire research, evolution, and verification pipeline locally with a single command:
+
+```powershell
+# Run the complete autonomous evolution cycle and quality gauntlet:
+python agent/evolution/run_evolution_cycle.py
+
+# Run the editorial board review panel:
+python agent/reviewers/run_editorial_board.py
+
+# Scout the latest SOTA robotics trends and generate proposals:
+python agent/evolution/research_trends.py
+
+# Verify academic citation and open-license media integrity:
+python agent/verifier/check_citations.py
+```
+
+### ⏰ Continuous CI/CD Automation (GitHub Actions)
+The repository includes an autonomous GitHub Actions workflow ([`.github/workflows/curriculum_evolution.yml`](.github/workflows/curriculum_evolution.yml)) that runs:
+1. **On Every Push & Pull Request**: Runs citation checks, AST syntax verification, and the editorial gauntlet.
+2. **Weekly Autonomous Schedule (`0 3 * * 1`)**: Scans for new robotics developments, tests dependencies, and automatically opens a pull request with new Evolution Change Requests (ECRs) while you are asleep or at work.
+

@@ -1,0 +1,69 @@
+{
+  "monitoring_tracks": [
+    {
+      "id": "track_ros2",
+      "name": "ROS 2 Ecosystem & Middleware",
+      "target_units": ["unit-08-ros2-middleware", "unit-09-autonomous-navigation"],
+      "focus_areas": [
+        "LTS release lifecycles (Humble Hawksbill, Jazzy Jalisco)",
+        "Nav2 architecture evolutions and behavior tree nodes",
+        "Micro-ROS on modern microcontrollers (ESP32, RP2040)",
+        "DDS/RMW implementation optimizations (FastDDS, CycloneDDS)"
+      ],
+      "academic_keywords": ["ROS 2", "robot operating system", "Nav2", "behavior trees", "micro-ROS"],
+      "current_standard": "ROS 2 Humble / Jazzy LTS"
+    },
+    {
+      "id": "track_vla_foundation_models",
+      "name": "Vision-Language-Action (VLA) & Robot Foundation Models",
+      "target_units": ["unit-10-modern-ai-sim2real"],
+      "focus_areas": [
+        "Open-source VLA models (OpenVLA, Octo, LeRobot)",
+        "Zero-shot semantic manipulation and affordance grounding",
+        "Multimodal transformers for robotics policy execution",
+        "Diffusion policy imitation learning from human demonstrations"
+      ],
+      "academic_keywords": ["Vision-Language-Action", "VLA", "OpenVLA", "diffusion policy", "embodied AI"],
+      "current_standard": "Google RT-1/RT-2, OpenVLA, YOLOv8"
+    },
+    {
+      "id": "track_sim2real_and_simulation",
+      "name": "Physics Simulation & Sim2Real Transfer",
+      "target_units": ["unit-06-mobile-robotics", "unit-10-modern-ai-sim2real"],
+      "focus_areas": [
+        "Webots open-source releases and ODE physics engine tuning",
+        "Isaac Sim / Isaac Lab GPU-accelerated parallel reinforcement learning",
+        "Domain randomization (dynamics, visual textures, lighting)",
+        "System identification for friction, motor backlash, and battery sag"
+      ],
+      "academic_keywords": ["sim2real", "domain randomization", "Webots", "Isaac Sim", "physics simulation"],
+      "current_standard": "Webots R2023b+, PyBullet, MuJoCo"
+    },
+    {
+      "id": "track_spatial_sensing_vision",
+      "name": "Spatial Sensing, Vision & Edge AI",
+      "target_units": ["unit-03-the-senses", "unit-07-robot-vision"],
+      "focus_areas": [
+        "Edge tensor accelerators (Google Coral Edge TPU, Hailo, Kneron)",
+        "Direct Time-of-Flight (dToF) LiDAR miniaturization and pricing drops",
+        "Neuromorphic event-based cameras for high-speed robotic tracking",
+        "RGB-D depth sensing and spatial neural networks (OAK-D, RealSense)"
+      ],
+      "academic_keywords": ["edge AI", "depth camera", "dToF LiDAR", "spatial AI", "event camera"],
+      "current_standard": "OpenCV 4.7+, YOLOv8-nano, Intel RealSense, RPLIDAR"
+    },
+    {
+      "id": "track_accessible_hardware",
+      "name": "Accessible & Low-Cost Educational Hardware",
+      "target_units": ["unit-01-electronics", "unit-02-the-brain", "unit-04-the-muscles", "unit-05-the-bones"],
+      "focus_areas": [
+        "Dual-core MCU platforms with built-in Wi-Fi/BLE (ESP32-S3, Raspberry Pi Pico 2 / RP2350)",
+        "Field-Oriented Control (FOC) drivers for cheap brushless gimbal motors",
+        "Direct-drive high-torque actuators and quasi-direct-drive (QDD) joints",
+        "3D printed cycloidal gearboxes and harmonic reducers"
+      ],
+      "academic_keywords": ["microcontroller robotics", "MicroPython", "field oriented control", "QDD actuator"],
+      "current_standard": "MicroPython, Raspberry Pi Pico / RP2040, L298N / TB6612FNG, NEMA 17"
+    }
+  ]
+}

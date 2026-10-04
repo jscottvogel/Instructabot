@@ -51,7 +51,7 @@ flowchart TD
 
 | Feature | Microcontroller Unit (MCU) | Single-Board Computer (SBC) |
 | :--- | :--- | :--- |
-| **Common Examples** | Raspberry Pi Pico (RP2040), ESP32, Arduino Uno | Raspberry Pi 4/5, NVIDIA Jetson Nano/Orin |
+| **Common Examples** | Raspberry Pi Pico (RP2040 / RP2350 Pico 2) [^4], ESP32, Arduino Uno | Raspberry Pi 4/5, NVIDIA Jetson Nano/Orin |
 | **Operating System** | **None** (Bare metal firmware: MicroPython or C++) | **Full Linux OS** (Ubuntu, Raspberry Pi OS) |
 | **Clock Speed** | $16\text{ MHz} - 240\text{ MHz}$ | $1.5\text{ GHz} - 2.4\text{ GHz}$ (Quad/Octa-core) |
 | **RAM Memory** | Kilobytes ($264\text{ KB}$ on Pico, $520\text{ KB}$ on ESP32) | Gigabytes ($2\text{ GB} - 8\text{ GB}$) |
@@ -206,6 +206,7 @@ In our unit capstone, **Lab 2: The Pedestrian-Responsive Intersection Controller
 ## 7. Sources & Media Provenance
 
 ### Cited References
+[^4]: **Raspberry Pi Ltd**, *"Raspberry Pi RP2350 Microcontroller Datasheet (Dual ARM Cortex-M33 & RISC-V Hazard3)"*, Raspberry Pi Documentation. Available: [RP2350 Official Datasheet](https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf).
 [^1]: **Damien P. George, MicroPython Community**, *"MicroPython Documentation and Language Reference (machine.Pin Module)"*, George Robotics Ltd. Available: [MicroPython Pin Documentation](https://docs.micropython.org/en/latest/library/machine.Pin.html).  
 [^2]: **Raspberry Pi Ltd. Documentation Team**, *"Raspberry Pi Pico Python SDK: A Guide to MicroPython on RP2040"*, Raspberry Pi Ltd. License: CC BY-SA 4.0. Available: [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf).  
 [^3]: **Leslie Kaelbling, Tomas Lozano-Perez, Dennis Freeman**, *"Introduction to Electrical Engineering and Computer Science I (6.01SC) — Embedded Systems and Microcontrollers"*, MIT OpenCourseWare. License: CC BY-NC-SA 4.0. Available: [MIT OCW 6.01SC](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/).

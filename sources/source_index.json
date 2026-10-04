@@ -6,407 +6,809 @@
     {
       "id": "mit-ocw-601sc",
       "title": "Introduction to Electrical Engineering and Computer Science I",
-      "authors": ["Leslie Kaelbling", "Tomas Lozano-Perez", "Dennis Freeman"],
+      "authors": [
+        "Leslie Kaelbling",
+        "Tomas Lozano-Perez",
+        "Dennis Freeman"
+      ],
       "institution": "Massachusetts Institute of Technology (MIT OpenCourseWare)",
       "url": "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/",
       "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
-      "relevance": ["Sense-Think-Act paradigm", "State machines", "Circuits and operational amplifiers", "Robot obstacle avoidance"]
+      "relevance": [
+        "Sense-Think-Act paradigm",
+        "State machines",
+        "Circuits and operational amplifiers",
+        "Robot obstacle avoidance"
+      ]
     },
     {
       "id": "nasa-rap",
       "title": "NASA Robotics Alliance Project - Educational Resources",
-      "authors": ["NASA RAP Engineering Team"],
+      "authors": [
+        "NASA RAP Engineering Team"
+      ],
       "institution": "National Aeronautics and Space Administration (NASA)",
       "url": "https://robotics.nasa.gov/educational-resources/",
       "license": "Public Domain (U.S. Government Work)",
-      "relevance": ["Robotics subsystems", "Engineering notebooks", "Mechanical principles", "Power systems and safety"]
+      "relevance": [
+        "Robotics subsystems",
+        "Engineering notebooks",
+        "Mechanical principles",
+        "Power systems and safety"
+      ]
     },
     {
       "id": "ros2-humble-docs",
       "title": "ROS 2 Humble Hawksbill Documentation",
-      "authors": ["Open Source Robotics Foundation (OSRF)"],
+      "authors": [
+        "Open Source Robotics Foundation (OSRF)"
+      ],
       "institution": "Open Robotics",
       "url": "https://docs.ros.org/en/humble/",
       "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
-      "relevance": ["ROS 2 nodes, topics, services, actions", "TF2 transform library", "RViz2 visualization", "Nav2 navigation stack"]
+      "relevance": [
+        "ROS 2 nodes, topics, services, actions",
+        "TF2 transform library",
+        "RViz2 visualization",
+        "Nav2 navigation stack"
+      ]
     },
     {
       "id": "lynch-park-modern-robotics",
       "title": "Modern Robotics: Mechanics, Planning, and Control",
-      "authors": ["Kevin M. Lynch", "Frank C. Park"],
+      "authors": [
+        "Kevin M. Lynch",
+        "Frank C. Park"
+      ],
       "institution": "Northwestern University / Seoul National University (Cambridge University Press)",
       "url": "https://modernrobotics.northwestern.edu/",
       "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (Preprint edition)",
-      "relevance": ["Rigid-body kinematics", "Forward and inverse kinematics", "Mobile robot drive kinematics", "Motion planning"]
+      "relevance": [
+        "Rigid-body kinematics",
+        "Forward and inverse kinematics",
+        "Mobile robot drive kinematics",
+        "Motion planning"
+      ]
     },
     {
       "id": "phet-circuits",
       "title": "Circuit Construction Kit (DC) Interactive Simulation",
-      "authors": ["PhET Interactive Simulations Team"],
+      "authors": [
+        "PhET Interactive Simulations Team"
+      ],
       "institution": "University of Colorado Boulder",
       "url": "https://phet.colorado.edu/en/simulations/circuit-construction-kit-dc",
       "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
-      "relevance": ["Ohm's Law visual intuition", "Series and parallel circuits", "Current flow and voltage drop"]
+      "relevance": [
+        "Ohm's Law visual intuition",
+        "Series and parallel circuits",
+        "Current flow and voltage drop"
+      ]
     },
     {
       "id": "webots-docs",
       "title": "Cyberbotics Webots Open-Source Robot Simulator Documentation",
-      "authors": ["Cyberbotics Ltd."],
+      "authors": [
+        "Cyberbotics Ltd."
+      ],
       "institution": "Cyberbotics",
       "url": "https://cyberbotics.com/doc/guide/index",
       "license": "Apache License 2.0",
-      "relevance": ["Physics simulation", "Differential drive robot modeling", "LiDAR and camera sensor simulation", "Python robot controller API"]
+      "relevance": [
+        "Physics simulation",
+        "Differential drive robot modeling",
+        "LiDAR and camera sensor simulation",
+        "Python robot controller API"
+      ]
     },
     {
       "id": "iso-8373-2021",
       "title": "ISO 8373:2021 Robotics - Vocabulary",
-      "authors": ["ISO/TC 299 Robotics Technical Committee"],
+      "authors": [
+        "ISO/TC 299 Robotics Technical Committee"
+      ],
       "institution": "International Organization for Standardization (ISO)",
       "url": "https://www.iso.org/standard/75338.html",
       "license": "Standard Reference (Public Abstract & Definitions)",
-      "relevance": ["Formal definition of robot", "Autonomy classification", "Industrial vs. Service robots"]
+      "relevance": [
+        "Formal definition of robot",
+        "Autonomy classification",
+        "Industrial vs. Service robots"
+      ]
     },
     {
       "id": "nasa-jpl-autonav",
       "title": "Autonomous Planetary Rover Navigation: The Mars Exploration Rovers, Curiosity, and Perseverance",
-      "authors": ["Mark Maimone", "Yang Cheng", "Larry Matthies"],
+      "authors": [
+        "Mark Maimone",
+        "Yang Cheng",
+        "Larry Matthies"
+      ],
       "institution": "NASA Jet Propulsion Laboratory / IEEE Aerospace Conference",
       "url": "https://trs.jpl.nasa.gov/handle/2014/37656",
       "license": "Public Domain (NASA Technical Reports Server)",
-      "relevance": ["Autonomous navigation in space", "Communication latency constraints", "Stereo vision obstacle detection on Mars"]
+      "relevance": [
+        "Autonomous navigation in space",
+        "Communication latency constraints",
+        "Stereo vision obstacle detection on Mars"
+      ]
     },
     {
       "id": "ansi-ria-r15-06",
       "title": "ANSI/RIA R15.06-2012: Industrial Robots and Robot Systems - Safety Requirements",
-      "authors": ["Robotics Industries Association (RIA) / ANSI"],
+      "authors": [
+        "Robotics Industries Association (RIA) / ANSI"
+      ],
       "institution": "Association for Advancing Automation (A3) / ANSI",
       "url": "https://www.automate.org/a3-content/ansi-ria-r15-06-2012-robot-safety-standard",
       "license": "Standard Reference (Safety Compliance Specifications)",
-      "relevance": ["E-Stops", "Pinch points", "Protective stop circuits", "Risk assessments"]
+      "relevance": [
+        "E-Stops",
+        "Pinch points",
+        "Protective stop circuits",
+        "Risk assessments"
+      ]
     },
     {
       "id": "ieee-ethics-ead",
       "title": "Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems",
-      "authors": ["IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems"],
+      "authors": [
+        "IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems"
+      ],
       "institution": "Institute of Electrical and Electronics Engineers (IEEE)",
       "url": "https://standards.ieee.org/industry-connections/ec/ead-v1/",
       "license": "Creative Commons Attribution-NonCommercial 3.0 (CC BY-NC 3.0)",
-      "relevance": ["Human well-being", "Algorithmic accountability", "Transparency", "Safety in autonomous systems"]
+      "relevance": [
+        "Human well-being",
+        "Algorithmic accountability",
+        "Transparency",
+        "Safety in autonomous systems"
+      ]
     },
     {
       "id": "kuphaldt-electric-circuits",
       "title": "Lessons In Electric Circuits, Volume I - DC",
-      "authors": ["Tony R. Kuphaldt"],
+      "authors": [
+        "Tony R. Kuphaldt"
+      ],
       "institution": "Open Textbook Library / All About Circuits",
       "url": "https://open.umn.edu/opentextbooks/textbooks/lessons-in-electric-circuits-volume-i-dc",
       "license": "Design Science License / Creative Commons Open Educational Resource",
-      "relevance": ["Ohm's Law", "Series and parallel circuits", "Voltage dividers", "Current flow"]
+      "relevance": [
+        "Ohm's Law",
+        "Series and parallel circuits",
+        "Voltage dividers",
+        "Current flow"
+      ]
     },
     {
       "id": "ti-buck-regulator-guide",
       "title": "Basic Calculation of a Buck Converter's Power Stage (Application Report SLVA477B)",
-      "authors": ["Everett Rogers"],
+      "authors": [
+        "Everett Rogers"
+      ],
       "institution": "Texas Instruments",
       "url": "https://www.ti.com/lit/an/slva477b/slva477b.pdf",
       "license": "Technical White Paper / Public Application Report",
-      "relevance": ["Switching regulators", "DC-DC buck converters", "Voltage regulation efficiency", "Brownout prevention"]
+      "relevance": [
+        "Switching regulators",
+        "DC-DC buck converters",
+        "Voltage regulation efficiency",
+        "Brownout prevention"
+      ]
     },
     {
       "id": "sparkfun-breadboard-guide",
       "title": "How to Use a Breadboard",
-      "authors": ["SparkFun Education Team"],
+      "authors": [
+        "SparkFun Education Team"
+      ],
       "institution": "SparkFun Electronics",
       "url": "https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard",
       "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
-      "relevance": ["Internal breadboard rails", "Tie points", "Prototyping circuits without soldering"]
+      "relevance": [
+        "Internal breadboard rails",
+        "Tie points",
+        "Prototyping circuits without soldering"
+      ]
     },
     {
       "id": "micropython-docs",
       "title": "MicroPython Documentation and Language Reference",
-      "authors": ["Damien P. George", "MicroPython Community"],
+      "authors": [
+        "Damien P. George",
+        "MicroPython Community"
+      ],
       "institution": "George Robotics Ltd.",
       "url": "https://docs.micropython.org/en/latest/",
       "license": "MIT License (Open Source)",
-      "relevance": ["Microcontroller hardware API", "machine.Pin", "time.ticks_ms", "Non-blocking event loops"]
+      "relevance": [
+        "Microcontroller hardware API",
+        "machine.Pin",
+        "time.ticks_ms",
+        "Non-blocking event loops"
+      ]
     },
     {
       "id": "raspberry-pi-pico-guide",
       "title": "Raspberry Pi Pico Python SDK: A Guide to MicroPython on RP2040",
-      "authors": ["Raspberry Pi Ltd. Documentation Team"],
+      "authors": [
+        "Raspberry Pi Ltd. Documentation Team"
+      ],
       "institution": "Raspberry Pi Ltd.",
       "url": "https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf",
       "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
-      "relevance": ["RP2040 microcontroller pinout", "GPIO input/output", "PWM hardware control", "Internal pull-ups"]
+      "relevance": [
+        "RP2040 microcontroller pinout",
+        "GPIO input/output",
+        "PWM hardware control",
+        "Internal pull-ups"
+      ]
     },
     {
       "id": "sipser-theory-of-computation",
       "title": "Introduction to the Theory of Computation (Finite State Automata)",
-      "authors": ["Michael Sipser"],
+      "authors": [
+        "Michael Sipser"
+      ],
       "institution": "Massachusetts Institute of Technology (MIT Mathematics)",
       "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/",
       "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)",
-      "relevance": ["Finite state machines", "State transitions", "Deterministic automata in robotics control"]
+      "relevance": [
+        "Finite state machines",
+        "State transitions",
+        "Deterministic automata in robotics control"
+      ]
     },
     {
       "id": "wokwi-simulator-docs",
       "title": "Wokwi Embedded Systems Simulator Documentation",
-      "authors": ["Uri Shaked"],
+      "authors": [
+        "Uri Shaked"
+      ],
       "institution": "Wokwi",
       "url": "https://docs.wokwi.com/",
       "license": "Open Educational Documentation",
-      "relevance": ["Browser microcontroller simulation", "RP2040 and ESP32 breadboarding", "MicroPython simulation"]
+      "relevance": [
+        "Browser microcontroller simulation",
+        "RP2040 and ESP32 breadboarding",
+        "MicroPython simulation"
+      ]
     },
     {
       "id": "oppenheim-signals-and-systems",
       "title": "Signals and Systems (6.007)",
-      "authors": ["Alan V. Oppenheim", "Alan S. Willsky"],
+      "authors": [
+        "Alan V. Oppenheim",
+        "Alan S. Willsky"
+      ],
       "institution": "Massachusetts Institute of Technology (MIT OpenCourseWare)",
       "url": "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/",
       "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)",
-      "relevance": ["Continuous vs. discrete signals", "Sampling theorem", "Analog-to-digital conversion", "Quantization error"]
+      "relevance": [
+        "Continuous vs. discrete signals",
+        "Sampling theorem",
+        "Analog-to-digital conversion",
+        "Quantization error"
+      ]
     },
     {
       "id": "sparkfun-ultrasonic-guide",
       "title": "HC-SR04 Ultrasonic Distance Sensor Hookup and Operating Guide",
-      "authors": ["SparkFun Electronics Technical Team"],
+      "authors": [
+        "SparkFun Electronics Technical Team"
+      ],
       "institution": "SparkFun Electronics",
       "url": "https://learn.sparkfun.com/tutorials/distance-sensing-basics",
       "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
-      "relevance": ["Time of flight acoustics", "Speed of sound calculation", "Acoustic specular reflections", "Beam angle limits"]
+      "relevance": [
+        "Time of flight acoustics",
+        "Speed of sound calculation",
+        "Acoustic specular reflections",
+        "Beam angle limits"
+      ]
     },
     {
       "id": "invensense-mpu6050",
       "title": "MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS MotionTracking Specification",
-      "authors": ["TDK InvenSense Engineering"],
+      "authors": [
+        "TDK InvenSense Engineering"
+      ],
       "institution": "TDK InvenSense",
       "url": "https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/",
       "license": "Public Manufacturer Specification",
-      "relevance": ["MEMS accelerometer", "Coriolis vibratory gyroscopes", "Sensor drift", "Complementary filter"]
+      "relevance": [
+        "MEMS accelerometer",
+        "Coriolis vibratory gyroscopes",
+        "Sensor drift",
+        "Complementary filter"
+      ]
     },
     {
       "id": "smith-dsp-guide",
       "title": "The Scientist and Engineer's Guide to Digital Signal Processing",
-      "authors": ["Steven W. Smith"],
+      "authors": [
+        "Steven W. Smith"
+      ],
       "institution": "California Technical Publishing",
       "url": "https://www.dspguide.com/",
       "license": "Open Access Educational Textbook",
-      "relevance": ["Moving average filter", "Median filter for outlier removal", "Noise reduction in sensor readings"]
+      "relevance": [
+        "Moving average filter",
+        "Median filter for outlier removal",
+        "Noise reduction in sensor readings"
+      ]
     },
     {
       "id": "chapman-electric-machinery",
       "title": "Electric Machinery Fundamentals (5th Edition)",
-      "authors": ["Stephen J. Chapman"],
+      "authors": [
+        "Stephen J. Chapman"
+      ],
       "institution": "McGraw-Hill Education / BAE Systems",
       "url": "https://www.mheducation.com/highered/product/electric-machinery-fundamentals-chapman/M9780073529547.html",
       "license": "Academic Reference (DC Motors & Machinery Principles)",
-      "relevance": ["DC motor fundamentals", "Back-EMF equation", "Torque-speed curves", "Brushless DC and Stepper motors"]
+      "relevance": [
+        "DC motor fundamentals",
+        "Back-EMF equation",
+        "Torque-speed curves",
+        "Brushless DC and Stepper motors"
+      ]
     },
     {
       "id": "toshiba-tb6612fng",
       "title": "TB6612FNG Driver IC for Dual DC Motors Datasheet",
-      "authors": ["Toshiba Semiconductor & Storage Products"],
+      "authors": [
+        "Toshiba Semiconductor & Storage Products"
+      ],
       "institution": "Toshiba Corporation",
       "url": "https://toshiba.semicon-storage.com/info/TB6612FNG_datasheet_en_20141001.pdf",
       "license": "Public Manufacturer Specification",
-      "relevance": ["H-Bridge circuit topology", "MOSFET motor driving", "Shoot-through protection", "PWM direction truth tables"]
+      "relevance": [
+        "H-Bridge circuit topology",
+        "MOSFET motor driving",
+        "Shoot-through protection",
+        "PWM direction truth tables"
+      ]
     },
     {
       "id": "ti-motor-driver-primer",
       "title": "Understanding Motor Driver Current Ratings and Thermal Dissipation (SLVA714)",
-      "authors": ["Nicholas Oborny"],
+      "authors": [
+        "Nicholas Oborny"
+      ],
       "institution": "Texas Instruments",
       "url": "https://www.ti.com/lit/an/slva714/slva714.pdf",
       "license": "Technical White Paper / Public Application Report",
-      "relevance": ["Inductive flyback diodes", "Inrush current management", "Thermal design in motor drivers", "Decoupling motor noise"]
+      "relevance": [
+        "Inductive flyback diodes",
+        "Inrush current management",
+        "Thermal design in motor drivers",
+        "Decoupling motor noise"
+      ]
     },
     {
       "id": "shigley-mechanical-engineering",
       "title": "Shigley's Mechanical Engineering Design (11th Edition)",
-      "authors": ["Richard G. Budynas", "J. Keith Nisbett"],
+      "authors": [
+        "Richard G. Budynas",
+        "J. Keith Nisbett"
+      ],
       "institution": "McGraw-Hill Education",
       "url": "https://www.mheducation.com/highered/product/shigley-s-mechanical-engineering-design-budynas-nisbett/M9780073398204.html",
       "license": "Academic Reference (Mechanical Principles & Machine Elements)",
-      "relevance": ["Gear train ratios", "Torque transmission", "Spur, worm, and planetary gears", "Shaft stress and fasteners"]
+      "relevance": [
+        "Gear train ratios",
+        "Torque transmission",
+        "Spur, worm, and planetary gears",
+        "Shaft stress and fasteners"
+      ]
     },
     {
       "id": "craig-intro-robotics",
       "title": "Introduction to Robotics: Mechanics and Control (4th Edition)",
-      "authors": ["John J. Craig"],
+      "authors": [
+        "John J. Craig"
+      ],
       "institution": "Pearson Education / Stanford University",
       "url": "https://www.pearson.com/en-us/subject-catalog/p/introduction-to-robotics-mechanics-and-control/P200000003290",
       "license": "Academic Textbook Reference",
-      "relevance": ["Spatial coordinate transformations", "Forward and inverse kinematics", "Degrees of freedom", "Workspace reachability"]
+      "relevance": [
+        "Spatial coordinate transformations",
+        "Forward and inverse kinematics",
+        "Degrees of freedom",
+        "Workspace reachability"
+      ]
     },
     {
       "id": "onshape-education-guide",
       "title": "Onshape Fundamentals: Parametric 3D CAD Curriculum",
-      "authors": ["PTC Education Team"],
+      "authors": [
+        "PTC Education Team"
+      ],
       "institution": "PTC Inc.",
       "url": "https://learn.onshape.com/",
       "license": "Open Educational Curriculum",
-      "relevance": ["Cloud parametric modeling", "Sketch constraints", "Assembly mating", "Design for 3D printing"]
+      "relevance": [
+        "Cloud parametric modeling",
+        "Sketch constraints",
+        "Assembly mating",
+        "Design for 3D printing"
+      ]
     },
     {
       "id": "nasa-structures-mechanisms",
       "title": "NASA Technical Handbook: Structural and Mechanical Design Guidelines (NASA-HDBK-7005)",
-      "authors": ["NASA Engineering and Safety Center (NESC)"],
+      "authors": [
+        "NASA Engineering and Safety Center (NESC)"
+      ],
       "institution": "National Aeronautics and Space Administration (NASA)",
       "url": "https://standards.nasa.gov/standard/nasa/nasa-hdbk-7005",
       "license": "Public Domain (U.S. Government Work)",
-      "relevance": ["Center of gravity", "Structural stability polygons", "Fasteners and locking mechanisms", "Vibration damping"]
+      "relevance": [
+        "Center of gravity",
+        "Structural stability polygons",
+        "Fasteners and locking mechanisms",
+        "Vibration damping"
+      ]
     },
     {
       "id": "siegwart-mobile-robots",
       "title": "Introduction to Autonomous Mobile Robots (2nd Edition)",
-      "authors": ["Roland Siegwart", "Illah R. Nourbakhsh", "Davide Scaramuzza"],
+      "authors": [
+        "Roland Siegwart",
+        "Illah R. Nourbakhsh",
+        "Davide Scaramuzza"
+      ],
       "institution": "Massachusetts Institute of Technology (MIT Press)",
       "url": "https://mitpress.mit.edu/9780262015356/introduction-to-autonomous-mobile-robots/",
       "license": "Academic Textbook Reference (Autonomous Mobile Robotics)",
-      "relevance": ["Differential drive kinematics", "Instantaneous center of curvature (ICC)", "Dead-reckoning odometry", "Wheel slip error modeling"]
+      "relevance": [
+        "Differential drive kinematics",
+        "Instantaneous center of curvature (ICC)",
+        "Dead-reckoning odometry",
+        "Wheel slip error modeling"
+      ]
     },
     {
       "id": "astrom-murray-feedback",
       "title": "Feedback Systems: An Introduction for Scientists and Engineers (2nd Edition)",
-      "authors": ["Karl Johan Astrom", "Richard M. Murray"],
+      "authors": [
+        "Karl Johan Astrom",
+        "Richard M. Murray"
+      ],
       "institution": "Princeton University Press / Caltech",
       "url": "https://fbswiki.org/wiki/index.php/Feedback_Systems:_An_Introduction_for_Scientists_and_Engineers",
       "license": "Creative Commons Attribution-ShareAlike 3.0 (OER Edition)",
-      "relevance": ["PID control loop principles", "Proportional, integral, derivative action", "Tuning heuristics", "Steady-state error elimination"]
+      "relevance": [
+        "PID control loop principles",
+        "Proportional, integral, derivative action",
+        "Tuning heuristics",
+        "Steady-state error elimination"
+      ]
     },
     {
       "id": "cyberbotics-epuck-guide",
       "title": "e-puck Mobile Robot Simulation Model Reference",
-      "authors": ["Cyberbotics Ltd. / EPFL DISAL Laboratory"],
+      "authors": [
+        "Cyberbotics Ltd. / EPFL DISAL Laboratory"
+      ],
       "institution": "Cyberbotics Ltd.",
       "url": "https://cyberbotics.com/doc/guide/epuck",
       "license": "Apache License 2.0 (Open Source Robotics)",
-      "relevance": ["Differential drive simulation", "Infrared proximity sensors", "Wheel encoder simulation", "Python robot controller API"]
+      "relevance": [
+        "Differential drive simulation",
+        "Infrared proximity sensors",
+        "Wheel encoder simulation",
+        "Python robot controller API"
+      ]
     },
     {
       "id": "cyberbotics-webots-reference",
       "title": "Webots Open-Source Robot Simulator User Guide & Reference Manual",
-      "authors": ["Olivier Michel", "Cyberbotics Technical Team"],
+      "authors": [
+        "Olivier Michel",
+        "Cyberbotics Technical Team"
+      ],
       "institution": "Cyberbotics Ltd.",
       "url": "https://cyberbotics.com/doc/reference/index",
       "license": "Apache License 2.0 (Open Source Simulation)",
-      "relevance": ["Physics simulation engine (ODE)", "World scene tree and PROTO nodes", "DifferentialWheels / Motor nodes", "Supervisor API and Python controller"]
+      "relevance": [
+        "Physics simulation engine (ODE)",
+        "World scene tree and PROTO nodes",
+        "DifferentialWheels / Motor nodes",
+        "Supervisor API and Python controller"
+      ]
     },
     {
       "id": "opencv-reference",
       "title": "OpenCV (Open Source Computer Vision Library) Official Documentation",
-      "authors": ["OpenCV Team", "Gary Bradski", "Adrian Kaehler"],
+      "authors": [
+        "OpenCV Team",
+        "Gary Bradski",
+        "Adrian Kaehler"
+      ],
       "institution": "OpenCV.org / Open Source Vision Foundation",
       "url": "https://docs.opencv.org/4.x/",
       "license": "Apache License 2.0 (Open Source Computer Vision)",
-      "relevance": ["Image matrices", "Color space transformations (RGB/HSV)", "Morphological operations", "Contour finding", "ArUco pose estimation"]
+      "relevance": [
+        "Image matrices",
+        "Color space transformations (RGB/HSV)",
+        "Morphological operations",
+        "Contour finding",
+        "ArUco pose estimation"
+      ]
     },
     {
       "id": "szeliski-computer-vision",
       "title": "Computer Vision: Algorithms and Applications (2nd Edition)",
-      "authors": ["Richard Szeliski"],
+      "authors": [
+        "Richard Szeliski"
+      ],
       "institution": "Springer / University of Washington",
       "url": "https://szeliski.org/Book/",
       "license": "Open Access Electronic Textbook",
-      "relevance": ["Digital image formation", "Color representations", "Stereo vision and disparity maps", "Feature detection and camera models"]
+      "relevance": [
+        "Digital image formation",
+        "Color representations",
+        "Stereo vision and disparity maps",
+        "Feature detection and camera models"
+      ]
     },
     {
       "id": "aruco-fiducial-markers",
       "title": "Automatic Generation and Detection of Highly Reliable Fiducial Markers Under Occlusion",
-      "authors": ["S. Garrido-Jurado", "R. Muñoz-Salinas", "F. J. Madrid-Cuevas", "M. J. Marín-Jiménez"],
-      "institution": "University of Córdoba / Pattern Recognition Journal",
+      "authors": [
+        "S. Garrido-Jurado",
+        "R. Mu\u00f1oz-Salinas",
+        "F. J. Madrid-Cuevas",
+        "M. J. Mar\u00edn-Jim\u00e9nez"
+      ],
+      "institution": "University of C\u00f3rdoba / Pattern Recognition Journal",
       "url": "https://www.uco.es/investiga/grupos/ava/portfolio/aruco/",
       "license": "Academic Research & BSD Open Source",
-      "relevance": ["Fiducial marker dictionary", "Perspective-n-Point (PnP) pose estimation", "Camera calibration matrix", "Robotic visual docking"]
+      "relevance": [
+        "Fiducial marker dictionary",
+        "Perspective-n-Point (PnP) pose estimation",
+        "Camera calibration matrix",
+        "Robotic visual docking"
+      ]
     },
     {
       "id": "ros2-documentation",
       "title": "ROS 2 (Robot Operating System 2) Design & Core Documentation",
-      "authors": ["Open Robotics", "ROS 2 Core Development Team"],
+      "authors": [
+        "Open Robotics",
+        "ROS 2 Core Development Team"
+      ],
       "institution": "Open Source Robotics Foundation (OSRF)",
       "url": "https://docs.ros.org/en/humble/index.html",
       "license": "Apache License 2.0 / Creative Commons Attribution 3.0",
-      "relevance": ["DDS middleware architecture", "Computational graph (Nodes, Topics, Services, Actions)", "QoS reliability profiles", "rviz2 and rqt introspection"]
+      "relevance": [
+        "DDS middleware architecture",
+        "Computational graph (Nodes, Topics, Services, Actions)",
+        "QoS reliability profiles",
+        "rviz2 and rqt introspection"
+      ]
     },
     {
       "id": "macenski-ros2-science-robotics",
       "title": "Robot Operating System 2: Design, Architecture, and Uses in the Wild",
-      "authors": ["Steven Macenski", "Tully Foote", "Brian Gerkey", "Michael Carroll", "Dirk Thomas"],
+      "authors": [
+        "Steven Macenski",
+        "Tully Foote",
+        "Brian Gerkey",
+        "Michael Carroll",
+        "Dirk Thomas"
+      ],
       "institution": "Science Robotics / Open Robotics",
       "url": "https://www.science.org/doi/10.1126/scirobotics.abm6074",
       "license": "Peer-Reviewed Academic Publication (Science Robotics)",
-      "relevance": ["Micro-ROS to multi-robot fleets", "Real-time deterministic execution", "Distributed DDS transport", "Fault isolation & modularity"]
+      "relevance": [
+        "Micro-ROS to multi-robot fleets",
+        "Real-time deterministic execution",
+        "Distributed DDS transport",
+        "Fault isolation & modularity"
+      ]
     },
     {
       "id": "foote-tf2-transforms",
       "title": "tf: The Transform Library (Spatial Coordinate Frame Management in Robotics)",
-      "authors": ["Tully Foote"],
+      "authors": [
+        "Tully Foote"
+      ],
       "institution": "Open Source Robotics Foundation / IEEE TEPR",
       "url": "https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Introduction-To-Tf2.html",
       "license": "BSD-3-Clause / Creative Commons Attribution 3.0",
-      "relevance": ["Coordinate frame trees", "Static and dynamic broadcasts", "Time-travel transform queries", "Matrix transformations (base_link, odom, map)"]
+      "relevance": [
+        "Coordinate frame trees",
+        "Static and dynamic broadcasts",
+        "Time-travel transform queries",
+        "Matrix transformations (base_link, odom, map)"
+      ]
     },
     {
       "id": "thrun-probabilistic-robotics",
       "title": "Probabilistic Robotics (Intelligent Robotics and Autonomous Agents)",
-      "authors": ["Sebastian Thrun", "Wolfram Burgard", "Dieter Fox"],
+      "authors": [
+        "Sebastian Thrun",
+        "Wolfram Burgard",
+        "Dieter Fox"
+      ],
       "institution": "Massachusetts Institute of Technology (MIT Press)",
       "url": "https://mitpress.mit.edu/9780262201629/probabilistic-robotics/",
       "license": "Academic Textbook Reference (Autonomous Mobile Robotics)",
-      "relevance": ["Occupancy grid mapping", "Particle filters (Monte Carlo Localization)", "Simultaneous Localization and Mapping (SLAM)", "Log-odds Bayes filtering"]
+      "relevance": [
+        "Occupancy grid mapping",
+        "Particle filters (Monte Carlo Localization)",
+        "Simultaneous Localization and Mapping (SLAM)",
+        "Log-odds Bayes filtering"
+      ]
     },
     {
       "id": "nav2-documentation",
       "title": "Nav2 (ROS 2 Navigation Framework) Official Documentation",
-      "authors": ["Steven Macenski", "Nav2 Working Group"],
+      "authors": [
+        "Steven Macenski",
+        "Nav2 Working Group"
+      ],
       "institution": "Open Navigation LLC / Open Robotics",
       "url": "https://navigation.ros.org/",
       "license": "Apache License 2.0 (Open Source Navigation)",
-      "relevance": ["Behavior trees for navigation", "Costmap2D (Inflation, Lethal, Inscribed layers)", "Global path planners (A*, NavFn)", "Local trajectory controllers (DWB, MPPI)"]
+      "relevance": [
+        "Behavior trees for navigation",
+        "Costmap2D (Inflation, Lethal, Inscribed layers)",
+        "Global path planners (A*, NavFn)",
+        "Local trajectory controllers (DWB, MPPI)"
+      ]
     },
     {
       "id": "lavalle-planning-algorithms",
       "title": "Planning Algorithms",
-      "authors": ["Steven M. LaValle"],
+      "authors": [
+        "Steven M. LaValle"
+      ],
       "institution": "Cambridge University Press / University of Illinois",
       "url": "https://planning.cs.uiuc.edu/",
       "license": "Open Access Electronic Textbook",
-      "relevance": ["Graph search (Dijkstra, A*)", "Rapidly-exploring Random Trees (RRT)", "Configuration space (C-space)", "Collision-checking geometry"]
+      "relevance": [
+        "Graph search (Dijkstra, A*)",
+        "Rapidly-exploring Random Trees (RRT)",
+        "Configuration space (C-space)",
+        "Collision-checking geometry"
+      ]
     },
     {
       "id": "yolo-realtime-detection",
       "title": "You Only Look Once: Unified, Real-Time Object Detection",
-      "authors": ["Joseph Redmon", "Santosh Divvala", "Ross Girshick", "Ali Farhadi"],
+      "authors": [
+        "Joseph Redmon",
+        "Santosh Divvala",
+        "Ross Girshick",
+        "Ali Farhadi"
+      ],
       "institution": "University of Washington / IEEE CVPR / Ultralytics",
       "url": "https://docs.ultralytics.com/",
       "license": "AGPL-3.0 / Open Source Computer Vision",
-      "relevance": ["Single-stage object detection", "Real-time edge inference", "Bounding box regression", "Class probability estimation"]
+      "relevance": [
+        "Single-stage object detection",
+        "Real-time edge inference",
+        "Bounding box regression",
+        "Class probability estimation"
+      ]
     },
     {
       "id": "tobin-domain-randomization",
       "title": "Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World",
-      "authors": ["Josh Tobin", "Rachel Fong", "Alex Ray", "Jonas Schneider", "Wojciech Zaremba", "Pieter Abbeel"],
+      "authors": [
+        "Josh Tobin",
+        "Rachel Fong",
+        "Alex Ray",
+        "Jonas Schneider",
+        "Wojciech Zaremba",
+        "Pieter Abbeel"
+      ],
       "institution": "OpenAI / UC Berkeley / IEEE IROS",
       "url": "https://arxiv.org/abs/1703.06907",
       "license": "Open Access Scientific Publication",
-      "relevance": ["The Sim2Real reality gap", "Visual domain randomization", "Physical dynamics randomization", "Zero-shot real-world transfer"]
+      "relevance": [
+        "The Sim2Real reality gap",
+        "Visual domain randomization",
+        "Physical dynamics randomization",
+        "Zero-shot real-world transfer"
+      ]
     },
     {
       "id": "rt2-vla-foundation-models",
       "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
-      "authors": ["Anthony Brohan", "Noah Brown", "Justice Carbajal", "Yevgen Chebotar", "Google DeepMind Team"],
+      "authors": [
+        "Anthony Brohan",
+        "Noah Brown",
+        "Justice Carbajal",
+        "Yevgen Chebotar",
+        "Google DeepMind Team"
+      ],
       "institution": "Google DeepMind",
       "url": "https://robotics-transformer2.github.io/",
       "license": "Open Access Scientific Publication (CoRL 2023)",
-      "relevance": ["Vision-Language-Action (VLA) architecture", "Web-scale multimodal pre-training", "Robotic action tokenization", "Semantic spatial reasoning"]
+      "relevance": [
+        "Vision-Language-Action (VLA) architecture",
+        "Web-scale multimodal pre-training",
+        "Robotic action tokenization",
+        "Semantic spatial reasoning"
+      ]
     },
     {
       "id": "diffusion-policy-manipulation",
       "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
-      "authors": ["Cheng Chi", "Siyuan Feng", "Yilun Du", "Zhenjia Xu", "Eric Cousineau", "Benjamin Burchfiel", "Shuran Song"],
+      "authors": [
+        "Cheng Chi",
+        "Siyuan Feng",
+        "Yilun Du",
+        "Zhenjia Xu",
+        "Eric Cousineau",
+        "Benjamin Burchfiel",
+        "Shuran Song"
+      ],
       "institution": "Columbia University / MIT / Toyota Research Institute",
       "url": "https://diffusion-policy.cs.columbia.edu/",
       "license": "Open Access Scientific Publication (RSS 2023)",
-      "relevance": ["Visuomotor policy learning", "Generative diffusion models for robot actions", "Multimodal action distributions", "Complex manipulation tasks"]
+      "relevance": [
+        "Visuomotor policy learning",
+        "Generative diffusion models for robot actions",
+        "Multimodal action distributions",
+        "Complex manipulation tasks"
+      ]
+    },
+    {
+      "id": "ros2-jazzy-release",
+      "title": "ROS 2 Jazzy Jalisco Release Notes",
+      "authors": [
+        "Open Source Robotics Foundation (OSRF)"
+      ],
+      "institution": "Open Robotics",
+      "url": "https://docs.ros.org/en/jazzy/Releases/Release-Jazzy-Jalisco.html",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "relevance": [
+        "ROS 2 Jazzy LTS lifecycle",
+        "Ubuntu 24.04 Noble compatibility",
+        "Middleware upgrades"
+      ]
+    },
+    {
+      "id": "rp2350-datasheet",
+      "title": "Raspberry Pi RP2350 Microcontroller Datasheet",
+      "authors": [
+        "Raspberry Pi Ltd Engineering Team"
+      ],
+      "institution": "Raspberry Pi Ltd",
+      "url": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf",
+      "license": "Public Documentation",
+      "relevance": [
+        "Dual ARM Cortex-M33 architecture",
+        "Hazard3 RISC-V cores",
+        "Hardware PWM and PIO"
+      ]
+    },
+    {
+      "id": "openvla-paper-2024",
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "authors": [
+        "Moo Jin Kim",
+        "Karl Pertsch",
+        "Siddharth Karamcheti",
+        "Ted Xiao",
+        "Chelsea Finn",
+        "Percy Liang"
+      ],
+      "institution": "Stanford University / UC Berkeley / Google DeepMind",
+      "url": "https://arxiv.org/abs/2406.09246",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "relevance": [
+        "Open-source 7B parameter VLA model",
+        "Generalist robotic manipulation",
+        "Diffusion policy and action tokens"
+      ]
     }
   ]
 }
