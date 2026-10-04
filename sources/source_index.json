@@ -119,6 +119,42 @@
       "url": "https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard",
       "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
       "relevance": ["Internal breadboard rails", "Tie points", "Prototyping circuits without soldering"]
+    },
+    {
+      "id": "micropython-docs",
+      "title": "MicroPython Documentation and Language Reference",
+      "authors": ["Damien P. George", "MicroPython Community"],
+      "institution": "George Robotics Ltd.",
+      "url": "https://docs.micropython.org/en/latest/",
+      "license": "MIT License (Open Source)",
+      "relevance": ["Microcontroller hardware API", "machine.Pin", "time.ticks_ms", "Non-blocking event loops"]
+    },
+    {
+      "id": "raspberry-pi-pico-guide",
+      "title": "Raspberry Pi Pico Python SDK: A Guide to MicroPython on RP2040",
+      "authors": ["Raspberry Pi Ltd. Documentation Team"],
+      "institution": "Raspberry Pi Ltd.",
+      "url": "https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
+      "relevance": ["RP2040 microcontroller pinout", "GPIO input/output", "PWM hardware control", "Internal pull-ups"]
+    },
+    {
+      "id": "sipser-theory-of-computation",
+      "title": "Introduction to the Theory of Computation (Finite State Automata)",
+      "authors": ["Michael Sipser"],
+      "institution": "Massachusetts Institute of Technology (MIT Mathematics)",
+      "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)",
+      "relevance": ["Finite state machines", "State transitions", "Deterministic automata in robotics control"]
+    },
+    {
+      "id": "wokwi-simulator-docs",
+      "title": "Wokwi Embedded Systems Simulator Documentation",
+      "authors": ["Uri Shaked"],
+      "institution": "Wokwi",
+      "url": "https://docs.wokwi.com/",
+      "license": "Open Educational Documentation",
+      "relevance": ["Browser microcontroller simulation", "RP2040 and ESP32 breadboarding", "MicroPython simulation"]
     }
   ]
 }

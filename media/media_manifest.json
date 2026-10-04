@@ -132,6 +132,46 @@
       "author": "Instructabot Educational Team",
       "attribution_required": true,
       "description": "Diagram contrasting heat dissipation of linear regulators with high-efficiency inductor-switched buck converters"
+    },
+    {
+      "id": "flowchart-fsm-traffic",
+      "filename": "fsm-traffic-light.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Finite State Machine state transition diagram showing green, yellow, red, and pedestrian crosswalk states"
+    },
+    {
+      "id": "mcu-vs-sbc-comparison",
+      "filename": "mcu-vs-sbc.svg",
+      "media_type": "vector_graphic",
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Comparison diagram between a bare-metal microcontroller unit (MCU) and a single-board computer (SBC)"
+    },
+    {
+      "id": "pico-pinout-gpio",
+      "filename": "pico-pinout.svg",
+      "media_type": "schematic",
+      "source_url": "https://datasheets.raspberrypi.com/",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
+      "author": "Raspberry Pi Ltd. / Instructabot",
+      "attribution_required": true,
+      "description": "Pinout schematic of the Raspberry Pi Pico highlighting GPIO pins, power rails, and ground pins"
+    },
+    {
+      "id": "wokwi-traffic-intersection",
+      "filename": "wokwi-traffic-system.png",
+      "media_type": "schematic",
+      "source_url": "https://docs.wokwi.com/",
+      "license": "Creative Commons Attribution 4.0 (Wokwi)",
+      "author": "Instructabot Educational Team",
+      "attribution_required": true,
+      "description": "Wokwi simulated intersection with Raspberry Pi Pico, red/yellow/green LEDs, and pedestrian pushbutton"
     }
   ]
 }
