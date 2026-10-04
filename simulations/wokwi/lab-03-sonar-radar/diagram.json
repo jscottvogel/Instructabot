@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Instructabot Team",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 100, "left": 100, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "sonar", "top": 50, "left": 320, "attrs": { "distance": "30" } },
+    { "type": "wokwi-servo", "id": "servo", "top": 200, "left": 320, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:VBUS", "sonar:VCC", "red", [ "h0" ] ],
+    [ "pico:GND.1", "sonar:GND", "black", [ "h0" ] ],
+    [ "pico:GP2", "sonar:TRIG", "blue", [ "h0" ] ],
+    [ "pico:GP3", "sonar:ECHO", "green", [ "h0" ] ],
+    [ "pico:VBUS", "servo:V+", "red", [ "h0" ] ],
+    [ "pico:GND.2", "servo:GND", "black", [ "h0" ] ],
+    [ "pico:GP4", "servo:PWM", "orange", [ "h0" ] ]
+  ]
+}

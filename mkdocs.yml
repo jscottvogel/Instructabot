@@ -1,0 +1,122 @@
+site_name: "Instructabot 🤖📚"
+site_description: "State-of-the-Art Autonomous Robotics Curriculum for High School & College Students"
+site_author: "Instructabot Educational Team"
+repo_url: "https://github.com/jscottvogel/Instructabot"
+repo_name: "jscottvogel/Instructabot"
+docs_dir: "docs"
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - footnotes
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Master Syllabus: syllabus.md
+  - Simulations & Labs: simulations.md
+  - Curriculum Units:
+      - Unit 00 Foundations:
+          - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/01-what-is-a-robot.md
+          - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/02-the-five-subsystems.md
+          - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/03-safety-ethics-notebook.md
+          - "The Robotic Mindset & Anatomy of Systems": curriculum/unit-00-foundations/lab-00-systems-decomposition.md
+      - Unit 01 Electronics:
+          - "Electricity & Electronics from Scratch": curriculum/unit-01-electronics/01-intuitive-electrical-physics.md
+          - "Electricity & Electronics from Scratch": curriculum/unit-01-electronics/02-circuit-components-breadboarding.md
+          - "Electricity & Electronics from Scratch": curriculum/unit-01-electronics/03-power-delivery-and-regulators.md
+          - "Electricity & Electronics from Scratch": curriculum/unit-01-electronics/lab-01-zero-code-nightlight.md
+      - Unit 02 The Brain:
+          - "Computational Thinking & Microcontrollers": curriculum/unit-02-the-brain/01-algorithmic-logic-and-flowcharts.md
+          - "Computational Thinking & Microcontrollers": curriculum/unit-02-the-brain/02-python-for-robotics.md
+          - "Computational Thinking & Microcontrollers": curriculum/unit-02-the-brain/03-microcontrollers-vs-sbcs.md
+          - "Computational Thinking & Microcontrollers": curriculum/unit-02-the-brain/lab-02-intersection-controller.md
+      - Unit 03 The Senses:
+          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/01-analog-vs-digital-signals.md
+          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/02-distance-and-proximity.md
+          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/03-motion-and-orientation-imus.md
+          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/04-noise-and-signal-conditioning.md
+          - "Sensors, Signals, & Perception": curriculum/unit-03-the-senses/lab-03-sonar-radar-scanner.md
+      - Unit 04 The Muscles:
+          - "Motors, Actuation, & Power Electronics": curriculum/unit-04-the-muscles/01-electric-motors-compared.md
+          - "Motors, Actuation, & Power Electronics": curriculum/unit-04-the-muscles/02-h-bridge-motor-driving.md
+          - "Motors, Actuation, & Power Electronics": curriculum/unit-04-the-muscles/03-speed-direction-soft-start.md
+          - "Motors, Actuation, & Power Electronics": curriculum/unit-04-the-muscles/lab-04-motor-drive-acceleration.md
+      - Unit 05 The Bones:
+          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/01-structural-fundamentals.md
+          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/02-mechanical-power-transmission.md
+          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/03-spatial-geometry-kinematics.md
+          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/04-cad-modeling-for-robotics.md
+          - "Mechanics, Kinematics, & CAD Modeling": curriculum/unit-05-the-bones/lab-05-robotic-arm-cad-sizing.md
+      - Unit 06 Mobile Robotics:
+          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/01-drive-architectures.md
+          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/02-odometry-and-encoders.md
+          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/03-closed-loop-pid-control.md
+          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/04-physics-simulators-webots.md
+          - "Driving the Physical World": curriculum/unit-06-mobile-robotics/lab-06-maze-navigation-webots.md
+      - Unit 07 Robot Vision:
+          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/01-digital-images-matrices.md
+          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/02-opencv-python-foundations.md
+          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/03-object-tracking-aruco.md
+          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/04-3d-depth-sensing.md
+          - "Giving Robots Sight with OpenCV": curriculum/unit-07-robot-vision/lab-07-pan-tilt-visual-turret.md
+      - Unit 08 Ros2 Middleware:
+          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/01-why-middleware-ros2.md
+          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/02-computational-graph-nodes-topics.md
+          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/03-introspection-rviz2.md
+          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/04-tf2-coordinate-transforms.md
+          - "The Industry Standard Robot Operating System": curriculum/unit-08-ros2-middleware/lab-08-modular-ros2-package.md
+      - Unit 09 Autonomous Navigation:
+          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/01-fundamental-problem-of-slam.md
+          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/02-lidar-slam-algorithms.md
+          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/03-path-planning-and-costmaps.md
+          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/04-nav2-stack-architecture.md
+          - "SLAM & Path Planning": curriculum/unit-09-autonomous-navigation/lab-09-autonomous-warehouse-nav2.md
+      - Unit 10 Modern Ai Sim2Real:
+          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/01-classical-vs-ai-robotics.md
+          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/02-deep-learning-object-detection-yolo.md
+          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/03-sim2real-domain-randomization.md
+          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/04-vla-foundation-models.md
+          - "Modern AI, Foundation Models, & Sim2Real": curriculum/unit-10-modern-ai-sim2real/lab-10-semantic-object-fetching-capstone.md
+  - Autonomous Reports & Audits:
+      - "Continuous Evolution Audit": reports/autonomous_evolution_report.md
+      - "Editorial Board Report": reports/editorial_board_report.md
+      - "Research Trends Brief": reports/evolution_brief.md

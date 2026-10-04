@@ -1,0 +1,124 @@
+#VRML_SIM R2023b utf8
+
+WorldInfo {
+  info [
+    "Instructabot Unit 6: Mobile Robotics & Maze Navigation"
+  ]
+  title "Instructabot Maze World"
+  basicTimeStep 32
+}
+
+Viewpoint {
+  orientation -0.57 0.57 0.57 2.09
+  position 0 -3.5 3.5
+}
+
+TexturedBackground {
+}
+
+TexturedBackgroundLight {
+}
+
+RectangleArena {
+  floorSize 2 2
+  wallHeight 0.1
+}
+
+Solid {
+  translation 0 0.3 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.4 0.1
+        roughness 0.5
+      }
+      geometry Box {
+        size 0.8 0.05 0.1
+      }
+    }
+  ]
+  name "wall_1"
+  boundingObject Box {
+    size 0.8 0.05 0.1
+  }
+}
+
+Solid {
+  translation -0.4 -0.2 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.4 0.1
+        roughness 0.5
+      }
+      geometry Box {
+        size 0.05 0.8 0.1
+      }
+    }
+  ]
+  name "wall_2"
+  boundingObject Box {
+    size 0.05 0.8 0.1
+  }
+}
+
+DifferentialWheels {
+  translation -0.7 -0.7 0.05
+  rotation 0 0 1 1.57
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.1 0.4 0.8
+        roughness 0.3
+      }
+      geometry Cylinder {
+        height 0.06
+        radius 0.08
+      }
+    }
+    DistanceSensor {
+      translation 0.06 0.05 0
+      rotation 0 0 1 0.5
+      children [
+        Shape {
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ds_right"
+      lookupTable [
+        0 1024 0
+        0.2 0 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.06 -0.05 0
+      rotation 0 0 1 -0.5
+      children [
+        Shape {
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ds_left"
+      lookupTable [
+        0 1024 0
+        0.2 0 0
+      ]
+    }
+  ]
+  name "instructabot_diff"
+  boundingObject Cylinder {
+    height 0.06
+    radius 0.08
+  }
+  physics Physics {
+    density -1
+    mass 1.2
+  }
+  controller "lab_06_maze_solver"
+  axleLength 0.14
+  wheelRadius 0.035
+}

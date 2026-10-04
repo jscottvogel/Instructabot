@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "Instructabot Team",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-vcc", "id": "vcc", "top": 50, "left": 100, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd", "top": 280, "left": 100, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r_pullup", "top": 110, "left": 180, "attrs": { "value": "10000" } },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr", "top": 180, "left": 180, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r_base", "top": 150, "left": 280, "attrs": { "value": "1000" } },
+    { "type": "wokwi-resistor", "id": "r_led", "top": 90, "left": 380, "attrs": { "value": "330" } },
+    { "type": "wokwi-led", "id": "nightlight_led", "top": 150, "left": 380, "attrs": { "color": "white" } }
+  ],
+  "connections": [
+    [ "vcc:VCC", "r_pullup:1", "red", [ "v0" ] ],
+    [ "r_pullup:2", "ldr:VCC", "green", [ "v0" ] ],
+    [ "r_pullup:2", "r_base:1", "orange", [ "h0" ] ],
+    [ "ldr:GND", "gnd:GND", "black", [ "v0" ] ],
+    [ "vcc:VCC", "r_led:1", "red", [ "h0" ] ],
+    [ "r_led:2", "nightlight_led:A", "red", [ "v0" ] ],
+    [ "nightlight_led:K", "gnd:GND", "black", [ "v0" ] ]
+  ]
+}

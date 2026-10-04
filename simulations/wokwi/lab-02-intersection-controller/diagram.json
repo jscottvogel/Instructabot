@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Instructabot Team",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 100, "left": 100, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_red", "top": 50, "left": 300, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led_yellow", "top": 90, "left": 300, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-led", "id": "led_green", "top": 130, "left": 300, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "ped_walk", "top": 190, "left": 300, "attrs": { "color": "white" } },
+    { "type": "wokwi-led", "id": "ped_stop", "top": 230, "left": 300, "attrs": { "color": "orange" } },
+    { "type": "wokwi-pushbutton", "id": "btn_cross", "top": 280, "left": 300, "attrs": { "color": "blue" } }
+  ],
+  "connections": [
+    [ "pico:GP15", "led_red:A", "red", [ "h0" ] ],
+    [ "pico:GP14", "led_yellow:A", "orange", [ "h0" ] ],
+    [ "pico:GP13", "led_green:A", "green", [ "h0" ] ],
+    [ "pico:GP12", "ped_walk:A", "cyan", [ "h0" ] ],
+    [ "pico:GP11", "ped_stop:A", "purple", [ "h0" ] ],
+    [ "pico:GP10", "btn_cross:1.l", "blue", [ "h0" ] ],
+    [ "pico:GND.1", "led_red:K", "black", [ "h0" ] ],
+    [ "pico:GND.1", "led_yellow:K", "black", [ "h0" ] ],
+    [ "pico:GND.1", "led_green:K", "black", [ "h0" ] ],
+    [ "pico:GND.1", "ped_walk:K", "black", [ "h0" ] ],
+    [ "pico:GND.1", "ped_stop:K", "black", [ "h0" ] ],
+    [ "pico:GND.1", "btn_cross:2.l", "black", [ "h0" ] ]
+  ]
+}

@@ -1,0 +1,216 @@
+#!/usr/bin/env python3
+"""
+Instructabot Web Textbook Sync & Site Generator
+-----------------------------------------------
+Compiles the 51 markdown curriculum modules, syllabus, simulations,
+and autonomous editorial reports into an interactive MkDocs Material textbook.
+Generates a complete, responsive navigation structure.
+"""
+
+import sys
+import os
+import shutil
+import re
+from pathlib import Path
+
+# Windows console encoding safety
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except AttributeError:
+        pass
+
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+CURRICULUM_DIR = REPO_ROOT / "curriculum"
+SIMULATIONS_DIR = REPO_ROOT / "simulations"
+REVIEWS_DIR = REPO_ROOT / "reviews"
+DOCS_DIR = REPO_ROOT / "docs"
+MKDOCS_YML = REPO_ROOT / "mkdocs.yml"
+
+
+def extract_title_from_md(filepath: Path) -> str:
+    """Extracts first H1 or H2 from a Markdown file to use as the menu label."""
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("# "):
+                    return line[2:].strip()
+                if line.startswith("## ") and not line.startswith("## 1."):
+                    return line[3:].strip()
+    except Exception:
+        pass
+    return filepath.stem.replace("-", " ").title()
+
+
+def sync_textbook():
+    print("=" * 65)
+    print("📚 Instructabot Interactive Web Textbook Sync")
+    print("=" * 65)
+
+    # 1. Clean and prepare docs directory
+    if DOCS_DIR.exists():
+        shutil.rmtree(DOCS_DIR)
+    DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    print("Created fresh docs/ directory.")
+
+    # 2. Copy home page (README.md -> docs/index.md) with link fixes
+    readme_path = REPO_ROOT / "README.md"
+    if readme_path.exists():
+        content = readme_path.read_text(encoding="utf-8")
+        content = content.replace("curriculum/SYLLABUS.md", "syllabus.md")
+        content = content.replace(".github/workflows/curriculum_evolution.yml", "https://github.com/jscottvogel/Instructabot/blob/main/.github/workflows/curriculum_evolution.yml")
+        (DOCS_DIR / "index.md").write_text(content, encoding="utf-8")
+        print("✅ Synced & sanitized Home: README.md -> docs/index.md")
+
+    # 3. Copy Syllabus
+    syllabus_path = CURRICULUM_DIR / "SYLLABUS.md"
+    if syllabus_path.exists():
+        shutil.copy2(syllabus_path, DOCS_DIR / "syllabus.md")
+        print("✅ Synced Master Syllabus: curriculum/SYLLABUS.md -> docs/syllabus.md")
+
+    # 4. Copy Simulations Guide with link fixes
+    sim_readme = SIMULATIONS_DIR / "README.md"
+    if sim_readme.exists():
+        sim_content = sim_readme.read_text(encoding="utf-8")
+        sim_content = sim_content.replace("cad_urdf/", "https://github.com/jscottvogel/Instructabot/tree/main/simulations/cad_urdf/")
+        sim_content = sim_content.replace("webots/worlds/", "https://github.com/jscottvogel/Instructabot/tree/main/simulations/webots/worlds/")
+        (DOCS_DIR / "simulations.md").write_text(sim_content, encoding="utf-8")
+        print("✅ Synced & sanitized Simulations Guide -> docs/simulations.md")
+
+    # 5. Copy All Reviews and Packets
+    reviews_target_dir = DOCS_DIR / "reviews"
+    reviews_target_dir.mkdir(parents=True, exist_ok=True)
+    if REVIEWS_DIR.exists():
+        for r_file in REVIEWS_DIR.glob("*.md"):
+            shutil.copy2(r_file, reviews_target_dir / r_file.name)
+        print("✅ Synced complete reviews/ directory into docs/reviews/.")
+
+    # 6. Copy Reports
+    reports_target_dir = DOCS_DIR / "reports"
+    reports_target_dir.mkdir(parents=True, exist_ok=True)
+    for report_file in ["autonomous_evolution_report.md", "editorial_board_report.md", "evolution_brief.md"]:
+        src = REVIEWS_DIR / report_file
+        if src.exists():
+            shutil.copy2(src, reports_target_dir / report_file)
+            print(f"✅ Synced Report: {report_file} -> docs/reports/{report_file}")
+
+    # 6. Copy Curriculum Units
+    curriculum_target_dir = DOCS_DIR / "curriculum"
+    curriculum_target_dir.mkdir(parents=True, exist_ok=True)
+
+    nav_units = []
+    unit_dirs = sorted([d for d in CURRICULUM_DIR.iterdir() if d.is_dir() and d.name.startswith("unit-")])
+
+    for u_dir in unit_dirs:
+        unit_slug = u_dir.name
+        dest_unit_dir = curriculum_target_dir / unit_slug
+        dest_unit_dir.mkdir(parents=True, exist_ok=True)
+
+        md_files = sorted(u_dir.glob("*.md"))
+        unit_nav_items = []
+        unit_display_title = unit_slug.replace("-", " ").title()
+
+        for md_f in md_files:
+            dest_file = dest_unit_dir / md_f.name
+            shutil.copy2(md_f, dest_file)
+            page_title = extract_title_from_md(md_f)
+            # Truncate long titles for clean sidebar display
+            if ":" in page_title:
+                page_title = page_title.split(":")[-1].strip()
+            rel_doc_path = f"curriculum/{unit_slug}/{md_f.name}"
+            unit_nav_items.append({page_title: rel_doc_path})
+
+        nav_units.append({unit_display_title: unit_nav_items})
+
+    print(f"✅ Synced {len(unit_dirs)} units ({sum(len(items[list(items.keys())[0]]) for items in nav_units)} modules) into docs/curriculum/.")
+
+    # 7. Generate mkdocs.yml
+    generate_mkdocs_yml(nav_units)
+    print("✅ Generated mkdocs.yml configuration.")
+    print("=" * 65)
+
+
+def generate_mkdocs_yml(nav_units):
+    lines = [
+        'site_name: "Instructabot 🤖📚"',
+        'site_description: "State-of-the-Art Autonomous Robotics Curriculum for High School & College Students"',
+        'site_author: "Instructabot Educational Team"',
+        'repo_url: "https://github.com/jscottvogel/Instructabot"',
+        'repo_name: "jscottvogel/Instructabot"',
+        'docs_dir: "docs"',
+        '',
+        'theme:',
+        '  name: material',
+        '  features:',
+        '    - navigation.tabs',
+        '    - navigation.sections',
+        '    - navigation.expand',
+        '    - navigation.top',
+        '    - search.suggest',
+        '    - search.highlight',
+        '    - content.code.copy',
+        '  palette:',
+        '    - scheme: default',
+        '      primary: indigo',
+        '      accent: cyan',
+        '      toggle:',
+        '        icon: material/brightness-7',
+        '        name: Switch to dark mode',
+        '    - scheme: slate',
+        '      primary: indigo',
+        '      accent: cyan',
+        '      toggle:',
+        '        icon: material/brightness-4',
+        '        name: Switch to light mode',
+        '',
+        'markdown_extensions:',
+        '  - admonition',
+        '  - pymdownx.details',
+        '  - pymdownx.superfences:',
+        '      custom_fences:',
+        '        - name: mermaid',
+        '          class: mermaid',
+        '          format: !!python/name:pymdownx.superfences.fence_code_format',
+        '  - pymdownx.arithmatex:',
+        '      generic: true',
+        '  - pymdownx.highlight:',
+        '      anchor_linenums: true',
+        '  - pymdownx.inlinehilite',
+        '  - pymdownx.snippets',
+        '  - tables',
+        '  - footnotes',
+        '',
+        'extra_javascript:',
+        '  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js',
+        '',
+        'nav:',
+        '  - Home: index.md',
+        '  - Master Syllabus: syllabus.md',
+        '  - Simulations & Labs: simulations.md',
+        '  - Curriculum Units:'
+    ]
+
+    # Add each unit
+    for u in nav_units:
+        for u_title, items in u.items():
+            lines.append(f'      - {u_title}:')
+            for item in items:
+                for label, path in item.items():
+                    clean_label = label.replace('"', '\\"')
+                    lines.append(f'          - "{clean_label}": {path}')
+
+    lines.extend([
+        '  - Autonomous Reports & Audits:',
+        '      - "Continuous Evolution Audit": reports/autonomous_evolution_report.md',
+        '      - "Editorial Board Report": reports/editorial_board_report.md',
+        '      - "Research Trends Brief": reports/evolution_brief.md'
+    ])
+
+    with open(MKDOCS_YML, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
+if __name__ == "__main__":
+    sync_textbook()

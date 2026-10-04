@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "Instructabot Team",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 100, "left": 100, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r_in1", "top": 100, "left": 320, "attrs": { "value": "1000" } },
+    { "type": "wokwi-resistor", "id": "r_in2", "top": 140, "left": 320, "attrs": { "value": "1000" } },
+    { "type": "wokwi-led", "id": "motor_fwd_led", "top": 100, "left": 400, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "motor_rev_led", "top": 140, "left": 400, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "pico:GP6", "r_in1:1", "blue", [ "h0" ] ],
+    [ "pico:GP7", "r_in2:1", "orange", [ "h0" ] ],
+    [ "r_in1:2", "motor_fwd_led:A", "green", [ "h0" ] ],
+    [ "r_in2:2", "motor_rev_led:A", "red", [ "h0" ] ],
+    [ "pico:GND.1", "motor_fwd_led:K", "black", [ "h0" ] ],
+    [ "pico:GND.1", "motor_rev_led:K", "black", [ "h0" ] ]
+  ]
+}
