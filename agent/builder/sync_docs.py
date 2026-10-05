@@ -138,16 +138,6 @@ def sync_textbook():
             shutil.copy2(src, reports_target_dir / report_file)
             print(f"✅ Synced Report: {report_file} -> docs/reports/{report_file}")
 
-    # 6. Copy Notebooks Directory
-    notebooks_source_dir = REPO_ROOT / "notebooks"
-    notebooks_target_dir = DOCS_DIR / "notebooks"
-    notebooks_target_dir.mkdir(parents=True, exist_ok=True)
-    if notebooks_source_dir.exists():
-        for nb_file in notebooks_source_dir.glob("*.md"):
-            nb_content = nb_file.read_text(encoding="utf-8")
-            (notebooks_target_dir / nb_file.name).write_text(nb_content, encoding="utf-8")
-        print("✅ Synced notebooks/ directory into docs/notebooks/.")
-
     # 7. Copy Curriculum Units with Link Sanitation
     curriculum_target_dir = DOCS_DIR / "curriculum"
     curriculum_target_dir.mkdir(parents=True, exist_ok=True)
@@ -260,20 +250,6 @@ def generate_mkdocs_yml(nav_units):
                     lines.append(f'          - "{clean_label}": {path}')
 
     lines.extend([
-        '  - "📓 Engineering Notebooks":',
-        '      - "Overview & CLI Guide": notebooks/README.md',
-        '      - "Master Notebook Template": notebooks/MASTER_NOTEBOOK_TEMPLATE.md',
-        '      - "Lab 00: Systems Decomposition": notebooks/lab-00-systems-decomposition-log.md',
-        '      - "Lab 01: Zero-Code Nightlight": notebooks/lab-01-nightlight-log.md',
-        '      - "Lab 02: Intersection Controller": notebooks/lab-02-intersection-controller-log.md',
-        '      - "Lab 03: Sonar Radar Scanner": notebooks/lab-03-sonar-radar-scanner-log.md',
-        '      - "Lab 04: Motor Drive & Acceleration": notebooks/lab-04-motor-drive-acceleration-log.md',
-        '      - "Lab 05: Robotic Arm CAD Sizing": notebooks/lab-05-robotic-arm-cad-sizing-log.md',
-        '      - "Lab 06: Webots Maze Navigation": notebooks/lab-06-maze-navigation-webots-log.md',
-        '      - "Lab 07: Pan-Tilt Visual Turret": notebooks/lab-07-pan-tilt-visual-turret-log.md',
-        '      - "Lab 08: Modular ROS 2 Package": notebooks/lab-08-modular-ros2-package-log.md',
-        '      - "Lab 09: Warehouse SLAM & Nav2": notebooks/lab-09-autonomous-warehouse-nav2-log.md',
-        '      - "Lab 10: SOTA AI Sim2Real Capstone": notebooks/lab-10-semantic-object-fetching-capstone-log.md',
         '  - Autonomous Reports & Audits:',
         '      - "Continuous Evolution Audit": reports/autonomous_evolution_report.md',
         '      - "Editorial Board Report": reports/editorial_board_report.md',

@@ -144,28 +144,20 @@ Before powering on any simulated or physical robot, evaluate the four safety pil
 - [ ] **Pillar 3 (Actuation & E-Stop)**: Is the robot propped up on a bench stand so the wheels can spin freely in the air during the first test? Is a hardwired power switch or accessible battery plug within immediate reach?
 - [ ] **Pillar 4 (Software & Fail-Safe)**: Does the control loop include a watchdog timer or communication timeout that automatically sets motor speeds to zero if connection is lost?
 
-### Part 2: Your Version-Controlled Engineering Notebook
+### Part 2: Engineering Log Template
+Create your first markdown log entry in your project notes:
 
-In this curriculum, you do not write notes on loose paper that can get lost. You maintain professional, version-controlled markdown engineering logs stored right inside the repository's [`notebooks/`](../../notebooks/README.md) directory.
-
-#### Turnkey Setup in 3 Simple Steps:
-1. **Initialize Your First Log**:
-   Run the notebook CLI to scaffold your Lab 0 log with your name and today's date:
-   ```bash
-   python agent/notebook/cli.py --new 0 --author "Your Name"
-   ```
-2. **Open Your Fillable Notebook**:
-   Open [**`notebooks/lab-00-systems-decomposition-log.md`**](../../notebooks/lab-00-systems-decomposition-log.md) in your editor (or view the [Master Template](../../notebooks/MASTER_NOTEBOOK_TEMPLATE.md)).
-3. **Record Your Observations & Evaluate Your Rubric**:
-   Fill in your subsystem observations and verify your rubric score:
-   ```bash
-   python agent/notebook/cli.py --verify 0
-   ```
-   When ready, commit to version control:
-   ```bash
-   git add notebooks/lab-00-systems-decomposition-log.md
-   git commit -m "docs: initialize Lab 0 systems decomposition log"
-   ```
+```markdown
+### Engineering Log Entry: 2026-10-04
+- **Subsystem**: Power & Safety
+- **Objective**: Conduct initial power-rail isolation test and verify common ground.
+- **Hypothesis**: The logic rail will supply stable 5.0V even when the motor driver draws 2.0A surge current.
+- **Observations / Measurements**:
+  - Unloaded Logic Voltage: 5.02V
+  - Motor Stall Current: 1.84A
+  - Voltage Dip on Logic Rail: 4.98V (Within acceptable 5% tolerance)
+- **Conclusion**: Power isolation verified. No brownout risk detected.
+```
 
 ---
 

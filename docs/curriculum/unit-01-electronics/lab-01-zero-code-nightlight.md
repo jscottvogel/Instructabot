@@ -158,36 +158,27 @@ flowchart TD
 
 ## 8. Author Your Engineering Notebook Entry
 
-Professional roboticists document every design iteration in an Engineering Notebook. You will record your measurements, schematics, and troubleshooting diagnosis directly in your digital notebook:
+In your digital engineering notes, document your completed build:
 
-> 📝 **[Click Here to Open Your Fillable Lab 1 Engineering Notebook](../../notebooks/lab-01-nightlight-log.md)**
+```markdown
+# Engineering Log: Autonomous Light-Sensitive Circuit
+**Date**: 2026-10-04  
+**Author**: [Your Name]  
+**Milestone**: Unit 1 Capstone (Zero-Code Autonomous Nightlight)  
 
-### Turnkey 4-Step Lab Submission Workflow:
+### 1. Objective
+Design and simulate an analog sensory control circuit that activates an LED in low-light conditions using a photoresistor voltage divider and an NPN transistor switch without a microcontroller.
 
-1. **Initialize Your Notebook Entry**:
-   Run the notebook CLI to pre-fill your author details and timestamp:
-   ```bash
-   python agent/notebook/cli.py --new 1 --author "Your Full Name"
-   ```
+### 2. Experimental Data & Multimeter Readings
+- Supply Voltage: 9.00V
+- Transistor Base Voltage (Bright Sunlight): 0.38V (Transistor Cutoff, LED Current = 0.0 mA)
+- Transistor Base Voltage (Total Darkness): 0.74V (Transistor Saturation, LED Current = 21.2 mA)
+- Voltage Drop across 330Ω Resistor during activation: 7.0V
+- Current through LED: I = 7.0V / 330Ω = 21.2 mA (Within safe 20-25 mA rating)
 
-2. **Record Your Observations & Multimeter Readings**:
-   Open [**`notebooks/lab-01-nightlight-log.md`**](../../notebooks/lab-01-nightlight-log.md) in your editor and record:
-   - Your measured Supply Voltage ($V_{\text{CC}}$).
-   - Base Voltage ($V_b$) and LED Current ($I_{\text{LED}}$) in bright light vs. midnight darkness.
-   - Your calculation verifying the $330\,\Omega$ current-limiting resistor.
-   - At least one troubleshooting challenge you diagnosed and resolved in Section 5.
-
-3. **Verify Your Notebook Rubric Score**:
-   Run the automated grader to verify all rubric requirements before submitting:
-   ```bash
-   python agent/notebook/cli.py --verify 1
-   ```
-
-4. **Commit Your Progress to Git**:
-   ```bash
-   git add notebooks/lab-01-nightlight-log.md
-   git commit -m "docs(notebook): complete Lab 1 autonomous nightlight log"
-   ```
+### 3. Engineering Reflection
+This lab demonstrates that robotic sensing and decision-making can be implemented purely through solid-state physics. The transistor acts as a physical threshold comparator.
+```
 
 ---
 
